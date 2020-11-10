@@ -10,63 +10,54 @@
         </Style>
         <ReportItems>
           <Tablix Name="Tablix1">
-            <Left>10.5pt</Left>
-            <Top>13.5pt</Top>
-            <Height>36pt</Height>
-            <Width>687pt</Width>
+            <Left>7.875pt</Left>
+            <Top>7.5pt</Top>
+            <Height>64.5pt</Height>
+            <Width>420pt</Width>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
-            <DataSetName>SalesOrderDetails</DataSetName>
+            <DataSetName>DataSet1</DataSetName>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
                   <Width>72pt</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>72pt</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>72pt</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>137.25pt</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>72pt</Width>
-                </TablixColumn>
-                <TablixColumn>
-                  <Width>117.75pt</Width>
+                  <Width>118.5pt</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>72pt</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>72pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>85.5pt</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>18pt</Height>
+                  <Height>21pt</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="TextBox1">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
+                          <Height>21pt</Height>
                           <Width>72pt</Width>
                           <Style>
-                            <BackgroundColor>#e9ebee</BackgroundColor>
+                            <BackgroundColor>#5fbe76</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                             <Border>
-                              <Color>#d3d3d3</Color>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                           </Style>
@@ -76,17 +67,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Order ID</Value>
+                                  <Value>ProductID</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>black</Color>
+                                    <Color>#ffffff</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                         </Textbox>
@@ -99,17 +88,17 @@
                         <Textbox Name="TextBox2">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>72pt</Width>
+                          <Height>21pt</Height>
+                          <Width>118.5pt</Width>
                           <Style>
-                            <BackgroundColor>#e9ebee</BackgroundColor>
+                            <BackgroundColor>#5fbe76</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                             <Border>
-                              <Color>#d3d3d3</Color>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                           </Style>
@@ -119,17 +108,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Name</Value>
+                                  <Value>Carrier Tracking No.</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>black</Color>
+                                    <Color>#ffffff</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                         </Textbox>
@@ -142,17 +129,17 @@
                         <Textbox Name="TextBox3">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
+                          <Height>21pt</Height>
                           <Width>72pt</Width>
                           <Style>
-                            <BackgroundColor>#e9ebee</BackgroundColor>
+                            <BackgroundColor>#5fbe76</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                             <Border>
-                              <Color>#d3d3d3</Color>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                           </Style>
@@ -162,17 +149,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Ship Name</Value>
+                                  <Value>Qty</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>black</Color>
+                                    <Color>#ffffff</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                         </Textbox>
@@ -185,17 +170,17 @@
                         <Textbox Name="TextBox7">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>137.25pt</Width>
+                          <Height>21pt</Height>
+                          <Width>72pt</Width>
                           <Style>
-                            <BackgroundColor>#e9ebee</BackgroundColor>
+                            <BackgroundColor>#5fbe76</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                             <Border>
-                              <Color>#d3d3d3</Color>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                           </Style>
@@ -205,17 +190,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Address</Value>
+                                  <Value>Unit Price</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>black</Color>
+                                    <Color>#ffffff</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                         </Textbox>
@@ -228,17 +211,17 @@
                         <Textbox Name="TextBox9">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>72pt</Width>
+                          <Height>21pt</Height>
+                          <Width>85.5pt</Width>
                           <Style>
-                            <BackgroundColor>#e9ebee</BackgroundColor>
+                            <BackgroundColor>#5fbe76</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
                             <Border>
-                              <Color>#d3d3d3</Color>
+                              <Color>LightGrey</Color>
                               <Style>Solid</Style>
                             </Border>
                           </Style>
@@ -248,146 +231,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>City</Value>
+                                  <Value>Item Total</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
                                     <FontWeight>Bold</FontWeight>
-                                    <Color>black</Color>
+                                    <Color>#ffffff</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                        </Textbox>
-                        <ColSpan>1</ColSpan>
-                        <RowSpan>1</RowSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="TextBox11">
-                          <Left>0in</Left>
-                          <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>117.75pt</Width>
-                          <Style>
-                            <BackgroundColor>#e9ebee</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                            <Border>
-                              <Color>#d3d3d3</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                          </Style>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Country</Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>black</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                        </Textbox>
-                        <ColSpan>1</ColSpan>
-                        <RowSpan>1</RowSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="TextBox13">
-                          <Left>0in</Left>
-                          <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>72pt</Width>
-                          <Style>
-                            <BackgroundColor>#e9ebee</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                            <Border>
-                              <Color>#d3d3d3</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                          </Style>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Postal Code</Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>black</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                        </Textbox>
-                        <ColSpan>1</ColSpan>
-                        <RowSpan>1</RowSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="TextBox15">
-                          <Left>0in</Left>
-                          <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>72pt</Width>
-                          <Style>
-                            <BackgroundColor>#e9ebee</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                            <Border>
-                              <Color>#d3d3d3</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                          </Style>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Freight</Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Bold</FontWeight>
-                                    <Color>black</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                         </Textbox>
@@ -398,14 +250,14 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>18pt</Height>
+                  <Height>22.5pt</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="TextBox4">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
+                          <Height>22.5pt</Height>
                           <Width>72pt</Width>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
@@ -424,16 +276,15 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!OrderID.Value</Value>
+                                  <Value>=Fields!ProductID.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Normal</FontWeight>
                                     <Color>black</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Center</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -447,8 +298,8 @@
                         <Textbox Name="TextBox5">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>72pt</Width>
+                          <Height>22.5pt</Height>
+                          <Width>118.5pt</Width>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -466,10 +317,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CustomerID.Value</Value>
+                                  <Value>=Fields!CarrierTrackingNumber.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Normal</FontWeight>
                                     <Color>black</Color>
                                   </Style>
                                 </TextRun>
@@ -487,7 +337,7 @@
                         <Textbox Name="TextBox6">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
+                          <Height>22.5pt</Height>
                           <Width>72pt</Width>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
@@ -506,15 +356,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ShipName.Value</Value>
+                                  <Value>=Fields!OrderQty.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Normal</FontWeight>
                                     <Color>black</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                         </Textbox>
@@ -527,8 +378,8 @@
                         <Textbox Name="TextBox8">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>137.25pt</Width>
+                          <Height>22.5pt</Height>
+                          <Width>72pt</Width>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -546,10 +397,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ShipAddress.Value</Value>
+                                  <Value>=Fields!UnitPrice.Value</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Normal</FontWeight>
+                                    <Format>'$'#,0.00;('$'#,0.00)</Format>
+                                    <FormatType xmlns="http://tempuri.org/">
+                                      <Format>Currency</Format>
+                                      <Representation>None</Representation>
+                                      <NegativeValue>($12345)</NegativeValue>
+                                      <Culture>English (United States)</Culture>
+                                    </FormatType>
                                     <Color>black</Color>
                                   </Style>
                                 </TextRun>
@@ -567,8 +424,8 @@
                         <Textbox Name="TextBox10">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>72pt</Width>
+                          <Height>22.5pt</Height>
+                          <Width>85.5pt</Width>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -586,10 +443,16 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ShipCity.Value</Value>
+                                  <Value>=Fields!OrderQty.Value*Round(Fields!UnitPrice.Value,2)</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Normal</FontWeight>
+                                    <Format>'$'#,0.00;('$'#,0.00)</Format>
+                                    <FormatType xmlns="http://tempuri.org/">
+                                      <Format>Currency</Format>
+                                      <Representation>None</Representation>
+                                      <NegativeValue>($12345)</NegativeValue>
+                                      <Culture>English (United States)</Culture>
+                                    </FormatType>
                                     <Color>black</Color>
                                   </Style>
                                 </TextRun>
@@ -602,93 +465,18 @@
                         <RowSpan>1</RowSpan>
                       </CellContents>
                     </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="TextBox12">
-                          <Left>0in</Left>
-                          <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>117.75pt</Width>
-                          <Style>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                          </Style>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!ShipCountry.Value</Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Normal</FontWeight>
-                                    <Color>black</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                        </Textbox>
-                        <ColSpan>1</ColSpan>
-                        <RowSpan>1</RowSpan>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="TextBox14">
-                          <Left>0in</Left>
-                          <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>72pt</Width>
-                          <Style>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                            <Border>
-                              <Color>LightGrey</Color>
-                              <Style>Solid</Style>
-                            </Border>
-                          </Style>
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!ShipPostalCode.Value</Value>
-                                  <Style>
-                                    <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Normal</FontWeight>
-                                    <Color>black</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                        </Textbox>
-                        <ColSpan>1</ColSpan>
-                        <RowSpan>1</RowSpan>
-                      </CellContents>
-                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>21pt</Height>
+                  <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="TextBox16">
                           <Left>0in</Left>
                           <Top>0in</Top>
-                          <Height>18pt</Height>
-                          <Width>72pt</Width>
+                          <Height>21pt</Height>
+                          <Width>334.5pt</Width>
                           <Style>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
@@ -706,11 +494,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Freight.Value</Value>
+                                  <Value>Total</Value>
                                   <Style>
                                     <FontFamily>Segoe UI</FontFamily>
-                                    <FontWeight>Normal</FontWeight>
-                                    <Format>'$'0.00;('$'0.00)</Format>
+                                    <FontWeight>Bold</FontWeight>
                                     <Color>black</Color>
                                   </Style>
                                 </TextRun>
@@ -718,6 +505,56 @@
                               <Style>
                                 <TextAlign>Right</TextAlign>
                               </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>4</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox20">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>21pt</Height>
+                          <Width>85.5pt</Width>
+                          <Style>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!OrderQty.Value*Round(Fields!UnitPrice.Value,2))</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>'$'#,0;('$'#,0)</Format>
+                                    <FormatType xmlns="http://tempuri.org/">
+                                      <Format>Currency</Format>
+                                      <Representation>None</Representation>
+                                      <NegativeValue>($12345)</NegativeValue>
+                                      <Culture>English (United States)</Culture>
+                                    </FormatType>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
                             </Paragraph>
                           </Paragraphs>
                         </Textbox>
@@ -736,9 +573,6 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
-                <TablixMember />
-                <TablixMember />
-                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -749,64 +583,17 @@
                 <TablixMember>
                   <Group Name="Details" />
                 </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
           </Tablix>
         </ReportItems>
-        <Height>63pt</Height>
+        <Height>79.5pt</Height>
       </Body>
-      <Width>708pt</Width>
+      <Width>435.75pt</Width>
       <Page>
-        <PageHeader>
-          <Style>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-          <Height>39.75pt</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <ReportItems>
-            <Textbox Name="TextBox18">
-              <Left>0pt</Left>
-              <Top>0pt</Top>
-              <Height>34.5pt</Height>
-              <Width>707.25pt</Width>
-              <Style>
-                <BackgroundColor>#555b63</BackgroundColor>
-                <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>4.62525pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-                <Border>
-                  <Color>#555b63</Color>
-                  <Style>None</Style>
-                </Border>
-              </Style>
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>Sales Order Details</Value>
-                      <Style>
-                        <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>11.49975pt</FontSize>
-                        <FontWeight>SemiBold</FontWeight>
-                        <Color>#ffffff</Color>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-            </Textbox>
-          </ReportItems>
-        </PageHeader>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
         <TopMargin>1in</TopMargin>
@@ -821,119 +608,111 @@
   </ReportSections>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="Northwind">
+    <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=;Initial Catalog=Northwind;</ConnectString>
+        <ConnectString>Data Source=.;Initial Catalog=AdventureWorks2012;</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
-      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:SecurityType>Integrated</rd:SecurityType>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="SalesOrderDetails">
+    <DataSet Name="DataSet1">
       <Fields>
-        <Field Name="OrderID">
-          <DataField>OrderID</DataField>
+        <Field Name="SalesOrderID">
+          <DataField>SalesOrderID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="CustomerID">
-          <DataField>CustomerID</DataField>
+        <Field Name="SalesOrderDetailID">
+          <DataField>SalesOrderDetailID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CarrierTrackingNumber">
+          <DataField>CarrierTrackingNumber</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="EmployeeID">
-          <DataField>EmployeeID</DataField>
+        <Field Name="OrderQty">
+          <DataField>OrderQty</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="ProductID">
+          <DataField>ProductID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="OrderDate">
-          <DataField>OrderDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="RequiredDate">
-          <DataField>RequiredDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="ShippedDate">
-          <DataField>ShippedDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="ShipVia">
-          <DataField>ShipVia</DataField>
+        <Field Name="SpecialOfferID">
+          <DataField>SpecialOfferID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Freight">
-          <DataField>Freight</DataField>
+        <Field Name="UnitPrice">
+          <DataField>UnitPrice</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ShipName">
-          <DataField>ShipName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="UnitPriceDiscount">
+          <DataField>UnitPriceDiscount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ShipAddress">
-          <DataField>ShipAddress</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="LineTotal">
+          <DataField>LineTotal</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="ShipCity">
-          <DataField>ShipCity</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="rowguid">
+          <DataField>rowguid</DataField>
+          <rd:TypeName>System.Guid</rd:TypeName>
         </Field>
-        <Field Name="ShipRegion">
-          <DataField>ShipRegion</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ShipPostalCode">
-          <DataField>ShipPostalCode</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ShipCountry">
-          <DataField>ShipCountry</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="ModifiedDate">
+          <DataField>ModifiedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
       <Query>
-        <DataSourceName>Northwind</DataSourceName>
+        <DataSourceName>DataSource1</DataSourceName>
         <CommandType>Text</CommandType>
-        <CommandText>SELECT [dbo].[Orders].[OrderID],
-[dbo].[Orders].[CustomerID],
-[dbo].[Orders].[EmployeeID],
-[dbo].[Orders].[OrderDate],
-[dbo].[Orders].[RequiredDate],
-[dbo].[Orders].[ShippedDate],
-[dbo].[Orders].[ShipVia],
-[dbo].[Orders].[Freight],
-[dbo].[Orders].[ShipName],
-[dbo].[Orders].[ShipAddress],
-[dbo].[Orders].[ShipCity],
-[dbo].[Orders].[ShipRegion],
-[dbo].[Orders].[ShipPostalCode],
-[dbo].[Orders].[ShipCountry] FROM [dbo].[Orders]</CommandText>
+        <CommandText>SELECT [Sales].[SalesOrderDetail].[SalesOrderID],
+[Sales].[SalesOrderDetail].[SalesOrderDetailID],
+[Sales].[SalesOrderDetail].[CarrierTrackingNumber],
+[Sales].[SalesOrderDetail].[OrderQty],
+[Sales].[SalesOrderDetail].[ProductID],
+[Sales].[SalesOrderDetail].[SpecialOfferID],
+[Sales].[SalesOrderDetail].[UnitPrice],
+[Sales].[SalesOrderDetail].[UnitPriceDiscount],
+[Sales].[SalesOrderDetail].[LineTotal],
+[Sales].[SalesOrderDetail].[rowguid],
+[Sales].[SalesOrderDetail].[ModifiedDate] FROM [Sales].[SalesOrderDetail]</CommandText>
         <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
           <Tables>
-            <Table Name="Orders" Schema="dbo">
+            <Table Name="SalesOrderDetail" Schema="Sales">
               <Columns>
-                <Column Name="OrderID" IsDuplicate="False" IsSelected="True" />
-                <Column Name="CustomerID" IsDuplicate="False" IsSelected="True" />
-                <Column Name="EmployeeID" IsDuplicate="False" IsSelected="True" />
-                <Column Name="OrderDate" IsDuplicate="False" IsSelected="True" />
-                <Column Name="RequiredDate" IsDuplicate="False" IsSelected="True" />
-                <Column Name="ShippedDate" IsDuplicate="False" IsSelected="True" />
-                <Column Name="ShipVia" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Freight" IsDuplicate="False" IsSelected="True" />
-                <Column Name="ShipName" IsDuplicate="False" IsSelected="True" />
-                <Column Name="ShipAddress" IsDuplicate="False" IsSelected="True" />
-                <Column Name="ShipCity" IsDuplicate="False" IsSelected="True" />
-                <Column Name="ShipRegion" IsDuplicate="False" IsSelected="True" />
-                <Column Name="ShipPostalCode" IsDuplicate="False" IsSelected="True" />
-                <Column Name="ShipCountry" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SalesOrderID" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SalesOrderDetailID" IsDuplicate="False" IsSelected="True" />
+                <Column Name="CarrierTrackingNumber" IsDuplicate="False" IsSelected="True" />
+                <Column Name="OrderQty" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ProductID" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SpecialOfferID" IsDuplicate="False" IsSelected="True" />
+                <Column Name="UnitPrice" IsDuplicate="False" IsSelected="True" />
+                <Column Name="UnitPriceDiscount" IsDuplicate="False" IsSelected="True" />
+                <Column Name="LineTotal" IsDuplicate="False" IsSelected="True" />
+                <Column Name="rowguid" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ModifiedDate" IsDuplicate="False" IsSelected="True" />
               </Columns>
               <SchemaLevels>
-                <SchemaInfo Name="dbo" SchemaType="Schema" />
+                <SchemaInfo Name="Sales" SchemaType="Schema" />
                 <SchemaInfo Name="Tables" SchemaType="Category" />
-                <SchemaInfo Name="Orders" SchemaType="Table" />
+                <SchemaInfo Name="SalesOrderDetail" SchemaType="Table" />
               </SchemaLevels>
             </Table>
           </Tables>
         </QueryDesignerState>
       </Query>
+      <Filters>
+        <Filter>
+          <FilterExpression>=Fields!ProductID.Value</FilterExpression>
+          <Operator>Equal</Operator>
+          <FilterValues>
+            <FilterValue DataType="Integer">711</FilterValue>
+          </FilterValues>
+        </Filter>
+      </Filters>
     </DataSet>
   </DataSets>
   <ReportParametersLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+        <ReportItems>
+          <Subreport Name="SubReport2">
+            <Left>217.125pt</Left>
+            <Top>9.375pt</Top>
+            <Height>228pt</Height>
+            <Width>192pt</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <ReportName>/Sample Reports/side-by-side</ReportName>
+            <Parameters>
+              <Parameter Name="SalesPersonID">
+                <Value>=Parameters!Employee-B.Value</Value>
+              </Parameter>
+            </Parameters>
+          </Subreport>
+          <Subreport Name="SubReport1">
+            <Left>12pt</Left>
+            <Top>9pt</Top>
+            <Height>228pt</Height>
+            <Width>192pt</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <ReportName>/Sample Reports/side-by-side</ReportName>
+            <Parameters>
+              <Parameter Name="SalesPersonID">
+                <Value>=Parameters!Employee-A.Value</Value>
+              </Parameter>
+            </Parameters>
+          </Subreport>
+        </ReportItems>
+        <Height>248.25pt</Height>
+      </Body>
+      <Width>423pt</Width>
+      <Page>
+        <PageHeader>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+          <Height>49.5pt</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Line Name="Line1">
+              <Left>22.5pt</Left>
+              <Top>39pt</Top>
+              <Height>0pt</Height>
+              <Width>386.25pt</Width>
+              <Style>
+                <Border>
+                  <Width>0.99750pt</Width>
+                  <Color>#d3d3d3</Color>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="TextBox1">
+              <Left>9.75pt</Left>
+              <Top>10.5pt</Top>
+              <Height>27.75pt</Height>
+              <Width>399.75pt</Width>
+              <Style>
+                <BackgroundColor>#ffffff</BackgroundColor>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Employee Comparison</Value>
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>15.99975pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>#6495EE</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+          </ReportItems>
+        </PageHeader>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=NorthWind;</ConnectString>
+        <rd:IsDesignState>true</rd:IsDesignState>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="EmployeeDetails">
+      <Fields>
+        <Field Name="EmployeeID">
+          <DataField>EmployeeID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>SELECT
+Employees.EmployeeID,
+Employees.FirstName
+FROM
+Employees</CommandText>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="Employee-A">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>1</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Employee-A</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>EmployeeDetails</DataSetName>
+          <ValueField>EmployeeID</ValueField>
+          <LabelField>FirstName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Employee-B">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>2</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Employee-B</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>EmployeeDetails</DataSetName>
+          <ValueField>EmployeeID</ValueField>
+          <LabelField>FirstName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+</Report>
