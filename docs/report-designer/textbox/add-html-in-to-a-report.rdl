@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+        <ReportItems>
+          <Textbox Name="TextBox1">
+            <Left>12pt</Left>
+            <Top>13.5pt</Top>
+            <Height>219pt</Height>
+            <Width>408.75pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>&lt;p&gt;The Report Designer is a web based reporting tool to create and edit the RDL(Report Definition Language) standard reports. &lt;/p&gt;</Value>
+                    <Style>
+                      <Color>Black</Color>
+                    </Style>
+                    <MarkupType>HTML</MarkupType>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>&lt;p&gt;&lt;a href="https://help.boldreports.com/enterprise-reporting/designer-guide/report-designer/manage-data/"&gt;Data Sources&lt;/a&gt; --- Supports connection to major data providers such as Microsoft SQL Server, Oracle, OLEDB and ODBC for exploring data and design reports with a wide range of data sources.&lt;/p&gt;</Value>
+                    <Style>
+                      <Color>Black</Color>
+                    </Style>
+                    <MarkupType>HTML</MarkupType>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <Color>Black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <Color>Black</Color>
+                    </Style>
+                  </TextRun>
+                  <TextRun>
+                    <Value>&lt;p&gt;&lt;a href="https://help.boldreports.com/enterprise-reporting/designer-guide/report-designer/compose-report/design-surface/"&gt;User friendly Environment&lt;/a&gt; --- Provides an effective design area, configuration options, and drag-and-drop facilities to make it easy for business users to compose reports.&lt;/p&gt;</Value>
+                    <Style>
+                      <Color>Black</Color>
+                    </Style>
+                    <MarkupType>HTML</MarkupType>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value />
+                    <Style>
+                      <Color>Black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>&lt;p&gt;&lt;a href="https://help.boldreports.com/enterprise-reporting/designer-guide/report-designer/report-items/"&gt;Report items&lt;/a&gt; --- All interactive report items that are commonly used in business reports is built-in, including charts, tablix, list, subreports, textboxes, images, lines, and rectangles for better visual representation of data&lt;/p&gt;</Value>
+                    <Style>
+                      <Color>Black</Color>
+                    </Style>
+                    <MarkupType>HTML</MarkupType>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+        </ReportItems>
+        <Height>238.5pt</Height>
+      </Body>
+      <Width>431.25pt</Width>
+      <Page>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <AutoRefresh>0</AutoRefresh>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+</Report>
