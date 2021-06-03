@@ -4,10 +4,12 @@
 
 --
 -- Connection String
--- Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=SampleDB;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh
+--
+Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=SampleDB;user id=demoreadonly@data-platform-demo;password=N@c)=Y8s*1&dh
+--
+--
 --
 
---
 -- Authentication Type
 -- None
 --
