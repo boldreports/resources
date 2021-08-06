@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        .switchstyle {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .e-reportviewer-viewerblockcellcontent {
+            padding-right: 10px;
+        }
+
+        .e-chkbox-wrap {
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+
+        .e-reportviewer-label {
+            padding-top: 5px;
+        }
+        /*div[id^='viewer_Param_'] {
+            margin-left: 5px;
+        }*/
+
+    </style>
+
+    <title> Report Viewer first HTML page</title>
+    <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://cdn.boldreports.com/3.1.42/content/material/bold.reports.all.min.css" rel="stylesheet" />
+    <script src="https://cdn.boldreports.com/external/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+    <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/common/bold.reports.common.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/common/bold.reports.widgets.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/data-visualization/ej.chart.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/bold.report-viewer.min.js"></script>
+</head>
+<body>
+    <div style="height: 600px; width: 100%;">
+        <!-- Creating a div tag which will act as a container for boldReportViewer widget. -->
+        <div style="height: 600px; width: 100%; min-height: 400px;" id="viewer"> </div>
+        <!-- Setting property and initializing boldReportViewer widget. -->
+        <script type="text/javascript">
+            $(function () {
+                $("#viewer").boldReportViewer({
+                    reportServiceUrl: "/api/ReportViewer",
+                    reportPath: '~/App_Data/product-line-sales.rdl',
+                    //parameters: [{ name: 'ProductCategory', values: ['2'] }],
+                    //parameterSettings: {
+                    //    itemWidth: '250px',
+                    //    labelWidth: 'auto',
+                    //    //hideParameterBlock: true,
+                    //    //dateTimePickerType: "DateTime",
+                    //    //dateTimeFormat: "M/d/yyyy h:mm tt",
+                    //    //timeDisplayFormat: "HH:mm",
+                    //    //timeInterval: 60,
+                    //    //minDateTime: new Date("4/5/2003 5:00:00 AM"),
+                    //    //maxDateTime: new Date("5/15/2003 5:00:00 AM"),
+                    //},
+                    
+
+                    //beforeParameterAdd: function (args) {
+                    //    if (args.parameterModel.Name === "StartDate") {
+                    //        args.parameterSettings.dateTimePickerType = "DateTime";
+                    //        args.parameterSettings.dateTimeFormat = "M/d/yyyy h:mm tt";
+                    //        args.parameterSettings.timeDisplayFormat = "HH:mm";
+                    //        args.parameterSettings.timeInterval = 60;
+                    //        args.parameterSettings.minDateTime = new Date("4/5/2003 5:00:00 AM");
+                    //        args.parameterSettings.maxDateTime = new Date("4/15/2003 5:00:00 AM");
+                    //    }
+
+
+                    //    ////////* Add custom UI element to the parameter panel. */
+
+                    //    //if (args.parameterModel.Name === "EndDate") {
+                    //    //    var $targetTag = $('#' + args.containerId);
+                    //    //    var $dateTime = ej.buildTag("input", "", "", { 'id': args.parameterModel.ControlId, 'type': 'text', 'style': 'width: 100%' });
+                    //    //    $targetTag.append($dateTime);
+                    //    //    var name = args.parameterModel.Name;
+                    //    //    $dateTime.ejDateTimePicker({
+                    //    //        timePopupWidth: 150,
+                    //    //        value: args.parameterModel._dateTimeValue,
+                    //    //        open: function (args) {
+                    //    //            var picker = this;
+                    //    //            var container = $('#' + this._id + '_popup');
+                    //    //            if ($(container).find('#null-btn').length == 0) {
+                    //    //                var btn = ej.buildTag("div.e-dt-button e-btn e-dt-button e-btn e-select e-flate-flat", "NULL", "", { id: "null-btn", style: "margin-left:4px;margin-right:4px;display:inline" });
+                    //    //                btn.click(function (args) {
+                    //    //                    picker._doneClick();
+                    //    //                    picker.setModel({ 'value': null, 'watermarkText': 'Null' });
+
+                    //    //                });
+                    //    //                $(container).find('.e-button-container').append(btn);
+                    //    //            }
+                    //    //        },
+                    //    //        change: function (args) {
+                    //    //            var data = this.getValue();
+                    //    //            var updateParam = {
+                    //    //                name: name,
+                    //    //                labels: [data],
+                    //    //                values: [data]
+                    //    //            };
+
+                    //    //            $('#viewer').data('boldReportViewer').updateParameter(updateParam);
+                    //    //        }
+                    //    //    });
+
+                    //    //    var parameterNull = ej.buildTag("input", null, null, { 'id': args.parameterModel.ControlId + '_chk', 'type': 'checkbox', 'name': 'chkDateTime', 'value': this._id, 'style': 'margin-top:8px' });
+                    //    //    $targetTag.append(parameterNull);
+
+                    //    //     ///////* Initialize EJ2 Switch. */
+                    //    //    var switchObj = new ejs.buttons.Switch({ onLabel: 'ON', offLabel: 'OFF', checked: false });
+                    //    //    switchObj.appendTo($('#' + args.parameterModel.ControlId + '_chk')[0]);
+                    //    //    switchObj.cssClass = "switchstyle";
+                    //    //    switchObj.addEventListener('change', function (args) {
+                    //    //        var id = this.element.id.replace("_chk", "");
+                    //    //        if (this.element.name === "chkDateTime") {
+                    //    //            dateTime = $('#' + id).data("ejDateTimePicker");
+                    //    //        } else {
+                    //    //            dateTime = $('#' + id).data("ejDatePicker");
+                    //    //        }
+                    //    //        if (this.checked) {
+                    //    //            dateTime.disable();
+                    //    //        } else {
+                    //    //            dateTime.enable();
+                    //    //        }
+                    //    //    });
+
+                    //    //    args.handled = true;
+                    //    //}
+                    //}
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>
