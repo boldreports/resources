@@ -37,13 +37,13 @@ namespace Web_ReportViewer.Controllers
         {
             // You can update report options here
 
-            List<BoldReports.Web.ReportParameter> userParameters = new List<BoldReports.Web.ReportParameter>();
-            userParameters.Add(new BoldReports.Web.ReportParameter()
-            {
-                Name = "ProductCategory",
-                Values = new List<string>() { "4" }
-            });
-            reportOption.ReportModel.Parameters = userParameters;
+            //List<BoldReports.Web.ReportParameter> userParameters = new List<BoldReports.Web.ReportParameter>();
+            //userParameters.Add(new BoldReports.Web.ReportParameter()
+            //{
+            //    Name = "ProductCategory",
+            //    Values = new List<string>() { "4" }
+            //});
+            //reportOption.ReportModel.Parameters = userParameters;
         }
     }
 }
