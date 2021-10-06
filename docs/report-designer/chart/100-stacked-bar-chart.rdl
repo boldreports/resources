@@ -10,10 +10,10 @@
         </Style>
         <ReportItems>
           <Chart Name="Chart1">
-            <Left>5.625pt</Left>
-            <Top>7.125pt</Top>
-            <Height>267pt</Height>
-            <Width>429.75pt</Width>
+            <Left>9.75pt</Left>
+            <Top>9.75pt</Top>
+            <Height>312pt</Height>
+            <Width>399.75pt</Width>
             <Style>
               <BackgroundColor>White</BackgroundColor>
               <FontFamily>Segoe UI</FontFamily>
@@ -23,6 +23,7 @@
               <Color>Gray</Color>
               <ShadowColor>Transparent</ShadowColor>
               <Border>
+                <Width>0.62475pt</Width>
                 <Color>#d3d3d3</Color>
                 <Style>Solid</Style>
               </Border>
@@ -33,15 +34,15 @@
                 <ChartMember>
                   <Group Name="Chart1_SeriesGroup1">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Country.Value</GroupExpression>
+                      <GroupExpression>=Fields!Name.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Country.Value</Value>
+                      <Value>=Fields!Name.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Country.Value</Label>
+                  <Label>=Fields!Name.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
@@ -50,25 +51,25 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup1">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Month.Value</GroupExpression>
+                      <GroupExpression>=Fields!Year.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Month(cdate("1-" &amp; Fields!Month.Value))</Value>
+                      <Value>=Fields!Year.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Month.Value</Label>
+                  <Label>=Fields!Year.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Temperature1">
+                <ChartSeries Name="Sales1">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Temperature.Value)</Y>
+                        <Y>=Sum(Fields!Sales.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
@@ -80,7 +81,7 @@
                             <Style>None</Style>
                           </Border>
                         </Style>
-                        <UseValueAsLabel>false</UseValueAsLabel>
+                        <UseValueAsLabel>true</UseValueAsLabel>
                         <Visible>false</Visible>
                         <Position>Auto</Position>
                       </ChartDataLabel>
@@ -95,8 +96,7 @@
                         </Border>
                       </Style>
                       <ChartMarker>
-                        <Type>Circle</Type>
-                        <Size>3pt</Size>
+                        <Size>6pt</Size>
                         <Style>
                           <FontFamily>Segoe UI</FontFamily>
                           <FontSize>8pt</FontSize>
@@ -110,8 +110,8 @@
                       </ChartMarker>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Line</Type>
-                  <Subtype>Smooth</Subtype>
+                  <Type>Bar</Type>
+                  <Subtype>PercentStacked</Subtype>
                   <Style>
                     <FontFamily>Segoe UI</FontFamily>
                     <FontSize>8pt</FontSize>
@@ -160,12 +160,12 @@
                       </Border>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Month</Caption>
+                      <Caption>Year</Caption>
                       <Position>Center</Position>
                       <Style>
                         <BackgroundColor>White</BackgroundColor>
                         <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>11.00025pt</FontSize>
+                        <FontSize>10.25025pt</FontSize>
                         <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
                         <TextAlign>Center</TextAlign>
                         <Color>Black</Color>
@@ -426,12 +426,12 @@
                       </Border>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Temperature in celcius</Caption>
+                      <Caption>Sales Percentage(%)</Caption>
                       <Position>Center</Position>
                       <Style>
                         <BackgroundColor>White</BackgroundColor>
                         <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>11.00025pt</FontSize>
+                        <FontSize>10.25025pt</FontSize>
                         <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
                         <TextAlign>Center</TextAlign>
                         <Color>Black</Color>
@@ -738,7 +738,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Climate Graph-2012</Caption>
+                <Caption>Sales by year</Caption>
                 <Hidden>false</Hidden>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
@@ -760,7 +760,7 @@
                 <TextOrientation>Auto</TextOrientation>
               </ChartTitle>
             </ChartTitles>
-            <Palette>BrightPastel</Palette>
+            <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
                 <BackgroundColor>White</BackgroundColor>
@@ -798,9 +798,9 @@
             </ChartNoDataMessage>
           </Chart>
         </ReportItems>
-        <Height>281.25pt</Height>
+        <Height>331.5pt</Height>
       </Body>
-      <Width>441pt</Width>
+      <Width>419.25pt</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -816,10 +816,10 @@
   </ReportSections>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSource2">
+    <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>JSON</DataProvider>
-        <ConnectString>{"Data":"[\n\t\t\t\t{\n                    points: [{ Month: 'Jan', Temperature: -1 }, { Month: 'Feb', Temperature: -1 }, { Month: 'Mar', Temperature: 2 }, { Month: 'Apr', Temperature: 8 }, \n\t\t\t\t\t\t\t { Month: 'May', Temperature: 13 }, { Month: 'Jun', Temperature: 18 }, { Month: 'Jul', Temperature: 21 }, { Month: 'Aug', Temperature: 20 },\n                             { Month: 'Sep', Temperature: 16 }, { Month: 'Oct', Temperature: 10 }, { Month: 'Nov', Temperature: 4 }, { Month: 'Dec', Temperature: 0 }],\n                    Country: 'London'\n                },\t\t\t\t\n                {\n                    points: [{ Month: 'Jan', Temperature: 3 }, { Month: 'Feb', Temperature: 3.5 }, { Month: 'Mar', Temperature: 7 }, { Month: 'Apr', Temperature: 13.5 },\n                             { Month: 'May', Temperature: 19 }, { Month: 'Jun', Temperature: 23.5 }, { Month: 'Jul', Temperature: 26 }, { Month: 'Aug', Temperature: 25 },\n                             { Month: 'Sep', Temperature: 21 }, { Month: 'Oct', Temperature: 15 }, { Month: 'Nov', Temperature: 9 }, { Month: 'Dec', Temperature: 3.5 }],\n\t\t\t\t\tCountry: 'Germany'\n                },                \n\t\t\t\t{\n                    points: [{ Month: 'Jan', Temperature: 7 }, { Month: 'Feb', Temperature: 8 }, { Month: 'Mar', Temperature: 12 }, { Month: 'Apr', Temperature: 19 }, \n                              { Month: 'May', Temperature: 25 }, { Month: 'Jun', Temperature: 29 }, { Month: 'Jul', Temperature: 31 }, { Month: 'Aug', Temperature: 30 },\n                              { Month: 'Sep', Temperature: 26 }, { Month: 'Oct', Temperature: 20 }, { Month: 'Nov', Temperature: 14 }, { Month: 'Dec', Temperature: 8 }], \n\t\t\t\t\tCountry: 'France'\n                }\n\t\t\t]","DataMode":"inline","URL":""}</ConnectString>
+        <ConnectString>{"Data":"\t\t\t[                                                      \n                {\n                    points: [{ Year: 2007, Sales:453 }, { Year: 2008, Sales: 354 }, { Year: 2009, Sales: 282 }, { Year: 2010, Sales: 321 }, \n\t\t\t\t\t\t\t { Year: 2011, Sales: 333 }, { Year: 2012, Sales:351 }, { Year: 2013, Sales:403 }, { Year: 2014,Sales:421 }], \n\t\t\t\t\tName: \"John\" \n                },\n                {\n                    points: [{ Year: 2007, Sales:876 }, { Year: 2008, Sales: 564 }, { Year: 2009, Sales: 242 }, { Year: 2010, Sales: 121 },\n\t\t\t\t\t\t\t { Year: 2011, Sales: 343 }, { Year: 2012, Sales: 451 }, { Year: 2013, Sales:203 },{ Year: 2014,Sales:431 }], \n\t\t\t\t\tName: \"Andrew\"\n                },\t\t\t\t\t\t\t\t  \n                {\n                    points: [{ Year: 2007, Sales:356 }, { Year: 2008, Sales:876 }, { Year: 2009, Sales: 898 }, { Year: 2010, Sales: 567 }, \n\t\t\t\t\t\t\t { Year: 2011, Sales: 456 }, { Year: 2012, Sales: 345 }, { Year: 2013, Sales: 543 }, { Year: 2014, Sales:654 }], \n\t\t\t\t\tName: \"Thomas\"\n\t\t\t\t},\t\t\t\t\t\t\t\t   \n                {\n                    points: [{ Year: 2007, Sales: 122 }, { Year: 2008, Sales: 444 }, { Year: 2009, Sales: 222 }, { Year: 2010, Sales: 231 },\n\t\t\t\t\t\t\t { Year: 2011, Sales: 122 }, { Year: 2012, Sales: 333}, { Year: 2013, Sales: 354}, { Year: 2014,Sales:100 }], \n\t\t\t\t\tName: \"Hendry\"\n                }\n\t\t\t]","DataMode":"inline","URL":""}</ConnectString>
       </ConnectionProperties>
       <rd:ImpersonateUser>false</rd:ImpersonateUser>
     </DataSource>
@@ -827,30 +827,30 @@
   <DataSets>
     <DataSet Name="DataSet1">
       <Fields>
-        <Field Name="Month">
-          <DataField>Month</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Temperature">
-          <DataField>Temperature</DataField>
+        <Field Name="Year">
+          <DataField>Year</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
-        <Field Name="Country">
-          <DataField>Country</DataField>
+        <Field Name="Sales">
+          <DataField>Sales</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <Query>
-        <DataSourceName>DataSource2</DataSourceName>
+        <DataSourceName>DataSource1</DataSourceName>
         <CommandType>Text</CommandType>
         <CommandText>{"Name":"Result","Columns":[]}</CommandText>
         <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
           <Tables>
             <Table Name="Result" Schema="">
               <Columns>
-                <Column Name="Month" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Temperature" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Country" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Year" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Sales" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Name" IsDuplicate="False" IsSelected="True" />
               </Columns>
               <SchemaLevels>
                 <SchemaInfo Name="Result" SchemaType="Table" />

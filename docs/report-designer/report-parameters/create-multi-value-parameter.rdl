@@ -590,17 +590,7 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="Details">
-                    <Filters>
-                      <Filter>
-                        <FilterExpression>=Fields!ProductID.Value</FilterExpression>
-                        <Operator>Equal</Operator>
-                        <FilterValues>
-                          <FilterValue DataType="Integer">=Parameters!ProductID.Value</FilterValue>
-                        </FilterValues>
-                      </Filter>
-                    </Filters>
-                  </Group>
+                  <Group Name="Details" />
                 </TablixMember>
                 <TablixMember>
                   <KeepWithGroup>Before</KeepWithGroup>
@@ -630,10 +620,10 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=.;Initial Catalog=AdventureWorks2012;</ConnectString>
-        <IntegratedSecurity>true</IntegratedSecurity>
+        <ConnectString>Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=AdventureWorks;
+</ConnectString>
+        <rd:IsDesignState>true</rd:IsDesignState>
       </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -728,12 +718,6 @@
   <ReportParameters>
     <ReportParameter Name="ProductID">
       <DataType>Integer</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>712</Value>
-          <Value>713</Value>
-        </Values>
-      </DefaultValue>
       <Prompt>ProductID</Prompt>
       <ValidValues>
         <DataSetReference>
@@ -758,6 +742,12 @@
       </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
+  <CustomProperties>
+    <CustomProperty>
+      <Name>UniqueValueParameters</Name>
+      <Value>ProductID</Value>
+    </CustomProperty>
+  </CustomProperties>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:PageUnit>Px</rd:PageUnit>
 </Report>

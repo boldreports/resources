@@ -611,10 +611,9 @@
     <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=.;Initial Catalog=AdventureWorks2012;</ConnectString>
-        <IntegratedSecurity>true</IntegratedSecurity>
+        <ConnectString>Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=AdventureWorks;</ConnectString>
+        <rd:IsDesignState>true</rd:IsDesignState>
       </ConnectionProperties>
-      <rd:SecurityType>Integrated</rd:SecurityType>
     </DataSource>
   </DataSources>
   <DataSets>

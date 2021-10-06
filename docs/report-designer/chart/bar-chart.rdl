@@ -10,10 +10,10 @@
         </Style>
         <ReportItems>
           <Chart Name="Chart1">
-            <Left>5.625pt</Left>
-            <Top>7.125pt</Top>
-            <Height>267pt</Height>
-            <Width>429.75pt</Width>
+            <Left>7.875pt</Left>
+            <Top>8.625pt</Top>
+            <Height>300pt</Height>
+            <Width>393.75pt</Width>
             <Style>
               <BackgroundColor>White</BackgroundColor>
               <FontFamily>Segoe UI</FontFamily>
@@ -27,21 +27,21 @@
                 <Style>Solid</Style>
               </Border>
             </Style>
-            <DataSetName>DataSet1</DataSetName>
+            <DataSetName>Sales</DataSetName>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
                   <Group Name="Chart1_SeriesGroup1">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Country.Value</GroupExpression>
+                      <GroupExpression>=Fields!OrderQtr.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Country.Value</Value>
+                      <Value>=Fields!OrderQtr.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Country.Value</Label>
+                  <Label>=Fields!OrderQtr.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
@@ -50,29 +50,36 @@
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup1">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Month.Value</GroupExpression>
+                      <GroupExpression>=Fields!ProdCat.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Month(cdate("1-" &amp; Fields!Month.Value))</Value>
+                      <Value>=Fields!ProdCat.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Month.Value</Label>
+                  <Label>=Fields!ProdCat.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Temperature1">
+                <ChartSeries Name="Sales1">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Temperature.Value)</Y>
+                        <Y>=Sum(Fields!Sales.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
                           <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+                          <Format>'$'#,0,;('$'#,0,)</Format>
+                          <FormatType xmlns="http://tempuri.org/">
+                            <Format>Currency</Format>
+                            <Representation>Thousands</Representation>
+                            <NegativeValue>($12345)</NegativeValue>
+                            <Culture>English (United States)</Culture>
+                          </FormatType>
                           <Color>Black</Color>
                           <ShadowColor>Transparent</ShadowColor>
                           <Border>
@@ -80,8 +87,8 @@
                             <Style>None</Style>
                           </Border>
                         </Style>
-                        <UseValueAsLabel>false</UseValueAsLabel>
-                        <Visible>false</Visible>
+                        <UseValueAsLabel>true</UseValueAsLabel>
+                        <Visible>true</Visible>
                         <Position>Auto</Position>
                       </ChartDataLabel>
                       <Style>
@@ -95,8 +102,7 @@
                         </Border>
                       </Style>
                       <ChartMarker>
-                        <Type>Circle</Type>
-                        <Size>3pt</Size>
+                        <Size>6pt</Size>
                         <Style>
                           <FontFamily>Segoe UI</FontFamily>
                           <FontSize>8pt</FontSize>
@@ -110,8 +116,7 @@
                       </ChartMarker>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Line</Type>
-                  <Subtype>Smooth</Subtype>
+                  <Type>Bar</Type>
                   <Style>
                     <FontFamily>Segoe UI</FontFamily>
                     <FontSize>8pt</FontSize>
@@ -138,6 +143,18 @@
                   </ChartMarker>
                   <ValueAxisName>Primary</ValueAxisName>
                   <CategoryAxisName>Primary</CategoryAxisName>
+                  <ChartSmartLabel>
+                    <Disabled>true</Disabled>
+                    <AllowOutSidePlotArea>True</AllowOutSidePlotArea>
+                    <CalloutBackColor>Transparent</CalloutBackColor>
+                    <CalloutLineAnchor>None</CalloutLineAnchor>
+                    <CalloutLineColor>Black</CalloutLineColor>
+                    <CalloutLineStyle>Solid</CalloutLineStyle>
+                    <CalloutStyle>Underline</CalloutStyle>
+                    <ShowOverlapped>false</ShowOverlapped>
+                    <MarkerOverlapping>false</MarkerOverlapping>
+                    <MinMovingDistance>0pt</MinMovingDistance>
+                  </ChartSmartLabel>
                 </ChartSeries>
               </ChartSeriesCollection>
             </ChartData>
@@ -145,7 +162,7 @@
               <ChartArea Name="Default">
                 <ChartCategoryAxes>
                   <ChartAxis Name="Primary">
-                    <Visible>Auto</Visible>
+                    <Visible>True</Visible>
                     <Style>
                       <BackgroundColor>White</BackgroundColor>
                       <FontFamily>Segoe UI</FontFamily>
@@ -160,12 +177,12 @@
                       </Border>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Month</Caption>
+                      <Caption />
                       <Position>Center</Position>
                       <Style>
                         <BackgroundColor>White</BackgroundColor>
                         <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>11.00025pt</FontSize>
+                        <FontSize>8pt</FontSize>
                         <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
                         <TextAlign>Center</TextAlign>
                         <Color>Black</Color>
@@ -417,6 +434,13 @@
                       <FontFamily>Segoe UI</FontFamily>
                       <FontSize>8pt</FontSize>
                       <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+                      <Format>'$'#,0;('$'#,0)</Format>
+                      <FormatType xmlns="http://tempuri.org/">
+                        <Format>Currency</Format>
+                        <Representation>None</Representation>
+                        <NegativeValue>($12345)</NegativeValue>
+                        <Culture>English (United States)</Culture>
+                      </FormatType>
                       <TextAlign>Center</TextAlign>
                       <Color>Black</Color>
                       <ShadowColor>Transparent</ShadowColor>
@@ -426,13 +450,14 @@
                       </Border>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Temperature in celcius</Caption>
+                      <Caption>Sum of sales</Caption>
                       <Position>Center</Position>
                       <Style>
                         <BackgroundColor>White</BackgroundColor>
                         <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>11.00025pt</FontSize>
+                        <FontSize>11.75025pt</FontSize>
                         <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+                        <FontStyle>Normal</FontStyle>
                         <TextAlign>Center</TextAlign>
                         <Color>Black</Color>
                         <ShadowColor>Transparent</ShadowColor>
@@ -738,7 +763,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Climate Graph-2012</Caption>
+                <Caption>Product Sales</Caption>
                 <Hidden>false</Hidden>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
@@ -798,9 +823,9 @@
             </ChartNoDataMessage>
           </Chart>
         </ReportItems>
-        <Height>281.25pt</Height>
+        <Height>317.25pt</Height>
       </Body>
-      <Width>441pt</Width>
+      <Width>409.5pt</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -816,48 +841,53 @@
   </ReportSections>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSource2">
+    <DataSource Name="DataSource1">
       <ConnectionProperties>
-        <DataProvider>JSON</DataProvider>
-        <ConnectString>{"Data":"[\n\t\t\t\t{\n                    points: [{ Month: 'Jan', Temperature: -1 }, { Month: 'Feb', Temperature: -1 }, { Month: 'Mar', Temperature: 2 }, { Month: 'Apr', Temperature: 8 }, \n\t\t\t\t\t\t\t { Month: 'May', Temperature: 13 }, { Month: 'Jun', Temperature: 18 }, { Month: 'Jul', Temperature: 21 }, { Month: 'Aug', Temperature: 20 },\n                             { Month: 'Sep', Temperature: 16 }, { Month: 'Oct', Temperature: 10 }, { Month: 'Nov', Temperature: 4 }, { Month: 'Dec', Temperature: 0 }],\n                    Country: 'London'\n                },\t\t\t\t\n                {\n                    points: [{ Month: 'Jan', Temperature: 3 }, { Month: 'Feb', Temperature: 3.5 }, { Month: 'Mar', Temperature: 7 }, { Month: 'Apr', Temperature: 13.5 },\n                             { Month: 'May', Temperature: 19 }, { Month: 'Jun', Temperature: 23.5 }, { Month: 'Jul', Temperature: 26 }, { Month: 'Aug', Temperature: 25 },\n                             { Month: 'Sep', Temperature: 21 }, { Month: 'Oct', Temperature: 15 }, { Month: 'Nov', Temperature: 9 }, { Month: 'Dec', Temperature: 3.5 }],\n\t\t\t\t\tCountry: 'Germany'\n                },                \n\t\t\t\t{\n                    points: [{ Month: 'Jan', Temperature: 7 }, { Month: 'Feb', Temperature: 8 }, { Month: 'Mar', Temperature: 12 }, { Month: 'Apr', Temperature: 19 }, \n                              { Month: 'May', Temperature: 25 }, { Month: 'Jun', Temperature: 29 }, { Month: 'Jul', Temperature: 31 }, { Month: 'Aug', Temperature: 30 },\n                              { Month: 'Sep', Temperature: 26 }, { Month: 'Oct', Temperature: 20 }, { Month: 'Nov', Temperature: 14 }, { Month: 'Dec', Temperature: 8 }], \n\t\t\t\t\tCountry: 'France'\n                }\n\t\t\t]","DataMode":"inline","URL":""}</ConnectString>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=dataplatformdemodata.syncfusion.com;
+Initial Catalog=Adventureworks ;
+user id=demoreadonly@data-platform-demo;
+password=N@c)=Y8s*1&amp;dh</ConnectString>
+        <rd:IsDesignState>true</rd:IsDesignState>
       </ConnectionProperties>
       <rd:ImpersonateUser>false</rd:ImpersonateUser>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet1">
+    <DataSet Name="Sales">
       <Fields>
-        <Field Name="Month">
-          <DataField>Month</DataField>
+        <Field Name="ProdCat">
+          <DataField>ProdCat</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Temperature">
-          <DataField>Temperature</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="Country">
-          <DataField>Country</DataField>
+        <Field Name="SubCat">
+          <DataField>SubCat</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrderYear">
+          <DataField>OrderYear</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OrderQtr">
+          <DataField>OrderQtr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sales">
+          <DataField>Sales</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <Query>
-        <DataSourceName>DataSource2</DataSourceName>
+        <DataSourceName>DataSource1</DataSourceName>
         <CommandType>Text</CommandType>
-        <CommandText>{"Name":"Result","Columns":[]}</CommandText>
-        <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
-          <Tables>
-            <Table Name="Result" Schema="">
-              <Columns>
-                <Column Name="Month" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Temperature" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Country" IsDuplicate="False" IsSelected="True" />
-              </Columns>
-              <SchemaLevels>
-                <SchemaInfo Name="Result" SchemaType="Table" />
-              </SchemaLevels>
-            </Table>
-          </Tables>
-        </QueryDesignerState>
+        <CommandText>SELECT PC.Name AS ProdCat, PS.Name AS SubCat, DATEPART(yy, SOH.OrderDate) AS OrderYear, 'Q' + DATENAME(qq, SOH.OrderDate) AS OrderQtr,SUM(SOD.UnitPrice * SOD.OrderQty) AS Sales
+FROM Production.ProductSubcategory PS INNER JOIN
+Sales.SalesOrderHeader SOH INNER JOIN
+Sales.SalesOrderDetail SOD ON SOH.SalesOrderID = SOD.SalesOrderID INNER JOIN
+Production.Product P ON SOD.ProductID = P.ProductID ON PS.ProductSubcategoryID = P.ProductSubcategoryID INNER JOIN
+Production.ProductCategory PC ON PS.ProductCategoryID = PC.ProductCategoryID
+WHERE (SOH.OrderDate BETWEEN '1/1/2002' AND '12/31/2003')
+GROUP BY DATEPART(yy, SOH.OrderDate), PC.Name, PS.Name, 'Q' + DATENAME(qq, SOH.OrderDate), PS.ProductSubcategoryID</CommandText>
       </Query>
     </DataSet>
   </DataSets>

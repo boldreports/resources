@@ -9,11 +9,11 @@
           </Border>
         </Style>
         <ReportItems>
-          <Chart Name="Chart1">
-            <Left>5.625pt</Left>
-            <Top>7.125pt</Top>
-            <Height>267pt</Height>
-            <Width>429.75pt</Width>
+          <Chart Name="Chart2">
+            <Left>7.5pt</Left>
+            <Top>6pt</Top>
+            <Height>336pt</Height>
+            <Width>395.25pt</Width>
             <Style>
               <BackgroundColor>White</BackgroundColor>
               <FontFamily>Segoe UI</FontFamily>
@@ -31,31 +31,31 @@
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_SeriesGroup1">
+                  <Group Name="Chart2_SeriesGroup1">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Country.Value</GroupExpression>
+                      <GroupExpression>=Fields!Product.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Country.Value</Value>
+                      <Value>=Fields!product.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Country.Value</Label>
+                  <Label>=Fields!Product.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_CategoryGroup1">
+                  <Group Name="Chart2_CategoryGroup1">
                     <GroupExpressions>
                       <GroupExpression>=Fields!Month.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Month(cdate("1-" &amp; Fields!Month.Value))</Value>
+                      <Value>=Month(cdate("1-" &amp; Fields!month.Value))</Value>
                     </SortExpression>
                   </SortExpressions>
                   <Label>=Fields!Month.Value</Label>
@@ -64,11 +64,11 @@
             </ChartCategoryHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Temperature1">
+                <ChartSeries Name="percentage1">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Temperature.Value)</Y>
+                        <Y>=Sum(Fields!Percentage.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
@@ -95,8 +95,7 @@
                         </Border>
                       </Style>
                       <ChartMarker>
-                        <Type>Circle</Type>
-                        <Size>3pt</Size>
+                        <Size>6pt</Size>
                         <Style>
                           <FontFamily>Segoe UI</FontFamily>
                           <FontSize>8pt</FontSize>
@@ -110,8 +109,8 @@
                       </ChartMarker>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Line</Type>
-                  <Subtype>Smooth</Subtype>
+                  <Type>Bar</Type>
+                  <Subtype>Stacked</Subtype>
                   <Style>
                     <FontFamily>Segoe UI</FontFamily>
                     <FontSize>8pt</FontSize>
@@ -165,7 +164,7 @@
                       <Style>
                         <BackgroundColor>White</BackgroundColor>
                         <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>11.00025pt</FontSize>
+                        <FontSize>10.25025pt</FontSize>
                         <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
                         <TextAlign>Center</TextAlign>
                         <Color>Black</Color>
@@ -426,12 +425,12 @@
                       </Border>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Temperature in celcius</Caption>
+                      <Caption />
                       <Position>Center</Position>
                       <Style>
                         <BackgroundColor>White</BackgroundColor>
                         <FontFamily>Segoe UI</FontFamily>
-                        <FontSize>11.00025pt</FontSize>
+                        <FontSize>8pt</FontSize>
                         <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
                         <TextAlign>Center</TextAlign>
                         <Color>Black</Color>
@@ -738,7 +737,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Climate Graph-2012</Caption>
+                <Caption>Sales Comparison</Caption>
                 <Hidden>false</Hidden>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
@@ -798,9 +797,9 @@
             </ChartNoDataMessage>
           </Chart>
         </ReportItems>
-        <Height>281.25pt</Height>
+        <Height>355.5pt</Height>
       </Body>
-      <Width>441pt</Width>
+      <Width>413.25pt</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -816,10 +815,10 @@
   </ReportSections>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSource2">
+    <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>JSON</DataProvider>
-        <ConnectString>{"Data":"[\n\t\t\t\t{\n                    points: [{ Month: 'Jan', Temperature: -1 }, { Month: 'Feb', Temperature: -1 }, { Month: 'Mar', Temperature: 2 }, { Month: 'Apr', Temperature: 8 }, \n\t\t\t\t\t\t\t { Month: 'May', Temperature: 13 }, { Month: 'Jun', Temperature: 18 }, { Month: 'Jul', Temperature: 21 }, { Month: 'Aug', Temperature: 20 },\n                             { Month: 'Sep', Temperature: 16 }, { Month: 'Oct', Temperature: 10 }, { Month: 'Nov', Temperature: 4 }, { Month: 'Dec', Temperature: 0 }],\n                    Country: 'London'\n                },\t\t\t\t\n                {\n                    points: [{ Month: 'Jan', Temperature: 3 }, { Month: 'Feb', Temperature: 3.5 }, { Month: 'Mar', Temperature: 7 }, { Month: 'Apr', Temperature: 13.5 },\n                             { Month: 'May', Temperature: 19 }, { Month: 'Jun', Temperature: 23.5 }, { Month: 'Jul', Temperature: 26 }, { Month: 'Aug', Temperature: 25 },\n                             { Month: 'Sep', Temperature: 21 }, { Month: 'Oct', Temperature: 15 }, { Month: 'Nov', Temperature: 9 }, { Month: 'Dec', Temperature: 3.5 }],\n\t\t\t\t\tCountry: 'Germany'\n                },                \n\t\t\t\t{\n                    points: [{ Month: 'Jan', Temperature: 7 }, { Month: 'Feb', Temperature: 8 }, { Month: 'Mar', Temperature: 12 }, { Month: 'Apr', Temperature: 19 }, \n                              { Month: 'May', Temperature: 25 }, { Month: 'Jun', Temperature: 29 }, { Month: 'Jul', Temperature: 31 }, { Month: 'Aug', Temperature: 30 },\n                              { Month: 'Sep', Temperature: 26 }, { Month: 'Oct', Temperature: 20 }, { Month: 'Nov', Temperature: 14 }, { Month: 'Dec', Temperature: 8 }], \n\t\t\t\t\tCountry: 'France'\n                }\n\t\t\t]","DataMode":"inline","URL":""}</ConnectString>
+        <ConnectString>{"Data":"[\n\t\t\t\t{\n                    points: [{ Month: \"Jan\", Percentage: 6 }, { Month: \"Feb\", Percentage: 8 }, { Month: \"Mar\", Percentage: 12}, { Month: \"Apr\", Percentage: 15.5},\n\t\t\t\t\t\t\t { Month: \"May\", Percentage: 20 }, { Month: \"Jun\", Percentage: 24 }, { Month: \"Jul\", Percentage: 28 }, { Month: \"Aug\", Percentage: 32},\n                             { Month: \"Sep\", Percentage: 33}, { Month: \"Oct\", Percentage: 35}, { Month: \"Nov\", Percentage: 40}, { Month: \"Dec\", Percentage: 42 }],\n                    Product: 'ProductA'\n                },                               \n\t\t\t\t{\n                    points: [{ Month: \"Jan\", Percentage: 6 }, { Month: \"Feb\", Percentage: 8 }, { Month: \"Mar\", Percentage: 11}, { Month: \"Apr\", Percentage: 16},\n\t\t\t\t\t\t\t { Month: \"May\", Percentage: 21 }, { Month: \"Jun\", Percentage: 25}, { Month: \"Jul\", Percentage: 27 }, { Month: \"Aug\", Percentage: 31},\n                             { Month: \"Sep\", Percentage: 34},{ Month: \"Oct\", Percentage: 34}, { Month: \"Nov\", Percentage: 41 } , { Month: \"Dec\", Percentage: 42 }],\n                    Product: 'ProductB'\n                },\t\t\t\t\n\t\t\t\t{\n                    points: [{ Month: \"Jan\", Percentage: -1 },{ Month: \"Feb\", Percentage: -1.5}, { Month: \"Mar\", Percentage: -2}, { Month: \"Apr\", Percentage: -2.5},\n\t\t\t\t\t\t\t { Month: \"May\", Percentage: -3 },{ Month: \"Jun\", Percentage: -3.5 }, { Month: \"Jul\", Percentage: -4 },{ Month: \"Aug\", Percentage: -4.5 },\n                             { Month: \"Sep\", Percentage: -5},{ Month: \"Oct\", Percentage: -5.5}, { Month: \"Nov\", Percentage: -6 } , { Month: \"Dec\", Percentage: -6.5 }],\n                    Product: 'Wastage'\n                } \n\t\t\t]","DataMode":"inline","URL":""}</ConnectString>
       </ConnectionProperties>
       <rd:ImpersonateUser>false</rd:ImpersonateUser>
     </DataSource>
@@ -831,17 +830,17 @@
           <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Temperature">
-          <DataField>Temperature</DataField>
+        <Field Name="Percentage">
+          <DataField>Percentage</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
-        <Field Name="Country">
-          <DataField>Country</DataField>
+        <Field Name="Product">
+          <DataField>Product</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <Query>
-        <DataSourceName>DataSource2</DataSourceName>
+        <DataSourceName>DataSource1</DataSourceName>
         <CommandType>Text</CommandType>
         <CommandText>{"Name":"Result","Columns":[]}</CommandText>
         <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
@@ -849,8 +848,8 @@
             <Table Name="Result" Schema="">
               <Columns>
                 <Column Name="Month" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Temperature" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Country" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Percentage" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Product" IsDuplicate="False" IsSelected="True" />
               </Columns>
               <SchemaLevels>
                 <SchemaInfo Name="Result" SchemaType="Table" />

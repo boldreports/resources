@@ -10,10 +10,10 @@
         </Style>
         <ReportItems>
           <Chart Name="Chart1">
-            <Left>5.625pt</Left>
-            <Top>7.125pt</Top>
-            <Height>267pt</Height>
-            <Width>429.75pt</Width>
+            <Left>15pt</Left>
+            <Top>9.375pt</Top>
+            <Height>318pt</Height>
+            <Width>359.25pt</Width>
             <Style>
               <BackgroundColor>White</BackgroundColor>
               <FontFamily>Segoe UI</FontFamily>
@@ -33,15 +33,15 @@
                 <ChartMember>
                   <Group Name="Chart1_SeriesGroup1">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Country.Value</GroupExpression>
+                      <GroupExpression>=Fields!SearchEngine.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Country.Value</Value>
+                      <Value>=Fields!SearchEngine.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Country.Value</Label>
+                  <Label>=Fields!SearchEngine.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
@@ -64,11 +64,11 @@
             </ChartCategoryHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Temperature1">
+                <ChartSeries Name="Visitors1">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Temperature.Value)</Y>
+                        <Y>=Sum(Fields!Visitors.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style>
@@ -95,8 +95,7 @@
                         </Border>
                       </Style>
                       <ChartMarker>
-                        <Type>Circle</Type>
-                        <Size>3pt</Size>
+                        <Size>6pt</Size>
                         <Style>
                           <FontFamily>Segoe UI</FontFamily>
                           <FontSize>8pt</FontSize>
@@ -110,8 +109,7 @@
                       </ChartMarker>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Line</Type>
-                  <Subtype>Smooth</Subtype>
+                  <Subtype>Stacked</Subtype>
                   <Style>
                     <FontFamily>Segoe UI</FontFamily>
                     <FontSize>8pt</FontSize>
@@ -426,7 +424,7 @@
                       </Border>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Temperature in celcius</Caption>
+                      <Caption>Number of visitors in Millions</Caption>
                       <Position>Center</Position>
                       <Style>
                         <BackgroundColor>White</BackgroundColor>
@@ -738,7 +736,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Climate Graph-2012</Caption>
+                <Caption>Most Popular Search Engines</Caption>
                 <Hidden>false</Hidden>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
@@ -760,7 +758,7 @@
                 <TextOrientation>Auto</TextOrientation>
               </ChartTitle>
             </ChartTitles>
-            <Palette>BrightPastel</Palette>
+            <Palette>Pacific</Palette>
             <ChartBorderSkin>
               <Style>
                 <BackgroundColor>White</BackgroundColor>
@@ -798,9 +796,9 @@
             </ChartNoDataMessage>
           </Chart>
         </ReportItems>
-        <Height>281.25pt</Height>
+        <Height>336.75pt</Height>
       </Body>
-      <Width>441pt</Width>
+      <Width>389.25pt</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -816,10 +814,10 @@
   </ReportSections>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSource2">
+    <DataSource Name="DataSource1">
       <ConnectionProperties>
         <DataProvider>JSON</DataProvider>
-        <ConnectString>{"Data":"[\n\t\t\t\t{\n                    points: [{ Month: 'Jan', Temperature: -1 }, { Month: 'Feb', Temperature: -1 }, { Month: 'Mar', Temperature: 2 }, { Month: 'Apr', Temperature: 8 }, \n\t\t\t\t\t\t\t { Month: 'May', Temperature: 13 }, { Month: 'Jun', Temperature: 18 }, { Month: 'Jul', Temperature: 21 }, { Month: 'Aug', Temperature: 20 },\n                             { Month: 'Sep', Temperature: 16 }, { Month: 'Oct', Temperature: 10 }, { Month: 'Nov', Temperature: 4 }, { Month: 'Dec', Temperature: 0 }],\n                    Country: 'London'\n                },\t\t\t\t\n                {\n                    points: [{ Month: 'Jan', Temperature: 3 }, { Month: 'Feb', Temperature: 3.5 }, { Month: 'Mar', Temperature: 7 }, { Month: 'Apr', Temperature: 13.5 },\n                             { Month: 'May', Temperature: 19 }, { Month: 'Jun', Temperature: 23.5 }, { Month: 'Jul', Temperature: 26 }, { Month: 'Aug', Temperature: 25 },\n                             { Month: 'Sep', Temperature: 21 }, { Month: 'Oct', Temperature: 15 }, { Month: 'Nov', Temperature: 9 }, { Month: 'Dec', Temperature: 3.5 }],\n\t\t\t\t\tCountry: 'Germany'\n                },                \n\t\t\t\t{\n                    points: [{ Month: 'Jan', Temperature: 7 }, { Month: 'Feb', Temperature: 8 }, { Month: 'Mar', Temperature: 12 }, { Month: 'Apr', Temperature: 19 }, \n                              { Month: 'May', Temperature: 25 }, { Month: 'Jun', Temperature: 29 }, { Month: 'Jul', Temperature: 31 }, { Month: 'Aug', Temperature: 30 },\n                              { Month: 'Sep', Temperature: 26 }, { Month: 'Oct', Temperature: 20 }, { Month: 'Nov', Temperature: 14 }, { Month: 'Dec', Temperature: 8 }], \n\t\t\t\t\tCountry: 'France'\n                }\n\t\t\t]","DataMode":"inline","URL":""}</ConnectString>
+        <ConnectString>{"Data":"[\n                {\n                    points: [{ Month: 'Jan', Visitors: 900 }, { Month: 'Feb', Visitors: 820 }, { Month: 'Mar', Visitors: 880 }, { Month: 'Apr', Visitors: 725 },\n\t\t\t\t\t\t\t { Month: 'May', Visitors: 765 }, { Month: 'June', Visitors: 679 }, { Month: 'July', Visitors: 770 }, { Month: 'Aug', Visitors: 825 }, \n\t\t\t\t\t\t\t { Month: 'Sep', Visitors: 704 }, { Month: 'Oct', Visitors: 781 }, { Month: 'Nov', Visitors: 799 }, { Month: 'Dec', Visitors: 882 }],\n                    SearchEngine: 'Google'\n                },\n                {\n                    points: [{ Month: 'Jan', Visitors: 190 }, { Month: 'Feb', Visitors: 226 }, { Month: 'Mar', Visitors: 194 }, { Month: 'Apr', Visitors: 250 },\n                             { Month: 'May', Visitors: 222 }, { Month: 'June', Visitors: 181 }, { Month: 'July', Visitors: 128 }, { Month: 'Aug', Visitors: 239 },\n\t\t\t\t\t\t\t { Month: 'Sep', Visitors: 268 }, { Month: 'Oct', Visitors: 236 }, { Month: 'Nov', Visitors: 285 }, { Month: 'Dec', Visitors: 199 }],                                  \n                    SearchEngine: 'Bing'\n                },\n                {\n                    points: [{ Month: 'Jan', Visitors: 250 }, { Month: 'Feb', Visitors: 145 },{ Month: 'Mar', Visitors: 190 }, { Month: 'Apr', Visitors: 220 },\n                             { Month: 'May', Visitors: 225 }, { Month: 'June', Visitors: 135 }, { Month: 'July', Visitors: 152 },{ Month: 'Aug', Visitors: 216 },\n\t\t\t\t\t\t\t { Month: 'Sep', Visitors: 137 }, { Month: 'Oct', Visitors: 147 }, { Month: 'Nov', Visitors: 242 }, { Month: 'Dec', Visitors: 230 }],                                  \n                    SearchEngine: 'Yahoo'\n                },\n                {\n                    points: [{ Month: 'Jan', Visitors: 150 }, { Month: 'Feb', Visitors: 120 },{ Month: 'Mar', Visitors: 115 }, { Month: 'Apr', Visitors: 125 },\n                             { Month: 'May', Visitors: 132 }, { Month: 'June', Visitors: 137 }, { Month: 'July', Visitors: 110 },{ Month: 'Aug', Visitors: 126 }, \n\t\t\t\t\t\t\t { Month: 'Sep', Visitors: 97 }, { Month: 'Oct', Visitors: 122 }, { Month: 'Nov', Visitors: 85 }, { Month: 'Dec', Visitors: 120 }],\n                    SearchEngine: 'Ask'\n                }\n            ]","DataMode":"inline","URL":""}</ConnectString>
       </ConnectionProperties>
       <rd:ImpersonateUser>false</rd:ImpersonateUser>
     </DataSource>
@@ -831,17 +829,17 @@
           <DataField>Month</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Temperature">
-          <DataField>Temperature</DataField>
+        <Field Name="Visitors">
+          <DataField>Visitors</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
-        <Field Name="Country">
-          <DataField>Country</DataField>
+        <Field Name="SearchEngine">
+          <DataField>SearchEngine</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <Query>
-        <DataSourceName>DataSource2</DataSourceName>
+        <DataSourceName>DataSource1</DataSourceName>
         <CommandType>Text</CommandType>
         <CommandText>{"Name":"Result","Columns":[]}</CommandText>
         <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
@@ -849,8 +847,8 @@
             <Table Name="Result" Schema="">
               <Columns>
                 <Column Name="Month" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Temperature" IsDuplicate="False" IsSelected="True" />
-                <Column Name="Country" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Visitors" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SearchEngine" IsDuplicate="False" IsSelected="True" />
               </Columns>
               <SchemaLevels>
                 <SchemaInfo Name="Result" SchemaType="Table" />
