@@ -738,7 +738,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Sales by year</Caption>
+                <Caption>Sales By Year</Caption>
                 <Hidden>false</Hidden>
                 <Style>
                   <FontFamily>Segoe UI</FontFamily>
