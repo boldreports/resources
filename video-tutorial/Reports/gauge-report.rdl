@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>3.125in</Height>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <Left>4.5pt</Left>
+            <Top>5.25pt</Top>
+            <Height>152.25pt</Height>
+            <Width>765.75pt</Width>
+            <Style>
+              <FontFamily>Segoe UI</FontFamily>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <DataSetName>RevenueDataset</DataSetName>
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>84pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>144.75pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>133.5pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>193.5pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>210pt</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>18pt</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox1">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18pt</Height>
+                          <Width>84pt</Width>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Year</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox2">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18pt</Height>
+                          <Width>144.75pt</Width>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Estimated Revenue ($)</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox3">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18pt</Height>
+                          <Width>133.5pt</Width>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Actual Revenue ($)</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox7">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18pt</Height>
+                          <Width>193.5pt</Width>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Estimated vs Actual Revenue ($)</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox9">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18pt</Height>
+                          <Width>210pt</Width>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Estimated vs Actual Revenue ($)</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>134.25pt</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox4">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>134.25pt</Height>
+                          <Width>84pt</Width>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Year.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox5">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>134.25pt</Height>
+                          <Width>144.75pt</Width>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!EstimatedRevenue.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <Format>'$'#,0;('$'#,0)</Format>
+                                    <rd:FormatType>
+                                      <Format>Currency</Format>
+                                      <Representation>None</Representation>
+                                      <NegativeValue>($12345)</NegativeValue>
+                                      <Culture>English (United States)</Culture>
+                                    </rd:FormatType>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox6">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>134.25pt</Height>
+                          <Width>133.5pt</Width>
+                          <Style>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ActualRevenue.Value</Value>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <Format>'$'#,0;('$'#,0)</Format>
+                                    <rd:FormatType>
+                                      <Format>Currency</Format>
+                                      <Representation>None</Representation>
+                                      <NegativeValue>($12345)</NegativeValue>
+                                      <Culture>English (United States)</Culture>
+                                    </rd:FormatType>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Segoe UI</FontFamily>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <GaugePanel Name="RadialGauge1">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>134.25pt</Height>
+                          <Width>193.5pt</Width>
+                          <Style>
+                            <BackgroundColor>White</BackgroundColor>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <DataSetName>RevenueDataset</DataSetName>
+                          <RadialGauges>
+                            <RadialGauge Name="RadialGaugeSet">
+                              <Top>0</Top>
+                              <Left>0</Left>
+                              <Height>100</Height>
+                              <Width>100</Width>
+                              <ParentItem>None</ParentItem>
+                              <AspectRatio>0</AspectRatio>
+                              <BackFrame>
+                                <FrameBackground>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <Border>
+                                      <Color>LightGrey</Color>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </FrameBackground>
+                                <FrameImage>
+                                  <Source>External</Source>
+                                  <Value />
+                                </FrameImage>
+                                <FrameShape>CustomCircular2</FrameShape>
+                                <FrameWidth>8</FrameWidth>
+                                <Style>
+                                  <FontFamily>Segoe UI</FontFamily>
+                                  <Border>
+                                    <Color>LightGrey</Color>
+                                    <Style>None</Style>
+                                  </Border>
+                                </Style>
+                              </BackFrame>
+                              <GaugeScales>
+                                <RadialScale Name="RadialScale">
+                                  <Width>30</Width>
+                                  <Interval>=Fields!EstimatedRevenue.Value*0.5</Interval>
+                                  <IntervalOffset>NaN</IntervalOffset>
+                                  <LogarithmicBase>10</LogarithmicBase>
+                                  <GaugePointers>
+                                    <RadialPointer Name="RadialPointer">
+                                      <BarStart>ScaleStart</BarStart>
+                                      <Placement>Inside</Placement>
+                                      <Width>13</Width>
+                                      <DistanceFromScale>0</DistanceFromScale>
+                                      <MarkerLength>25</MarkerLength>
+                                      <SnappingInterval>0</SnappingInterval>
+                                      <Style>
+                                        <BackgroundColor>=iif(Fields!ActualRevenue.Value &lt; (0.5 * Fields!EstimatedRevenue.Value), "Red",
+iif(Fields!ActualRevenue.Value &lt; (0.75 * Fields!EstimatedRevenue.Value), "Orange", "Green"))</BackgroundColor>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <Border>
+                                          <Color>LightGrey</Color>
+                                          <Style>None</Style>
+                                        </Border>
+                                      </Style>
+                                      <GaugeInputValue>
+                                        <MaxPercent>0</MaxPercent>
+                                        <MinPercent>0</MinPercent>
+                                        <AddConstant>0</AddConstant>
+                                        <Multiplier>1</Multiplier>
+                                        <Value>=Fields!ActualRevenue.Value</Value>
+                                      </GaugeInputValue>
+                                      <MarkerStyle>Rectangle</MarkerStyle>
+                                      <Type>Needle</Type>
+                                      <NeedleStyle>Tapered</NeedleStyle>
+                                      <PointerCap>
+                                        <CapStyle>RoundedDark</CapStyle>
+                                        <Style>
+                                          <BackgroundColor>LightGrey</BackgroundColor>
+                                          <FontFamily>Segoe UI</FontFamily>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>None</Style>
+                                          </Border>
+                                        </Style>
+                                        <Hidden>false</Hidden>
+                                        <Width>20</Width>
+                                      </PointerCap>
+                                    </RadialPointer>
+                                  </GaugePointers>
+                                  <ScaleRanges>
+                                    <ScaleRange Name="RadialRange1">
+                                      <StartWidth>30</StartWidth>
+                                      <EndWidth>30</EndWidth>
+                                      <Placement>Cross</Placement>
+                                      <Style>
+                                        <BackgroundColor>=iif(Fields!ActualRevenue.Value &lt; (0.5 * Fields!EstimatedRevenue.Value), "Red",
+iif(Fields!ActualRevenue.Value &lt; (0.75 * Fields!EstimatedRevenue.Value), "Orange", "Green"))</BackgroundColor>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <Border>
+                                          <Color>LightGrey</Color>
+                                          <Style>None</Style>
+                                        </Border>
+                                      </Style>
+                                      <DistanceFromScale>0</DistanceFromScale>
+                                      <StartValue>
+                                        <MaxPercent>0</MaxPercent>
+                                        <MinPercent>0</MinPercent>
+                                        <AddConstant>0</AddConstant>
+                                        <Multiplier>1</Multiplier>
+                                        <Value>0</Value>
+                                      </StartValue>
+                                      <EndValue>
+                                        <MaxPercent>0</MaxPercent>
+                                        <MinPercent>0</MinPercent>
+                                        <AddConstant>0</AddConstant>
+                                        <Multiplier>1</Multiplier>
+                                        <Value>=Fields!ActualRevenue.Value</Value>
+                                      </EndValue>
+                                    </ScaleRange>
+                                  </ScaleRanges>
+                                  <Style>
+                                    <BackgroundColor>LightGrey</BackgroundColor>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <Border>
+                                      <Color>LightGrey</Color>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                  <MinimumValue>
+                                    <MaxPercent>0</MaxPercent>
+                                    <MinPercent>0</MinPercent>
+                                    <AddConstant>0</AddConstant>
+                                    <Multiplier>1</Multiplier>
+                                    <Value>0</Value>
+                                  </MinimumValue>
+                                  <MaximumValue>
+                                    <MaxPercent>0</MaxPercent>
+                                    <MinPercent>0</MinPercent>
+                                    <AddConstant>0</AddConstant>
+                                    <Multiplier>1</Multiplier>
+                                    <Value>=Fields!EstimatedRevenue.Value</Value>
+                                  </MaximumValue>
+                                  <GaugeMajorTickMarks>
+                                    <Placement>Outside</Placement>
+                                    <Shape>Rectangle</Shape>
+                                    <DistanceFromScale>0</DistanceFromScale>
+                                    <Length>8</Length>
+                                    <Width>2</Width>
+                                    <Style>
+                                      <BackgroundColor>=iif(Fields!ActualRevenue.Value &lt; (0.5 * Fields!EstimatedRevenue.Value), "Red",
+iif(Fields!ActualRevenue.Value &lt; (0.75 * Fields!EstimatedRevenue.Value), "Orange", "Green"))</BackgroundColor>
+                                      <FontFamily>Segoe UI</FontFamily>
+                                      <Border>
+                                        <Color>Transparent</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                    </Style>
+                                    <Hidden>false</Hidden>
+                                    <Interval>NaN</Interval>
+                                    <IntervalOffset>NaN</IntervalOffset>
+                                  </GaugeMajorTickMarks>
+                                  <GaugeMinorTickMarks>
+                                    <Placement>Outside</Placement>
+                                    <Shape>Rectangle</Shape>
+                                    <DistanceFromScale>0</DistanceFromScale>
+                                    <Length>8</Length>
+                                    <Width>3</Width>
+                                    <Style>
+                                      <BackgroundColor>WhiteSmoke</BackgroundColor>
+                                      <FontFamily>Segoe UI</FontFamily>
+                                      <Border>
+                                        <Color>Transparent</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                    </Style>
+                                    <Hidden>true</Hidden>
+                                    <Interval>NaN</Interval>
+                                    <IntervalOffset>0</IntervalOffset>
+                                  </GaugeMinorTickMarks>
+                                  <ScaleLabels>
+                                    <Placement>Outside</Placement>
+                                    <Interval>0</Interval>
+                                    <IntervalOffset>0</IntervalOffset>
+                                    <DistanceFromScale>0</DistanceFromScale>
+                                    <FontAngle>0</FontAngle>
+                                    <Style>
+                                      <FontFamily>Segoe UI</FontFamily>
+                                      <Color>Black</Color>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                    </Style>
+                                    <RotateLabels>false</RotateLabels>
+                                    <ShowEndLabels>true</ShowEndLabels>
+                                    <Hidden>false</Hidden>
+                                    <UseFontPercent>true</UseFontPercent>
+                                  </ScaleLabels>
+                                  <Radius>37</Radius>
+                                  <StartAngle>20</StartAngle>
+                                  <SweepAngle>320</SweepAngle>
+                                </RadialScale>
+                              </GaugeScales>
+                              <PivotX>50</PivotX>
+                              <PivotY>50</PivotY>
+                            </RadialGauge>
+                          </RadialGauges>
+                          <ShadowIntensity>25</ShadowIntensity>
+                        </GaugePanel>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <GaugePanel Name="LinearGauge1">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>134.25pt</Height>
+                          <Width>210pt</Width>
+                          <Style>
+                            <BackgroundColor>White</BackgroundColor>
+                            <FontFamily>Segoe UI</FontFamily>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <DataSetName>RevenueDataset</DataSetName>
+                          <LinearGauges>
+                            <LinearGauge Name="LinearGaugeSet">
+                              <Top>0</Top>
+                              <Left>0</Left>
+                              <Height>100</Height>
+                              <Width>100</Width>
+                              <ParentItem>None</ParentItem>
+                              <AspectRatio>NaN</AspectRatio>
+                              <BackFrame>
+                                <FrameBackground>
+                                  <Style>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <Border>
+                                      <Color>LightGrey</Color>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </FrameBackground>
+                                <FrameImage>
+                                  <Source>External</Source>
+                                  <Value />
+                                </FrameImage>
+                                <FrameShape>CustomCircular2</FrameShape>
+                                <FrameWidth>8</FrameWidth>
+                                <Style>
+                                  <FontFamily>Segoe UI</FontFamily>
+                                  <Border>
+                                    <Color>LightGrey</Color>
+                                    <Style>None</Style>
+                                  </Border>
+                                </Style>
+                              </BackFrame>
+                              <GaugeScales>
+                                <LinearScale Name="LinearScale">
+                                  <Width>30</Width>
+                                  <Interval>=Fields!EstimatedRevenue.Value*0.5</Interval>
+                                  <IntervalOffset>NaN</IntervalOffset>
+                                  <LogarithmicBase>10</LogarithmicBase>
+                                  <GaugePointers>
+                                    <LinearPointer Name="LinearPointer">
+                                      <BarStart>ScaleStart</BarStart>
+                                      <Placement>Inside</Placement>
+                                      <Width>25</Width>
+                                      <DistanceFromScale>0</DistanceFromScale>
+                                      <MarkerLength>25</MarkerLength>
+                                      <SnappingInterval>0</SnappingInterval>
+                                      <Style>
+                                        <BackgroundColor>=iif(Fields!ActualRevenue.Value &lt; (0.5 * Fields!EstimatedRevenue.Value), “Red”,
+iif(Fields!ActualRevenue.Value &lt; (0.75 * Fields!EstimatedRevenue.Value), “Orange”, “Green”))</BackgroundColor>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <Border>
+                                          <Color>LightGrey</Color>
+                                          <Style>None</Style>
+                                        </Border>
+                                      </Style>
+                                      <GaugeInputValue>
+                                        <MaxPercent>0</MaxPercent>
+                                        <MinPercent>0</MinPercent>
+                                        <AddConstant>0</AddConstant>
+                                        <Multiplier>1</Multiplier>
+                                        <Value>=Fields!ActualRevenue.Value</Value>
+                                      </GaugeInputValue>
+                                      <MarkerStyle>Triangle</MarkerStyle>
+                                      <Type>Marker</Type>
+                                      <Thermometer>
+                                        <Style>
+                                          <FontFamily>Segoe UI</FontFamily>
+                                          <Border>
+                                            <Color>LightGrey</Color>
+                                            <Style>None</Style>
+                                          </Border>
+                                        </Style>
+                                        <BulbOffset>5</BulbOffset>
+                                        <BulbSize>50</BulbSize>
+                                      </Thermometer>
+                                    </LinearPointer>
+                                  </GaugePointers>
+                                  <ScaleRanges>
+                                    <ScaleRange Name="LinearRange1">
+                                      <StartWidth>30</StartWidth>
+                                      <EndWidth>30</EndWidth>
+                                      <Placement>Cross</Placement>
+                                      <Style>
+                                        <BackgroundColor>=iif(Fields!ActualRevenue.Value &lt; (0.5 * Fields!EstimatedRevenue.Value), “Red”, iif(Fields!ActualRevenue.Value &lt; (0.75 * Fields!EstimatedRevenue.Value), “Orange”, “Green”))</BackgroundColor>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <Border>
+                                          <Color>LightGrey</Color>
+                                          <Style>None</Style>
+                                        </Border>
+                                      </Style>
+                                      <DistanceFromScale>0</DistanceFromScale>
+                                      <StartValue>
+                                        <MaxPercent>0</MaxPercent>
+                                        <MinPercent>0</MinPercent>
+                                        <AddConstant>0</AddConstant>
+                                        <Multiplier>1</Multiplier>
+                                        <Value>0</Value>
+                                      </StartValue>
+                                      <EndValue>
+                                        <MaxPercent>0</MaxPercent>
+                                        <MinPercent>0</MinPercent>
+                                        <AddConstant>0</AddConstant>
+                                        <Multiplier>1</Multiplier>
+                                        <Value>=Fields!ActualRevenue.Value</Value>
+                                      </EndValue>
+                                    </ScaleRange>
+                                  </ScaleRanges>
+                                  <Style>
+                                    <BackgroundColor>LightGrey</BackgroundColor>
+                                    <FontFamily>Segoe UI</FontFamily>
+                                    <Border>
+                                      <Color>LightGrey</Color>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                  <MinimumValue>
+                                    <MaxPercent>0</MaxPercent>
+                                    <MinPercent>0</MinPercent>
+                                    <AddConstant>0</AddConstant>
+                                    <Multiplier>1</Multiplier>
+                                    <Value>0</Value>
+                                  </MinimumValue>
+                                  <MaximumValue>
+                                    <MaxPercent>0</MaxPercent>
+                                    <MinPercent>0</MinPercent>
+                                    <AddConstant>0</AddConstant>
+                                    <Multiplier>1</Multiplier>
+                                    <Value>=Fields!EstimatedRevenue.Value</Value>
+                                  </MaximumValue>
+                                  <GaugeMajorTickMarks>
+                                    <Placement>Outside</Placement>
+                                    <Shape>Rectangle</Shape>
+                                    <DistanceFromScale>0</DistanceFromScale>
+                                    <Length>8</Length>
+                                    <Width>2</Width>
+                                    <Style>
+                                      <BackgroundColor>=iif(Fields!ActualRevenue.Value &lt; (0.5 * Fields!EstimatedRevenue.Value), “Red”,
+iif(Fields!ActualRevenue.Value &lt; (0.75 * Fields!EstimatedRevenue.Value), “Orange”, “Green”))</BackgroundColor>
+                                      <FontFamily>Segoe UI</FontFamily>
+                                      <Border>
+                                        <Color>Transparent</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                    </Style>
+                                    <Hidden>false</Hidden>
+                                    <Interval>NaN</Interval>
+                                    <IntervalOffset>NaN</IntervalOffset>
+                                  </GaugeMajorTickMarks>
+                                  <GaugeMinorTickMarks>
+                                    <Placement>Cross</Placement>
+                                    <Shape>Rectangle</Shape>
+                                    <DistanceFromScale>0</DistanceFromScale>
+                                    <Length>9</Length>
+                                    <Width>1</Width>
+                                    <Style>
+                                      <BackgroundColor>DimGray</BackgroundColor>
+                                      <FontFamily>Segoe UI</FontFamily>
+                                      <Border>
+                                        <Color>Transparent</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                    </Style>
+                                    <Hidden>true</Hidden>
+                                    <Interval>NaN</Interval>
+                                    <IntervalOffset>0</IntervalOffset>
+                                  </GaugeMinorTickMarks>
+                                  <MinimumPin>
+                                    <Location>0</Location>
+                                    <Placement>Inside</Placement>
+                                    <Width>0</Width>
+                                    <Length>0</Length>
+                                    <PinLabel>
+                                      <Placement>Inside</Placement>
+                                      <FontAngle>0</FontAngle>
+                                      <DistanceFromScale>0</DistanceFromScale>
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <Border>
+                                          <Color>LightGrey</Color>
+                                          <Style>None</Style>
+                                        </Border>
+                                      </Style>
+                                      <RotateLabel>false</RotateLabel>
+                                    </PinLabel>
+                                  </MinimumPin>
+                                  <MaximumPin>
+                                    <Location>0</Location>
+                                    <Placement>Inside</Placement>
+                                    <Width>0</Width>
+                                    <Length>0</Length>
+                                    <PinLabel>
+                                      <Placement>Inside</Placement>
+                                      <FontAngle>0</FontAngle>
+                                      <DistanceFromScale>0</DistanceFromScale>
+                                      <Style>
+                                        <FontFamily>Segoe UI</FontFamily>
+                                        <FontSize>12pt</FontSize>
+                                        <Border>
+                                          <Color>LightGrey</Color>
+                                          <Style>None</Style>
+                                        </Border>
+                                      </Style>
+                                      <RotateLabel>false</RotateLabel>
+                                    </PinLabel>
+                                  </MaximumPin>
+                                  <ScaleLabels>
+                                    <Placement>Outside</Placement>
+                                    <Interval>0</Interval>
+                                    <IntervalOffset>0</IntervalOffset>
+                                    <DistanceFromScale>0</DistanceFromScale>
+                                    <FontAngle>0</FontAngle>
+                                    <Style>
+                                      <FontFamily>Segoe UI</FontFamily>
+                                      <Color>#404040</Color>
+                                      <Border>
+                                        <Color>LightGrey</Color>
+                                        <Style>None</Style>
+                                      </Border>
+                                    </Style>
+                                    <RotateLabels>false</RotateLabels>
+                                    <ShowEndLabels>true</ShowEndLabels>
+                                    <Hidden>false</Hidden>
+                                    <UseFontPercent>true</UseFontPercent>
+                                  </ScaleLabels>
+                                  <Position>50</Position>
+                                  <StartMargin>8</StartMargin>
+                                  <EndMargin>8</EndMargin>
+                                </LinearScale>
+                              </GaugeScales>
+                            </LinearGauge>
+                          </LinearGauges>
+                          <ShadowIntensity>25</ShadowIntensity>
+                        </GaugePanel>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+          </Tablix>
+        </ReportItems>
+        <Style>
+          <FontFamily>Segoe UI</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>777.75pt</Width>
+      <Page>
+        <PageFooter>
+          <Height>0.72917in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <FontFamily>Segoe UI</FontFamily>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <FontFamily>Segoe UI</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <DataSources>
+    <DataSource Name="RevenueDetails">
+      <rd:SecurityType>None</rd:SecurityType>
+      <ConnectionProperties>
+        <DataProvider>JSON</DataProvider>
+        <ConnectString>{"Data":"[\n   {\n       Year: 2015,\n\t   EstimatedRevenue: 16620,\n\t   ActualRevenue: 7150\n   },\n   {\n       Year: 2016,\n\t   EstimatedRevenue: 17390,\n\t   ActualRevenue: 10434\n   },\n   {\n       Year:2017,\n\t   EstimatedRevenue: 18150,\n\t   ActualRevenue: 9826\n   },\n   {\n       Year:2018,\n\t   EstimatedRevenue: 20900,\n\t   ActualRevenue: 20900\n   },\n   {\n       Year:2019,\n\t   EstimatedRevenue: 22650,\n\t   ActualRevenue: 22650\n   }\n]","DataMode":"inline","URL":""}</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="RevenueDataset">
+      <Query>
+        <DataSourceName>RevenueDetails</DataSourceName>
+        <CommandText>{"Name":"Result","Columns":[]}</CommandText>
+        <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
+          <Tables>
+            <Table Name="Result" Schema="">
+              <Columns>
+                <Column Name="Year" AliasName="" AggregateType="" IsDuplicate="false" IsSelected="true" />
+                <Column Name="EstimatedRevenue" AliasName="" AggregateType="" IsDuplicate="false" IsSelected="true" />
+                <Column Name="ActualRevenue" AliasName="" AggregateType="" IsDuplicate="false" IsSelected="true" />
+              </Columns>
+              <SchemaLevels>
+                <SchemaInfo Name="Result" SchemaType="Table" />
+              </SchemaLevels>
+            </Table>
+          </Tables>
+        </QueryDesignerState>
+      </Query>
+      <Fields>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="EstimatedRevenue">
+          <DataField>EstimatedRevenue</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="ActualRevenue">
+          <DataField>ActualRevenue</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+</Report>
