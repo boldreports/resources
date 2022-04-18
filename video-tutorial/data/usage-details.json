@@ -1,0 +1,26 @@
+[
+   {
+	   BrowserName: 'Chrome',
+	   Usage: 37
+   },
+   {
+	   BrowserName: 'UC Browser',
+	   Usage: 17
+   },
+   {
+	   BrowserName: 'Safari',
+	   Usage: 19
+   },
+   {
+	   BrowserName: 'Opera',
+	   Usage: 11
+   },
+   {
+	   BrowserName: 'Android Browser',
+	   Usage: 12
+   },
+   {
+	   BrowserName: 'Others',
+	   Usage: 4
+   }
+]
