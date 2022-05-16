@@ -1,0 +1,26 @@
+[
+   {
+	   Stage: 'Visitors',
+	   LeadCount: 500
+   },
+   {
+	   Stage: 'Qualified Visitors',
+	   LeadCount: 425
+   },
+   {
+	   Stage: 'Sign up',
+	   LeadCount: 200
+   },
+   {
+	   Stage: 'Price Quotes',
+	   LeadCount: 150
+   },
+   {
+	   Stage: 'Negotiations',
+	   LeadCount: 100
+   },
+   {
+	   Stage: 'Closed Visitors',
+	   LeadCount: 90
+   }
+]
