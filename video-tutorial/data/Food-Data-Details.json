@@ -1,0 +1,26 @@
+[
+  {
+    "Food":"Sweet Treats",
+    "Calories": 120
+  },
+  {
+    "Food":"Milk, Youghnut, Cheese",
+    "Calories": 435
+  },
+  {
+    "Food":"Vegetables",
+    "Calories": 470
+  },
+  {
+    "Food":"Meat, Poultry, Fish",
+    "Calories": 475
+  },
+  {
+    "Food":"Fruits",
+    "Calories": 520
+  },
+  {
+    "Food":"Bread, Rice, Pasta",
+    "Calories": 930
+  }
+]
