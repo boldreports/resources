@@ -1,0 +1,22 @@
+[
+    {
+        points: [
+            { Month: 'Jan', Celcius: -7.1 }, { Month: 'Feb', Celcius: -3.7 },
+            { Month: 'Mar', Celcius: 0.8 }, { Month: 'Apr', Celcius: 6.3 },
+            { Month: 'May', Celcius: 13.3 }, { Month: 'Jun', Celcius: 18.0 },
+            { Month: 'Jul', Celcius: 19.8 }, { Month: 'Aug', Celcius: 18.1 },
+            { Month: 'Sep', Celcius: 13.1 }, { Month: 'Oct', Celcius: 4.1 },
+            { Month: 'Nov', Celcius: -3.8 }, { Month: 'Dec', Celcius: -6.8 }],
+         Country: 'Warmest'
+    },
+    {
+        points: [
+            { Month: 'Jan', Celcius: -17.4 }, { Month: 'Feb', Celcius: -15.6 },
+            { Month: 'Mar', Celcius: -12.3 }, { Month: 'Apr', Celcius: -5.3 },
+            { Month: 'May', Celcius: 1.0 }, { Month: 'Jun', Celcius: 6.9 },
+            { Month: 'Jul', Celcius: 9.4 }, { Month: 'Aug', Celcius: 7.6 },
+            { Month: 'Sep', Celcius: 2.6 }, { Month: 'Oct', Celcius: -4.9 },
+            { Month: 'Nov', Celcius: -13.4 }, { Month: 'Dec', Celcius: -16.4 }],
+        Country: 'Coldest'
+    }
+]
