@@ -1,0 +1,26 @@
+[
+   {
+      points: [
+         { Month: "Jan", Percentage: 6 }, { Month: "Feb", Percentage: 8 }, { Month: "Mar", Percentage: 12 },
+         { Month: "Apr", Percentage: 15.5 }, { Month: "May", Percentage: 20 }, { Month: "Jun", Percentage: 24 },
+         { Month: "Jul", Percentage: 28 }, { Month: "Aug", Percentage: 32 }, { Month: "Sep", Percentage: 33 },
+         { Month: "Oct", Percentage: 35 }, { Month: "Nov", Percentage: 40 }, { Month: "Dec", Percentage: 42 }],
+      Product: 'ProductA'
+   },
+   {
+      points: [
+         { Month: "Jan", Percentage: 6 }, { Month: "Feb", Percentage: 8 }, { Month: "Mar", Percentage: 11 },
+         { Month: "Apr", Percentage: 16 }, { Month: "May", Percentage: 21 }, { Month: "Jun", Percentage: 25 },
+         { Month: "Jul", Percentage: 27 }, { Month: "Aug", Percentage: 31 }, { Month: "Sep", Percentage: 34 },
+         { Month: "Oct", Percentage: 34 }, { Month: "Nov", Percentage: 41 } , { Month: "Dec", Percentage: 42 }],
+      Product: 'ProductB'
+   },
+   {
+      points: [
+         { Month: "Jan", Percentage: -1 },{ Month: "Feb", Percentage: -1.5}, { Month: "Mar", Percentage: -2 },
+         { Month: "Apr", Percentage: -2.5 }, { Month: "May", Percentage: -3 },{ Month: "Jun", Percentage: -3.5 },
+         { Month: "Jul", Percentage: -4 },{ Month: "Aug", Percentage: -4.5 }, { Month: "Sep", Percentage: -5 },
+         { Month: "Oct", Percentage: -5.5 }, { Month: "Nov", Percentage: -6 } , { Month: "Dec", Percentage: -6.5 }],
+      Product: 'Wastage'
+   }
+]
