@@ -1,0 +1,26 @@
+[
+   {
+      points: [
+         { Year: 2007, Sales:453 }, { Year: 2008, Sales: 354 }, { Year: 2009, Sales: 282 }, { Year: 2010, Sales: 321 },
+         { Year: 2011, Sales: 333 }, { Year: 2012, Sales:351 }, { Year: 2013, Sales:403 }, { Year: 2014,Sales:421 }],
+      Name: "John"
+   },
+   {
+      points: [
+         { Year: 2007, Sales:876 }, { Year: 2008, Sales: 564 }, { Year: 2009, Sales: 242 }, { Year: 2010, Sales: 121 },
+         { Year: 2011, Sales: 343 }, { Year: 2012, Sales: 451 }, { Year: 2013, Sales:203 }, { Year: 2014,Sales:431 }],
+      Name: "Andrew"
+   },
+   {
+      points: [
+         { Year: 2007, Sales:356 }, { Year: 2008, Sales:876 }, { Year: 2009, Sales: 898 }, { Year: 2010, Sales: 567 },
+         { Year: 2011, Sales: 456 }, { Year: 2012, Sales: 345 }, { Year: 2013, Sales: 543 }, { Year: 2014, Sales:654 }],
+      Name: "Thomas"
+   },
+   {
+      points: [
+         { Year: 2007, Sales: 122 }, { Year: 2008, Sales: 444 }, { Year: 2009, Sales: 222 }, { Year: 2010, Sales: 231 },
+         { Year: 2011, Sales: 122 }, { Year: 2012, Sales: 333}, { Year: 2013, Sales: 354}, { Year: 2014,Sales:100 }],
+      Name: "Hendry"
+   }
+]

@@ -1,0 +1,30 @@
+[
+   {
+      points: [
+         {Year: 2006,Temperature: 34},{Year: 2007,Temperature: 20},{Year: 2008,Temperature: 40},
+         {Year: 2009,Temperature: 51},{Year: 2010,Temperature: 26},{Year: 2011,Temperature: 37},
+         {Year: 2012,Temperature: 54},{Year: 2013,Temperature: 44},{Year: 2014,Temperature: 48}],
+      Country: "USA"
+   },
+   {
+      points: [
+         {Year: 2006,Temperature: 51},{Year: 2007,Temperature: 26},{Year: 2008,Temperature: 37},
+         {Year: 2009,Temperature: 51},{Year: 2010,Temperature: 26},{Year: 2011,Temperature: 37},
+         {Year: 2012,Temperature: 43},{Year: 2013,Temperature: 23},{Year: 2014,Temperature: 55}],
+      Country: "India"
+   },
+   {
+      points: [
+         {Year: 2006,Temperature: 14},{Year: 2007,Temperature: 34},{Year: 2008,Temperature: 73},
+         {Year: 2009,Temperature: 51},{Year: 2010,Temperature: 26},{Year: 2011,Temperature: 37},
+         {Year: 2012,Temperature: 12},{Year: 2013,Temperature: 16},{Year: 2014,Temperature: 34}],
+      Country: "Canada"
+   },
+   {
+      points: [
+         {Year: 2006,Temperature: 37},{Year: 2007,Temperature: 16},{Year: 2008,Temperature: 53},
+         {Year: 2009,Temperature: 51},{Year: 2010,Temperature: 26},{Year: 2011,Temperature: 37},
+         {Year: 2012,Temperature: 54},{Year: 2013,Temperature: 44},{Year: 2014,Temperature: 23}],
+      Country: "China"
+   }
+]
