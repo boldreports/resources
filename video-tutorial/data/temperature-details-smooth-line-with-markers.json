@@ -1,0 +1,26 @@
+[
+   {
+      points: [
+            { "WeekDays": "Sun", "Temperature": 15 }, { "WeekDays": "Mon", "Temperature": 22 },
+            { "WeekDays": "Tue", "Temperature": 32 }, { "WeekDays": "Wed", "Temperature": 31 },
+            { "WeekDays": "Thu", "Temperature": 29 }, { "WeekDays": "Fri", "Temperature": 24 },
+            { "WeekDays": "Sat", "Temperature": 18 }],
+      "TemperatureLevel": "Max Temp"
+   },
+   {
+      points: [
+            { "WeekDays": "Sun", "Temperature": 10 }, { "WeekDays": "Mon", "Temperature": 18 },
+            { "WeekDays": "Tue", "Temperature": 28 }, { "WeekDays": "Wed", "Temperature": 28 },
+            { "WeekDays": "Thu", "Temperature": 26 }, { "WeekDays": "Fri", "Temperature": 20 },
+            { "WeekDays": "Sat", "Temperature": 15 }],
+      "TemperatureLevel": "Avg Temp"
+   },
+   {
+      points: [
+            { "WeekDays": "Sun", "Temperature": 2 }, { "WeekDays": "Mon", "Temperature": 12 },
+            { "WeekDays": "Tue", "Temperature": 22 }, { "WeekDays": "Wed", "Temperature": 23 },
+            { "WeekDays": "Thu", "Temperature": 19 }, { "WeekDays": "Fri", "Temperature": 13 },
+            { "WeekDays": "Sat", "Temperature": 8 }],
+      "TemperatureLevel": "Min Temp"
+   }
+]
