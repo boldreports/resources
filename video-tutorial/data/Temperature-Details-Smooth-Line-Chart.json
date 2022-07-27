@@ -1,0 +1,26 @@
+[
+{  
+   points: [
+      { Month: 'Jan', Temperature: -1 }, { Month: 'Feb', Temperature: -1 }, { Month: 'Mar', Temperature: 2 },
+      { Month: 'Apr', Temperature: 8 }, { Month: 'May', Temperature: 13 }, { Month: 'Jun', Temperature: 18 },
+      { Month: 'Jul', Temperature: 21 }, { Month: 'Aug', Temperature: 20 }, { Month: 'Sep', Temperature: 16 },
+      { Month: 'Oct', Temperature: 10 }, { Month: 'Nov', Temperature: 4 }, { Month: 'Dec', Temperature: 0 }],
+   Country: 'London'
+},
+{
+   points: [
+      { Month: 'Jan', Temperature: 3 }, { Month: 'Feb', Temperature: 3.5 }, { Month: 'Mar', Temperature: 7 },
+      { Month: 'Apr', Temperature: 13.5 }, { Month: 'May', Temperature: 19 }, { Month: 'Jun', Temperature: 23.5 },
+      { Month: 'Jul', Temperature: 26 }, { Month: 'Aug', Temperature: 25 }, { Month: 'Sep', Temperature: 21 },
+      { Month: 'Oct', Temperature: 15 }, { Month: 'Nov', Temperature: 9 }, { Month: 'Dec', Temperature: 3.5 }],
+   Country: 'Germany'
+},
+{
+   points: [
+      { Month: 'Jan', Temperature: 7 }, { Month: 'Feb', Temperature: 8 }, { Month: 'Mar', Temperature: 12 },
+      { Month: 'Apr', Temperature: 19 }, { Month: 'May', Temperature: 25 }, { Month: 'Jun', Temperature: 29 },
+      { Month: 'Jul', Temperature: 31 }, { Month: 'Aug', Temperature: 30 }, { Month: 'Sep', Temperature: 26 },
+      { Month: 'Oct', Temperature: 20 }, { Month: 'Nov', Temperature: 14 }, { Month: 'Dec', Temperature: 8 }],
+   Country: 'France'
+}
+]
