@@ -1,0 +1,26 @@
+[
+   {
+      points: [
+            { Year: 2006, EmissionIntensity: 378 }, { Year: 2007, EmissionIntensity: 416 }, { Year: 2008, EmissionIntensity: 404 },
+            { Year: 2009, EmissionIntensity: 390 }, { Year: 2010, EmissionIntensity: 376 }, { Year: 2011, EmissionIntensity: 365 }],
+      Country: 'USA'
+   },
+   {
+      points: [
+            { Year: 2006, EmissionIntensity: 463 }, { Year: 2007, EmissionIntensity: 449 }, { Year: 2008, EmissionIntensity: 458 },
+            { Year: 2009, EmissionIntensity: 450 }, { Year: 2010, EmissionIntensity: 425 }, { Year: 2011, EmissionIntensity: 430 }],
+      Country: 'UK'
+   },
+   {
+      points: [
+            { Year: 2006, EmissionIntensity: 519 }, { Year: 2007, EmissionIntensity: 508 }, { Year: 2008, EmissionIntensity: 502 },
+            { Year: 2009, EmissionIntensity: 495 }, { Year: 2010, EmissionIntensity: 485 }, { Year: 2011, EmissionIntensity: 470 }],
+      Country: 'Korea'
+   },
+   {
+      points: [
+            { Year: 2006, EmissionIntensity: 570 }, { Year: 2007, EmissionIntensity: 579 }, { Year: 2008, EmissionIntensity: 563 },
+            { Year: 2009, EmissionIntensity: 550 }, { Year: 2010, EmissionIntensity: 545 }, { Year: 2011, EmissionIntensity: 525 }],
+      Country: 'Japan'
+   }
+]
