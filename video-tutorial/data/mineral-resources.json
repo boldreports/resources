@@ -1,0 +1,105 @@
+[
+{
+ "State" : "Alabama", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd"
+},
+{ "State" : "Alaska", "Resource" : "Silver", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Arizona", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Arkansas", "Resource" : "Copper", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "California", "Resource" : "Uranium", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Colorado", "Resource" : "Bauxite", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Connecticut", "Resource" : "Iron", "CompanyName" : "U.S Minerals.Ltd"
+ },
+{ "State" : "Delaware", "Resource" : "Iron", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "District of Columbia", "Resource" : "Uranium", "CompanyName" : "U.S Minerals.Ltd"
+ },
+{ "State" : "Florida", "Resource" : "Copper", "CompanyName" : "U.S Minerals.Ltd"
+ },
+{ "State" : "Georgia", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Hawaii", "Resource" : "Copper", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Idaho", "Resource" : "Silver", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Illinois", "Resource" : "Bauxite", "CompanyName" : "U.S Minerals.Ltd"
+},
+{ "State" : "Indiana", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Iowa", "Resource" : "Silver", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Kansas", "Resource" : "Bauxite", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Kentucky", "Resource" : "Iron", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Louisiana", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Maine", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Maryland", "Resource" : "Silver", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Massachusetts", "Resource" : "Bauxite", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Michingan", "Resource" : "Copper", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Minnesota", "Resource" : "Iron", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Mississippi", "Resource" : "Iron", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Missouri", "Resource" : "Copper", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Montana", "Resource" : "Bauxite", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Nebraska", "Resource" : "Copper", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Nevada", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "New Hampshire", "Resource" : "Uranium", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "New Jersey", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "New Mexico", "Resource" : "Bauxite", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "New York", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "North Carolina", "Resource" : "Silver", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "North Dakota", "Resource" : "Bauxite", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Ohio", "Resource" : "Iron", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Oklahoma", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Oregon", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd"
+},
+{ "State" : "Pennsylvania", "Resource" : "Silver", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Rhode Island", "Resource" : "Silver", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "South Carolina", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "South Dakota", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd"
+},
+{ "State" : "Tennessee", "Resource" : "Uranium", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Texas", "Resource" : "Uranium", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Utah", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Vermont", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Virginia", "Resource" : "Bauxite", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Washington", "Resource" : "Diamond", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "West Virginia", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Wisconsin", "Resource" : "Silver", "CompanyName" : "U.S Minerals.Ltd" 
+},
+{ "State" : "Wyoming", "Resource" : "Iron", "CompanyName" : "U.S Minerals.Ltd" },
+{ "State" : "Motana", "Resource" : "Gold", "CompanyName" : "U.S Minerals.Ltd" }
+]
