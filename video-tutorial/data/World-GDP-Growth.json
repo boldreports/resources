@@ -1,0 +1,1586 @@
+[
+ {
+   "Country": "Aruba",
+   "CountryCode": "ABW",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Afghanistan",
+   "CountryCode": "AFG",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.901228964
+ },
+ {
+   "Country": "Angola",
+   "CountryCode": "AGO",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.869393785
+ },
+ {
+   "Country": "Albania",
+   "CountryCode": "ALB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.214063153
+ },
+ {
+   "Country": "Andorra",
+   "CountryCode": "AND",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.849238257
+ },
+ {
+   "Country": "Arab World",
+   "CountryCode": "ARB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.478439683
+ },
+ {
+   "Country": "United Arab Emirates",
+   "CountryCode": "ARE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.677720371
+ },
+ {
+   "Country": "Argentina",
+   "CountryCode": "ARG",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -2.162952121
+ },
+ {
+   "Country": "Armenia",
+   "CountryCode": "ARM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 7.6
+ },
+ {
+   "Country": "American Samoa",
+   "CountryCode": "ASM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Antigua and Barbuda",
+   "CountryCode": "ATG",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.65040225
+ },
+ {
+   "Country": "Australia",
+   "CountryCode": "AUS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.89682574
+ },
+ {
+   "Country": "Austria",
+   "CountryCode": "AUT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.612959328
+ },
+ {
+   "Country": "Azerbaijan",
+   "CountryCode": "AZE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.218704277
+ },
+ {
+   "Country": "Burundi",
+   "CountryCode": "BDI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.842476677
+ },
+ {
+   "Country": "Belgium",
+   "CountryCode": "BEL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.404455201
+ },
+ {
+   "Country": "Benin",
+   "CountryCode": "BEN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 6.865687335
+ },
+ {
+   "Country": "Burkina Faso",
+   "CountryCode": "BFA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.688598986
+ },
+ {
+   "Country": "Bangladesh",
+   "CountryCode": "BGD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 8.152684947
+ },
+ {
+   "Country": "Bulgaria",
+   "CountryCode": "BGR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.371615546
+ },
+ {
+   "Country": "Bahrain",
+   "CountryCode": "BHR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.819569006
+ },
+ {
+   "Country": "Bahamas, The",
+   "CountryCode": "BHS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.799255621
+ },
+ {
+   "Country": "Bosnia and Herzegovina",
+   "CountryCode": "BIH",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.582627866
+ },
+ {
+   "Country": "Belarus",
+   "CountryCode": "BLR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.222096629
+ },
+ {
+   "Country": "Belize",
+   "CountryCode": "BLZ",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.266552937
+ },
+ {
+   "Country": "Bermuda",
+   "CountryCode": "BMU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Bolivia",
+   "CountryCode": "BOL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.216707101
+ },
+ {
+   "Country": "Brazil",
+   "CountryCode": "BRA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.136585572
+ },
+ {
+   "Country": "Barbados",
+   "CountryCode": "BRB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.096135553
+ },
+ {
+   "Country": "Brunei Darussalam",
+   "CountryCode": "BRN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.869109803
+ },
+ {
+   "Country": "Bhutan",
+   "CountryCode": "BTN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Botswana",
+   "CountryCode": "BWA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.966135933
+ },
+ {
+   "Country": "Central African Rep.",
+   "CountryCode": "CAF",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.970275648
+ },
+ {
+   "Country": "Canada",
+   "CountryCode": "CAN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.656040854
+ },
+ {
+   "Country": "Central Europe and the Baltics",
+   "CountryCode": "CEB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.690173574
+ },
+ {
+   "Country": "Switzerland",
+   "CountryCode": "CHE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.92883244
+ },
+ {
+   "Country": "Channel Islands",
+   "CountryCode": "CHI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Chile",
+   "CountryCode": "CHL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.054442551
+ },
+ {
+   "Country": "China",
+   "CountryCode": "CHN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 6.108560627
+ },
+ {
+   "Country": "Côte d''Ivoire",
+   "CountryCode": "CIV",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 6.852334587
+ },
+ {
+   "Country": "Cameroon",
+   "CountryCode": "CMR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.017216043
+ },
+ {
+   "Country": "Dem. Rep. Congo",
+   "CountryCode": "COD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.384528881
+ },
+ {
+   "Country": "Congo",
+   "CountryCode": "COG",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.899999998
+ },
+ {
+   "Country": "Colombia",
+   "CountryCode": "COL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.322212789
+ },
+ {
+   "Country": "Comoros",
+   "CountryCode": "COM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.715259465
+ },
+ {
+   "Country": "Cabo Verde",
+   "CountryCode": "CPV",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.66775246
+ },
+ {
+   "Country": "Costa Rica",
+   "CountryCode": "CRI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.083859938
+ },
+ {
+   "Country": "Caribbean small states",
+   "CountryCode": "CSS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.8752453
+ },
+ {
+   "Country": "Cuba",
+   "CountryCode": "CUB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Curacao",
+   "CountryCode": "CUW",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Cayman Islands",
+   "CountryCode": "CYM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Cyprus",
+   "CountryCode": "CYP",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.230090314
+ },
+ {
+   "Country": "Czech Rep.",
+   "CountryCode": "CZE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.565931233
+ },
+ {
+   "Country": "Germany",
+   "CountryCode": "DEU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.564174893
+ },
+ {
+   "Country": "Djibouti",
+   "CountryCode": "DJI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 7.470318422
+ },
+ {
+   "Country": "Dominica",
+   "CountryCode": "DMA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.663680185
+ },
+ {
+   "Country": "Denmark",
+   "CountryCode": "DNK",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.365846456
+ },
+ {
+   "Country": "Dominican Republic",
+   "CountryCode": "DOM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.087176037
+ },
+ {
+   "Country": "Algeria",
+   "CountryCode": "DZA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.8
+ },
+ {
+   "Country": "East Asia & Pacific (excluding high income)",
+   "CountryCode": "EAP",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.830970017
+ },
+ {
+   "Country": "Early-demographic dividend",
+   "CountryCode": "EAR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.819257988
+ },
+ {
+   "Country": "East Asia & Pacific",
+   "CountryCode": "EAS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.763356211
+ },
+ {
+   "Country": "Europe & Central Asia (excluding high income)",
+   "CountryCode": "ECA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.687589841
+ },
+ {
+   "Country": "Europe & Central Asia",
+   "CountryCode": "ECS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.504683934
+ },
+ {
+   "Country": "Ecuador",
+   "CountryCode": "ECU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.053718829
+ },
+ {
+   "Country": "Egypt",
+   "CountryCode": "EGY",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.557683888
+ },
+ {
+   "Country": "Euro area",
+   "CountryCode": "EMU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.281742016
+ },
+ {
+   "Country": "Eritrea",
+   "CountryCode": "ERI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Spain",
+   "CountryCode": "ESP",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.979100561
+ },
+ {
+   "Country": "Estonia",
+   "CountryCode": "EST",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.334487473
+ },
+ {
+   "Country": "Ethiopia",
+   "CountryCode": "ETH",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 8.281361047
+ },
+ {
+   "Country": "European Union",
+   "CountryCode": "EUU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.522885916
+ },
+ {
+   "Country": "Fragile and conflict affected situations",
+   "CountryCode": "FCS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Finland",
+   "CountryCode": "FIN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.97958181
+ },
+ {
+   "Country": "Fiji",
+   "CountryCode": "FJI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.063260344
+ },
+ {
+   "Country": "France",
+   "CountryCode": "FRA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.508594035
+ },
+ {
+   "Country": "Faroe Islands",
+   "CountryCode": "FRO",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Micronesia, Fed. Sts.",
+   "CountryCode": "FSM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Gabon",
+   "CountryCode": "GAB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.394110152
+ },
+ {
+   "Country": "United Kingdom",
+   "CountryCode": "GBR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.408642101
+ },
+ {
+   "Country": "Georgia",
+   "CountryCode": "GEO",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.136813264
+ },
+ {
+   "Country": "Ghana",
+   "CountryCode": "GHA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 6.478394805
+ },
+ {
+   "Country": "Gibraltar",
+   "CountryCode": "GIB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Guinea",
+   "CountryCode": "GIN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.576968903
+ },
+ {
+   "Country": "Gambia, The",
+   "CountryCode": "GMB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.975204332
+ },
+ {
+   "Country": "Guinea-Bissau",
+   "CountryCode": "GNB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.600094045
+ },
+ {
+   "Country": "Equatorial Guinea",
+   "CountryCode": "GNQ",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -5.576308454
+ },
+ {
+   "Country": "Greece",
+   "CountryCode": "GRC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.870869674
+ },
+ {
+   "Country": "Grenada",
+   "CountryCode": "GRD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.126316984
+ },
+ {
+   "Country": "Greenland",
+   "CountryCode": "GRL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Guatemala",
+   "CountryCode": "GTM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.845997853
+ },
+ {
+   "Country": "Guam",
+   "CountryCode": "GUM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Guyana",
+   "CountryCode": "GUY",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.695891722
+ },
+ {
+   "Country": "High income",
+   "CountryCode": "HIC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.680877995
+ },
+ {
+   "Country": "Hong Kong SAR, China",
+   "CountryCode": "HKG",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -1.18827235
+ },
+ {
+   "Country": "Honduras",
+   "CountryCode": "HND",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.65276116
+ },
+ {
+   "Country": "Heavily indebted poor countries (HIPC)",
+   "CountryCode": "HPC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.065539823
+ },
+ {
+   "Country": "Croatia",
+   "CountryCode": "HRV",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.93606564
+ },
+ {
+   "Country": "Haiti",
+   "CountryCode": "HTI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.93487001
+ },
+ {
+   "Country": "Hungary",
+   "CountryCode": "HUN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.927792275
+ },
+ {
+   "Country": "IBRD only",
+   "CountryCode": "IBD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.92964936
+ },
+ {
+   "Country": "IDA & IBRD total",
+   "CountryCode": "IBT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.913119572
+ },
+ {
+   "Country": "IDA total",
+   "CountryCode": "IDA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.679159237
+ },
+ {
+   "Country": "IDA blend",
+   "CountryCode": "IDB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.262618559
+ },
+ {
+   "Country": "Indonesia",
+   "CountryCode": "IDN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.024714022
+ },
+ {
+   "Country": "IDA only",
+   "CountryCode": "IDX",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.03922513
+ },
+ {
+   "Country": "Isle of Man",
+   "CountryCode": "IMN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "India",
+   "CountryCode": "IND",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.023873428
+ },
+ {
+   "Country": "Not classified",
+   "CountryCode": "INX",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Ireland",
+   "CountryCode": "IRL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.549767053
+ },
+ {
+   "Country": "Iran, Islamic Rep.",
+   "CountryCode": "IRN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Iraq",
+   "CountryCode": "IRQ",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.400913395
+ },
+ {
+   "Country": "Iceland",
+   "CountryCode": "ISL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.918676882
+ },
+ {
+   "Country": "Israel",
+   "CountryCode": "ISR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.514084546
+ },
+ {
+   "Country": "Italy",
+   "CountryCode": "ITA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.301256161
+ },
+ {
+   "Country": "Jamaica",
+   "CountryCode": "JAM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.7
+ },
+ {
+   "Country": "Jordan",
+   "CountryCode": "JOR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2
+ },
+ {
+   "Country": "Japan",
+   "CountryCode": "JPN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.65415165
+ },
+ {
+   "Country": "Kazakhstan",
+   "CountryCode": "KAZ",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.5
+ },
+ {
+   "Country": "Kenya",
+   "CountryCode": "KEN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.365748965
+ },
+ {
+   "Country": "Kyrgyzstan",
+   "CountryCode": "KGZ",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.507138923
+ },
+ {
+   "Country": "Cambodia",
+   "CountryCode": "KHM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 7.054106932
+ },
+ {
+   "Country": "Kiribati",
+   "CountryCode": "KIR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.247365963
+ },
+ {
+   "Country": "St. Kitts and Nevis",
+   "CountryCode": "KNA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.504709007
+ },
+ {
+   "Country": "Korea",
+   "CountryCode": "KOR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.033150971
+ },
+ {
+   "Country": "Kuwait",
+   "CountryCode": "KWT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.412348553
+ },
+ {
+   "Country": "Latin America & Caribbean (excluding high income)",
+   "CountryCode": "LAC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.799242896
+ },
+ {
+   "Country": "Lao PDR",
+   "CountryCode": "LAO",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.651887119
+ },
+ {
+   "Country": "Lebanon",
+   "CountryCode": "LBN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -5.637170641
+ },
+ {
+   "Country": "Liberia",
+   "CountryCode": "LBR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -2.278245125
+ },
+ {
+   "Country": "Libya",
+   "CountryCode": "LBY",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.535953478
+ },
+ {
+   "Country": "St. Lucia",
+   "CountryCode": "LCA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.728838432
+ },
+ {
+   "Country": "Latin America & Caribbean",
+   "CountryCode": "LCN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.83169257
+ },
+ {
+   "Country": "Least developed countries: UN classification",
+   "CountryCode": "LDC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.412191503
+ },
+ {
+   "Country": "Low income",
+   "CountryCode": "LIC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.884034719
+ },
+ {
+   "Country": "Liechtenstein",
+   "CountryCode": "LIE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Sri Lanka",
+   "CountryCode": "LKA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.283465301
+ },
+ {
+   "Country": "Lower middle income",
+   "CountryCode": "LMC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.367327759
+ },
+ {
+   "Country": "Low & middle income",
+   "CountryCode": "LMY",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.948287965
+ },
+ {
+   "Country": "Lesotho",
+   "CountryCode": "LSO",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.516001439
+ },
+ {
+   "Country": "Late-demographic dividend",
+   "CountryCode": "LTE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.351107873
+ },
+ {
+   "Country": "Lithuania",
+   "CountryCode": "LTU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.930407976
+ },
+ {
+   "Country": "Luxembourg",
+   "CountryCode": "LUX",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.296979166
+ },
+ {
+   "Country": "Latvia",
+   "CountryCode": "LVA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.197441768
+ },
+ {
+   "Country": "Macao SAR, China",
+   "CountryCode": "MAC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -4.710859447
+ },
+ {
+   "Country": "St. Martin (French part)",
+   "CountryCode": "MAF",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Morocco",
+   "CountryCode": "MAR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.3
+ },
+ {
+   "Country": "Monaco",
+   "CountryCode": "MCO",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Moldova",
+   "CountryCode": "MDA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.456278122
+ },
+ {
+   "Country": "Madagascar",
+   "CountryCode": "MDG",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.8
+ },
+ {
+   "Country": "Maldives",
+   "CountryCode": "MDV",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.215999257
+ },
+ {
+   "Country": "Middle East & North Africa",
+   "CountryCode": "MEA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.808834379
+ },
+ {
+   "Country": "Mexico",
+   "CountryCode": "MEX",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.145602325
+ },
+ {
+   "Country": "Marshall Islands",
+   "CountryCode": "MHL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Middle income",
+   "CountryCode": "MIC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.949171924
+ },
+ {
+   "Country": "North Macedonia",
+   "CountryCode": "MKD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.550583873
+ },
+ {
+   "Country": "Mali",
+   "CountryCode": "MLI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.040000002
+ },
+ {
+   "Country": "Malta",
+   "CountryCode": "MLT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.384096283
+ },
+ {
+   "Country": "Myanmar",
+   "CountryCode": "MMR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.887960733
+ },
+ {
+   "Country": "Middle East & North Africa (excluding high income)",
+   "CountryCode": "MNA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Montenegro",
+   "CountryCode": "MNE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.620808341
+ },
+ {
+   "Country": "Mongolia",
+   "CountryCode": "MNG",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.099167896
+ },
+ {
+   "Country": "Northern Mariana Islands",
+   "CountryCode": "MNP",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Mozambique",
+   "CountryCode": "MOZ",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.223877655
+ },
+ {
+   "Country": "Mauritania",
+   "CountryCode": "MRT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.930510885
+ },
+ {
+   "Country": "Mauritius",
+   "CountryCode": "MUS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.55078438
+ },
+ {
+   "Country": "Malawi",
+   "CountryCode": "MWI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.369238986
+ },
+ {
+   "Country": "Malaysia",
+   "CountryCode": "MYS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.330218416
+ },
+ {
+   "Country": "North America",
+   "CountryCode": "NAC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.268329806
+ },
+ {
+   "Country": "Namibia",
+   "CountryCode": "NAM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -1.134097952
+ },
+ {
+   "Country": "New Caledonia",
+   "CountryCode": "NCL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Niger",
+   "CountryCode": "NER",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.828590084
+ },
+ {
+   "Country": "Nigeria",
+   "CountryCode": "NGA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.208429277
+ },
+ {
+   "Country": "Nicaragua",
+   "CountryCode": "NIC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -3.8785099
+ },
+ {
+   "Country": "Netherlands",
+   "CountryCode": "NLD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.810503082
+ },
+ {
+   "Country": "Norway",
+   "CountryCode": "NOR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.154721939
+ },
+ {
+   "Country": "Nepal",
+   "CountryCode": "NPL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 6.991212438
+ },
+ {
+   "Country": "Nauru",
+   "CountryCode": "NRU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0
+ },
+ {
+   "Country": "New Zealand",
+   "CountryCode": "NZL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.170978389
+ },
+ {
+   "Country": "OECD members",
+   "CountryCode": "OED",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.65991714
+ },
+ {
+   "Country": "Oman",
+   "CountryCode": "OMN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.5
+ },
+ {
+   "Country": "Other small states",
+   "CountryCode": "OSS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.335904831
+ },
+ {
+   "Country": "Pakistan",
+   "CountryCode": "PAK",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.98882944
+ },
+ {
+   "Country": "Panama",
+   "CountryCode": "PAN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.006389295
+ },
+ {
+   "Country": "Peru",
+   "CountryCode": "PER",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.150131391
+ },
+ {
+   "Country": "Philippines",
+   "CountryCode": "PHL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 6.040575257
+ },
+ {
+   "Country": "Palau",
+   "CountryCode": "PLW",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Papua New Guinea",
+   "CountryCode": "PNG",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.623797977
+ },
+ {
+   "Country": "Poland",
+   "CountryCode": "POL",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.147023756
+ },
+ {
+   "Country": "Pre-demographic dividend",
+   "CountryCode": "PRE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.922852994
+ },
+ {
+   "Country": "Puerto Rico",
+   "CountryCode": "PRI",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.187663555
+ },
+ {
+   "Country": "Dem. Rep. Korea",
+   "CountryCode": "PRK",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Portugal",
+   "CountryCode": "PRT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.164403593
+ },
+ {
+   "Country": "Paraguay",
+   "CountryCode": "PRY",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.029914393
+ },
+ {
+   "Country": "West Bank and Gaza",
+   "CountryCode": "PSE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Pacific island small states",
+   "CountryCode": "PSS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.820091801
+ },
+ {
+   "Country": "Post-demographic dividend",
+   "CountryCode": "PST",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.622178377
+ },
+ {
+   "Country": "French Polynesia",
+   "CountryCode": "PYF",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Qatar",
+   "CountryCode": "QAT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.183327101
+ },
+ {
+   "Country": "Romania",
+   "CountryCode": "ROU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.07954831
+ },
+ {
+   "Country": "Russia",
+   "CountryCode": "RUS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.341875441
+ },
+ {
+   "Country": "Rwanda",
+   "CountryCode": "RWA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 9.406934948
+ },
+ {
+   "Country": "South Asia",
+   "CountryCode": "SAS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.832489659
+ },
+ {
+   "Country": "Saudi Arabia",
+   "CountryCode": "SAU",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.331435727
+ },
+ {
+   "Country": "Sudan",
+   "CountryCode": "SDN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -2.55550594
+ },
+ {
+   "Country": "Senegal",
+   "CountryCode": "SEN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.271192358
+ },
+ {
+   "Country": "Singapore",
+   "CountryCode": "SGP",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.733309935
+ },
+ {
+   "Country": "Solomon Islands",
+   "CountryCode": "SLB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.693985053
+ },
+ {
+   "Country": "Sierra Leone",
+   "CountryCode": "SLE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.513460168
+ },
+ {
+   "Country": "El Salvador",
+   "CountryCode": "SLV",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.382362908
+ },
+ {
+   "Country": "San Marino",
+   "CountryCode": "SMR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Somalia",
+   "CountryCode": "SOM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Serbia",
+   "CountryCode": "SRB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.1870987
+ },
+ {
+   "Country": "Sub-Saharan Africa (excluding high income)",
+   "CountryCode": "SSA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.266196278
+ },
+ {
+   "Country": "South Sudan",
+   "CountryCode": "SSD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Sub-Saharan Africa",
+   "CountryCode": "SSF",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.277675586
+ },
+ {
+   "Country": "Small states",
+   "CountryCode": "SST",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.280479104
+ },
+ {
+   "Country": "Sao Tome and Principe",
+   "CountryCode": "STP",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.399999446
+ },
+ {
+   "Country": "Suriname",
+   "CountryCode": "SUR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.771763737
+ },
+ {
+   "Country": "Slovakia",
+   "CountryCode": "SVK",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.398568858
+ },
+ {
+   "Country": "Slovenia",
+   "CountryCode": "SVN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.442991915
+ },
+ {
+   "Country": "Sweden",
+   "CountryCode": "SWE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.194853426
+ },
+ {
+   "Country": "Eswatini",
+   "CountryCode": "SWZ",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.013918405
+ },
+ {
+   "Country": "Sint Maarten (Dutch part)",
+   "CountryCode": "SXM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Seychelles",
+   "CountryCode": "SYC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.708114431
+ },
+ {
+   "Country": "Syrian Arab Republic",
+   "CountryCode": "SYR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Turks and Caicos Islands",
+   "CountryCode": "TCA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Chad",
+   "CountryCode": "TCD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.247181917
+ },
+ {
+   "Country": "East Asia & Pacific (IDA & IBRD countries)",
+   "CountryCode": "TEA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.830925437
+ },
+ {
+   "Country": "Europe & Central Asia (IDA & IBRD countries)",
+   "CountryCode": "TEC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.155131627
+ },
+ {
+   "Country": "Togo",
+   "CountryCode": "TGO",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.312535005
+ },
+ {
+   "Country": "Thailand",
+   "CountryCode": "THA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.37187626
+ },
+ {
+   "Country": "Tajikistan",
+   "CountryCode": "TJK",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 7.011268985
+ },
+ {
+   "Country": "Turkmenistan",
+   "CountryCode": "TKM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Latin America & the Caribbean (IDA & IBRD countries)",
+   "CountryCode": "TLA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.824977469
+ },
+ {
+   "Country": "Timor-Leste",
+   "CountryCode": "TLS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.414192346
+ },
+ {
+   "Country": "Middle East & North Africa (IDA & IBRD countries)",
+   "CountryCode": "TMN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Tonga",
+   "CountryCode": "TON",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "South Asia (IDA & IBRD)",
+   "CountryCode": "TSA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.832489659
+ },
+ {
+   "Country": "Sub-Saharan Africa (IDA & IBRD countries)",
+   "CountryCode": "TSS",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.277675586
+ },
+ {
+   "Country": "Trinidad and Tobago",
+   "CountryCode": "TTO",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -0.002371632
+ },
+ {
+   "Country": "Tunisia",
+   "CountryCode": "TUN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.042780016
+ },
+ {
+   "Country": "Turkey",
+   "CountryCode": "TUR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.877433458
+ },
+ {
+   "Country": "Tuvalu",
+   "CountryCode": "TUV",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 9.756097561
+ },
+ {
+   "Country": "Tanzania",
+   "CountryCode": "TZA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.791371376
+ },
+ {
+   "Country": "Uganda",
+   "CountryCode": "UGA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 6.507342527
+ },
+ {
+   "Country": "Ukraine",
+   "CountryCode": "UKR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.233491188
+ },
+ {
+   "Country": "Upper middle income",
+   "CountryCode": "UMC",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.836720659
+ },
+ {
+   "Country": "Uruguay",
+   "CountryCode": "URY",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.222121735
+ },
+ {
+   "Country": "United States",
+   "CountryCode": "USA",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.333577492
+ },
+ {
+   "Country": "Uzbekistan",
+   "CountryCode": "UZB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 5.563723953
+ },
+ {
+   "Country": "St. Vincent and the Grenadines",
+   "CountryCode": "VCT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.342428046
+ },
+ {
+   "Country": "Venezuela, RB",
+   "CountryCode": "VEN",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "British Virgin Islands",
+   "CountryCode": "VGB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Virgin Islands (U.S.)",
+   "CountryCode": "VIR",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "Vietnam",
+   "CountryCode": "VNM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 7.017434882
+ },
+ {
+   "Country": "Vanuatu",
+   "CountryCode": "VUT",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.910560297
+ },
+ {
+   "Country": "World",
+   "CountryCode": "WLD",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 2.474999297
+ },
+ {
+   "Country": "Samoa",
+   "CountryCode": "WSM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 3.472878147
+ },
+ {
+   "Country": "Kosovo",
+   "CountryCode": "XKX",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 4.171659654
+ },
+ {
+   "Country": "Yemen, Rep.",
+   "CountryCode": "YEM",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": null
+ },
+ {
+   "Country": "South Africa",
+   "CountryCode": "ZAF",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 0.152583317
+ },
+ {
+   "Country": "Zambia",
+   "CountryCode": "ZMB",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": 1.705792875
+ },
+ {
+   "Country": "Zimbabwe",
+   "CountryCode": "ZWE",
+   "IndicatorName": "GDP growth (annual %)",
+   "GDP": -8.100000199
+ }
+]
