@@ -82,10 +82,7 @@
                         <Visible>False</Visible>
                         <Position>Auto</Position>
                       </ChartDataLabel>
-                      <ToolTip>= "Season: " &amp; Fields!Season.Value &amp; " | "  &amp;  VbCrLf  &amp;
-"Country: " &amp; Fields!Country.Value &amp; " | "  &amp;  VbCrLf  &amp;
-"Highvalue: " &amp; Sum(Fields!Highvalue.Value) &amp; " | "  &amp; VbCrLf &amp;
-"Lowvalue: " &amp; Sum(Fields!Lowvalue.Value)</ToolTip>
+                      <ToolTip>="Country: " &amp; Fields!Country.Value + "&lt;br&gt;" + "Season: " &amp; Fields!Season.Value  + "&lt;br&gt;" + "High Value: " + Fields!Highvalue.Value + "&lt;br&gt;" + "Low Value: " + Fields!Lowvalue.Value</ToolTip>
                       <Style>
                         <FontSize>8pt</FontSize>
                         <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
@@ -387,7 +384,7 @@
                       </Border>
                     </Style>
                     <ChartAxisTitle>
-                      <Caption>Temperature (Celcius)</Caption>
+                      <Caption>Temperature (Celsius)</Caption>
                       <Style>
                         <BackgroundColor>White</BackgroundColor>
                         <FontSize>9.75pt</FontSize>
