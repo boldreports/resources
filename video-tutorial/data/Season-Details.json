@@ -1,0 +1,54 @@
+[
+   {
+      points:
+        [
+			{
+				Seasons:'Winter',
+				Highvalue: 10.2,
+				Lowvalue: 6.9
+			},
+			{
+				Seasons:'Spring',
+				Highvalue: 19.0,
+				Lowvalue: 11.8
+			},
+			{
+				Seasons:'Summer',
+				Highvalue: 24.6,
+				Lowvalue: 21.8
+			},
+			{
+				Seasons:'Autumn',
+				Highvalue: 20.8,
+				Lowvalue: 7.8
+			}
+		],
+        Country:'France'
+   },
+   {
+      points:
+        [
+			{
+				Seasons:'Winter',
+				Highvalue: 13.0,
+				Lowvalue: 7.9
+			},
+			{
+				Seasons:'Spring',
+				Highvalue: 22.8,
+				Lowvalue: 15.2
+			},
+			{
+				Seasons:'Summer',
+				Highvalue: 30.6,
+				Lowvalue: 23.9
+			},
+			{
+				Seasons:'Autumn',
+				Highvalue: 26.5,
+				Lowvalue: 15.9
+			}
+		],
+        Country:'Italy'
+   }
+]
