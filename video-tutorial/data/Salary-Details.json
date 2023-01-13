@@ -1,0 +1,67 @@
+[
+	{
+		MaximumSalary: 14.81,
+		MinimumSalary:  4.61,
+		Year: 1985
+	},
+	{
+		MaximumSalary: 17.10,
+		MinimumSalary:  0.88,
+		Year: 1987
+	},
+	{
+		MaximumSalary: 21.07,
+		MinimumSalary:  7.27,
+		Year: 1989
+	},
+	{
+		MaximumSalary: 37.00,
+		MinimumSalary:  10.73,
+		Year: 1991
+	},
+	{
+		MaximumSalary: 44.79,
+		MinimumSalary:  10.35,
+		Year: 1993
+	},
+	{
+		MaximumSalary: 50.59,
+		MinimumSalary:  12.36,
+		Year: 1995
+	},
+	{
+		MaximumSalary: 62.24,
+		MinimumSalary:  10.77,
+		Year: 1997
+	},
+	{
+		MaximumSalary: 86.73,
+		MinimumSalary:  17.70,
+		Year: 1999
+	},
+	{
+		MaximumSalary: 112.29,
+		MinimumSalary:  24.13,
+		Year: 2001
+	},
+	{
+		MaximumSalary: 152.75,
+		MinimumSalary:  19.63,
+		Year: 2003
+	},
+	{
+		MaximumSalary: 208.31,
+		MinimumSalary:  29.68,
+		Year: 2005
+	},
+	{
+		MaximumSalary: 189.26,
+		MinimumSalary:  24.12,
+		Year: 2007
+	},
+	{
+		MaximumSalary: 201.45,
+		MinimumSalary:  36.83,
+		Year: 2009
+	}
+]

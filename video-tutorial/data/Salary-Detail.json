@@ -1,0 +1,74 @@
+[
+	{
+		MaximumSalary: 16500,
+		MinimumSalary: 10000,
+		Quarter:'Qtr 1',
+		Country:'Australia'
+	},
+	{
+		MaximumSalary: 18000,
+		MinimumSalary: 8500,
+		Quarter:'Qtr 2',
+		Country:'Australia'
+	},
+	{
+		MaximumSalary: 16000,
+		MinimumSalary: 10500,
+		Quarter:'Qtr 3',
+		Country:'Australia'
+	},
+	{
+		MaximumSalary: 14000,
+		MinimumSalary: 9000,
+		Quarter:'Qtr 4',
+		Country:'Australia'
+	},
+	{
+		MaximumSalary: 26000,
+		MinimumSalary:19000,
+		Quarter:'Qtr 1',
+		Country:'Singapore'
+	},
+	{
+		MaximumSalary: 31500,
+		MinimumSalary: 21500,
+		Quarter:'Qtr 2',
+		Country:'Singapore'
+	},
+	{
+		MaximumSalary: 39500,
+		MinimumSalary: 31000,
+		Quarter:'Qtr 3',
+		Country:'Singapore'
+	},
+	{
+		MaximumSalary: 40000,
+		MinimumSalary: 28000,
+		Quarter:'Qtr 4',
+		Country:'Singapore'
+	},
+	{
+		MaximumSalary: 30000,
+		MinimumSalary: 27500,
+		Quarter:'Qtr 1',
+		Country:'Switzerland'
+	},
+	{
+		MaximumSalary: 41000,
+		MinimumSalary: 34500,
+		Quarter:'Qtr 2',
+		Country:'Switzerland'
+	},
+	{
+		MaximumSalary: 55000,
+		MinimumSalary: 45000,
+		Quarter:'Qtr 3',
+		Country:'Switzerland'
+	},
+	{
+		MaximumSalary: 50000,
+		MinimumSalary: 40000,
+		Quarter:'Qtr 4',
+		Country:'Switzerland'
+	}		
+]
