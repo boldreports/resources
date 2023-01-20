@@ -1,0 +1,66 @@
+[
+   {
+		points:
+			[
+				{ Year: 2002, Percent: 6 },
+				{ Year: 2003, Percent: 7.5 },
+				{ Year: 2004, Percent: 6 },
+				{ Year: 2005, Percent: 6.5 },
+				{ Year: 2006, Percent: 7.4 }, 
+				{ Year: 2007, Percent: 7.9 }, 
+				{ Year: 2008, Percent: 7.5 },
+				{ Year: 2009, Percent: 8.5 },
+				{ Year: 2010, Percent: 4.8 },
+				{ Year: 2011, Percent: 9.3 }
+			],
+		Country: 'US'
+   },
+   {
+		points:
+			[
+				{ Year: 2002, Percent: 3.5 },
+				{ Year: 2003, Percent: 4.9 },
+				{ Year: 2004, Percent: 3.7 },
+				{ Year: 2005, Percent: 7.5 },
+				{ Year: 2006, Percent: 4.8 },
+				{ Year: 2007, Percent: 2.6 },
+				{ Year: 2008, Percent: 4.7 },
+				{ Year: 2009, Percent: 3.7 },
+				{ Year: 2010, Percent: 3.5 },
+				{ Year: 2011, Percent: 3.6 }
+			],
+		Country: 'Indonesia'
+   },
+   {
+		points:
+			[
+				{ Year: 2002, Percent: 8.1 },
+				{ Year: 2003, Percent: 8.8 },
+				{ Year: 2004, Percent: 6.7 },
+				{ Year: 2005, Percent: 6.4 },
+				{ Year: 2006, Percent: 4 }, 
+				{ Year: 2007, Percent: 4.8 },
+				{ Year: 2008, Percent: 7.4 },
+				{ Year: 2009, Percent: 3.5 },
+				{ Year: 2010, Percent: 8.3 },
+				{ Year: 2011, Percent: 4.7 }
+			],
+		Country: 'Russia'
+   },
+   {
+		points:
+			[
+				{ Year: 2002, Percent: 2.5 },
+				{ Year: 2003, Percent: 6.1 },
+				{ Year: 2004, Percent: 6.2 },
+				{ Year: 2005, Percent: 1.8 },
+				{ Year: 2006, Percent: 4 },
+				{ Year: 2007, Percent: 6.5 },
+				{ Year: 2008, Percent: 6.7 },
+				{ Year: 2009, Percent: 7.2 },
+				{ Year: 2010, Percent: 8.4 },
+				{ Year: 2011, Percent: 6.9 }
+			],
+		Country: 'Bangladesh'
+   }
+]
