@@ -1,0 +1,175 @@
+using System.Collections;
+
+namespace CoreRDLCReportViewer
+{
+    public class ProductList
+    {
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public string OrderId { get; set; }
+        public double Price { get; set; }
+        public string Category { get; set; }
+        public string Ingredients { get; set; }
+        public string ProductImage { get; set; }
+        public int PreparationTimeMinutes { get; set; } // Add this line for the new property
+        public bool Availability { get; set; } // Add this line for the new property
+        public string DietaryInformation { get; set; } // Add this line for the new property
+
+        public static IList<ProductList> GetData()
+        {
+            List<ProductList> datas = new List<ProductList>();
+            ProductList data = null;
+            data = new ProductList()
+            {
+                ProductId = 1,
+                ProductName = "Baked Chicken and Cheese",
+                OrderId = "323B60",
+                Price = 55,
+                Category = "Non-Veg",
+                Ingredients = "grilled chicken, corn and olives.",
+                PreparationTimeMinutes = 40,
+                Availability = true,
+                DietaryInformation = "Contains dairy",
+                ProductImage = ""
+            };
+            datas.Add(data);
+
+            data = new ProductList()
+            {
+                ProductId = 2,
+                ProductName = "Chicken Delite",
+                OrderId = "323B61",
+                Price = 100,
+                Category = "Non-Veg",
+                Ingredients = "cheese, chicken chunks, onions & pineapple chunks.",
+                PreparationTimeMinutes = 35,
+                Availability = true,
+                DietaryInformation = "Pineapple allergen",
+                ProductImage = ""
+            };
+            datas.Add(data);
+
+            data = new ProductList()
+            {
+                ProductId = 3,
+                ProductName = "Chicken Tikka",
+                OrderId = "323B62",
+                Price = 64,
+                Category = "Non-Veg",
+                Ingredients = "onions, grilled chicken, chicken salami & tomatoes.",
+                PreparationTimeMinutes = 45,
+                Availability = true,
+                DietaryInformation = "Gluten-free",
+                ProductImage = ""
+            };
+            datas.Add(data);
+            data = new ProductList()
+            {
+                ProductId = 4,
+                ProductName = "Vegetarian Supreme",
+                OrderId = "323B63",
+                Price = 80,
+                Category = "Vegetarian",
+                Ingredients = "bell peppers, mushrooms, black olives & sweet corn.",
+                PreparationTimeMinutes = 30,
+                Availability = true,
+                DietaryInformation = "Vegetarian",
+                ProductImage = ""
+            };
+            datas.Add(data);
+
+            data = new ProductList()
+            {
+                ProductId = 5,
+                ProductName = "Margherita Pizza",
+                OrderId = "323B64",
+                Price = 70,
+                Category = "Vegetarian",
+                Ingredients = "tomato sauce, fresh mozzarella & basil leaves.",
+                PreparationTimeMinutes = 25,
+                Availability = true,
+                DietaryInformation = "Vegetarian",
+                ProductImage = ""
+            };
+            datas.Add(data);
+
+            data = new ProductList()
+            {
+                ProductId = 6,
+                ProductName = "Seafood Delight",
+                OrderId = "323B65",
+                Price = 120,
+                Category = "Seafood",
+                Ingredients = "shrimp, squid, crab meat & garlic butter sauce.",
+                PreparationTimeMinutes = 50,
+                Availability = true,
+                DietaryInformation = "Shellfish allergen",
+                ProductImage = ""
+            };
+            datas.Add(data);
+
+            data = new ProductList()
+            {
+                ProductId = 7,
+                ProductName = "Spicy Beef Burrito",
+                OrderId = "323B66",
+                Price = 85,
+                Category = "Mexican",
+                Ingredients = "spicy beef, rice, black beans, cheese & salsa.",
+                PreparationTimeMinutes = 35,
+                Availability = true,
+                DietaryInformation = "Spicy",
+                ProductImage = ""
+            };
+            datas.Add(data);
+
+            data = new ProductList()
+            {
+                ProductId = 8,
+                ProductName = "Veggie Wrap",
+                OrderId = "323B67",
+                Price = 60,
+                Category = "Vegetarian",
+                Ingredients = "grilled vegetables, hummus, feta cheese & lettuce.",
+                PreparationTimeMinutes = 20,
+                Availability = true,
+                DietaryInformation = "Vegan option available",
+                ProductImage = ""
+            };
+            datas.Add(data);
+
+            data = new ProductList()
+            {
+                ProductId = 9,
+                ProductName = "BBQ Pulled Pork Sandwich",
+                OrderId = "323B68",
+                Price = 95,
+                Category = "Non-Veg",
+                Ingredients = "slow-cooked pulled pork, barbecue sauce, coleslaw & pickles.",
+                PreparationTimeMinutes = 40,
+                Availability = true,
+                DietaryInformation = "Contains pork",
+                ProductImage = ""
+            };
+            datas.Add(data);
+
+            data = new ProductList()
+            {
+                ProductId = 10,
+                ProductName = "Mango Tango Smoothie",
+                OrderId = "323B69",
+                Price = 45,
+                Category = "Beverage",
+                Ingredients = "mango, banana, yogurt & orange juice.",
+                PreparationTimeMinutes = 5,
+                Availability = true,
+                DietaryInformation = "Vegan",
+                ProductImage = ""
+            };
+            datas.Add(data);
+            Console.WriteLine("Data retrieved: " + datas.Count);
+
+            return datas;
+        }
+    }
+}
