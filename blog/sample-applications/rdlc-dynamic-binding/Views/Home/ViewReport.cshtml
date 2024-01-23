@@ -1,0 +1,28 @@
+@model RDLCDynamicBinding.ProductList
+
+@{
+    ViewData["Title"] = "View Report";
+}
+
+<!-- RDLC Report Viewer Container -->
+<div style="height: 900px; width: 1800px; min-height: 400px;" id="viewer"></div>
+
+<!-- Include the necessary scripts for RDLC Report Viewer -->
+<!-- ... -->
+
+<script>
+   var productID = "@ViewBag.ProductID"; 
+
+    $(document).ready(function () {
+        // Initialize the RDLC Report Viewer with the product data
+        $("#viewer").boldReportViewer({
+            reportServiceUrl: "/api/ReportViewer",
+            reportPath: "Resources/ProductList.rdlc",
+                ajaxBeforeLoad: onAjaxRequest
+        });
+    });
+
+        function onAjaxRequest(args) {
+            args.data = productID;
+        }
+</script>
