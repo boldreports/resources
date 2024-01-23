@@ -1,0 +1,80 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDLC Dynamic Binding</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        h5 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 12px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<h5>Product List</h5>
+<h6>Click the product name to view the report.</h6>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Product Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href="/Home/ViewReport?productId=1">Baked Chicken and Cheese</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="/Home/ViewReport?productId=2">Chicken Delite</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="/Home/ViewReport?productId=3">Chicken Tikka</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="/Home/ViewReport?productId=4">Vegetarian Supreme</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="/Home/ViewReport?productId=5">Margherita Pizza</a></td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+
+</body>
+</html>
