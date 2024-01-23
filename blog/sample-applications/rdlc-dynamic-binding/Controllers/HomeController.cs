@@ -31,7 +31,6 @@ namespace RDLCDynamicBinding.Controllers
         public IActionResult ViewReport(int productId)
         {
             ViewBag.ProductID = productId;
-   
             // Pass the product data to the view
             return View("ViewReport");
         }
