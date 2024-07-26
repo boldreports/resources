@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>3.125in</Height>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <Left>3.75pt</Left>
+            <Top>6pt</Top>
+            <Height>48pt</Height>
+            <Width>147.75pt</Width>
+            <Style>
+              <FontFamily>Arial</FontFamily>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>MaxRowCount</Name>
+                <Value>100000</Value>
+              </CustomProperty>
+              <CustomProperty>
+                <Name>MaxColumnCount</Name>
+                <Value>20</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <DataSetName>GDPGrowthDataset</DataSetName>
+            <TablixCorner>
+              <TablixCornerRows>
+                <TablixCornerRow>
+                  <TablixCornerCell>
+                    <CellContents>
+                      <Textbox Name="TextBox2">
+                        <Left>0in</Left>
+                        <Top>0in</Top>
+                        <Height>18pt</Height>
+                        <Width>72pt</Width>
+                        <Style>
+                          <FontFamily>Arial</FontFamily>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value />
+                                <Style>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>black</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <FontFamily>Arial</FontFamily>
+                              <TextAlign>Left</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                      </Textbox>
+                      <RowSpan>1</RowSpan>
+                      <ColSpan>1</ColSpan>
+                    </CellContents>
+                  </TablixCornerCell>
+                </TablixCornerRow>
+              </TablixCornerRows>
+            </TablixCorner>
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>75.75pt</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>30pt</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox11">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>30pt</Height>
+                          <Width>75.75pt</Width>
+                          <Style>
+                            <BackgroundColor>=Code.GetHeatMapColor(Fields!GDP.Value, MIN(Fields!GDP.Value, "GDPGrowthDataset"), MAX(Fields!GDP.Value, "GDPGrowthDataset"))</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!GDP.Value</Value>
+                                  <Style>
+                                    <Color>black</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <RowSpan>1</RowSpan>
+                        <ColSpan>1</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="ColumnGroup">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Year.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <TablixHeader>
+                    <Size>18pt</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox12">
+                        <Left>0in</Left>
+                        <Top>0in</Top>
+                        <Height>18pt</Height>
+                        <Width>75.75pt</Width>
+                        <Style>
+                          <BackgroundColor>#6aa329</BackgroundColor>
+                          <FontFamily>Arial</FontFamily>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!Year.Value</Value>
+                                <Style>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#ffffff</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <FontFamily>Arial</FontFamily>
+                              <TextAlign>Left</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Country1">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Country.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Country.Value</Value>
+                      <Direction>Ascending</Direction>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>72pt</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox10">
+                        <Left>0in</Left>
+                        <Top>0in</Top>
+                        <Height>30pt</Height>
+                        <Width>72pt</Width>
+                        <Style>
+                          <FontFamily>Arial</FontFamily>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!Country.Value</Value>
+                                <Style>
+                                  <Color>black</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <FontFamily>Arial</FontFamily>
+                              <TextAlign>Left</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+          </Tablix>
+        </ReportItems>
+        <Style>
+          <FontFamily>Arial</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>838.5pt</Width>
+      <Page>
+        <PageHeader>
+          <Height>42.75pt</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Rectangle Name="Rectangle1">
+              <Left>3.75pt</Left>
+              <Top>2.25pt</Top>
+              <Height>41.25pt</Height>
+              <Width>831.75pt</Width>
+              <Style>
+                <BackgroundColor>#555b63</BackgroundColor>
+                <FontFamily>Arial</FontFamily>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+            </Rectangle>
+            <Textbox Name="TextBox1">
+              <Left>6.75pt</Left>
+              <Top>9pt</Top>
+              <Height>30.75pt</Height>
+              <Width>274.5pt</Width>
+              <Style>
+                <FontFamily>Arial</FontFamily>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Growth Rate for Major Economies</Value>
+                      <Style>
+                        <FontSize>13.74975pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>#ffffff</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <FontFamily>Arial</FontFamily>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <FontFamily>Arial</FontFamily>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageFooter>
+          <Height>0.72917in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <FontFamily>Arial</FontFamily>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <FontFamily>Arial</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <DataSources>
+    <DataSource Name="AdventureWorks">
+      <rd:SecurityType>None</rd:SecurityType>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=AdventureWorks;</ConnectString>
+        <rd:IsDesignState>true</rd:IsDesignState>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="GDPGrowthDataset">
+      <Query>
+        <DataSourceName>AdventureWorks</DataSourceName>
+        <CommandText>DECLARE @json NVARCHAR(MAX)
+SET @json=N' [
+   {"Country": "China", "Year": "2008", "GDP": "9.5"},
+   {"Country": "China", "Year": "2009", "GDP": "2.2"},
+   {"Country": "China", "Year": "2010", "GDP": "4.2"},
+   {"Country": "China", "Year": "2011", "GDP": "8.2"},
+   {"Country": "China", "Year": "2012", "GDP": "-0.5"},
+   {"Country": "China", "Year": "2013", "GDP": "3.2"},
+   {"Country": "China", "Year": "2014", "GDP": "5.4"},
+   {"Country": "China", "Year": "2015", "GDP": "7.4"},
+   {"Country": "China", "Year": "2016", "GDP": "6.2"},
+   {"Country": "China", "Year": "2017", "GDP": "1.4"},
+   
+   {"Country": "India", "Year": "2008", "GDP": "4.3"},
+   {"Country": "India", "Year": "2009", "GDP": "8.9"},
+   {"Country": "India", "Year": "2010", "GDP": "10.8"},
+   {"Country": "India", "Year": "2011", "GDP": "6.5"},
+   {"Country": "India", "Year": "2012", "GDP": "5.1"},
+   {"Country": "India", "Year": "2013", "GDP": "6.2"},
+   {"Country": "India", "Year": "2014", "GDP": "7.6"},
+   {"Country": "India", "Year": "2015", "GDP": "7.5"},
+   {"Country": "India", "Year": "2016", "GDP": "6.1"},
+   {"Country": "India", "Year": "2017", "GDP": "7.6"},
+   
+   {"Country": "Australia", "Year": "2008", "GDP": "3.9"},
+   {"Country": "Australia", "Year": "2009", "GDP": "2.7"},
+   {"Country": "Australia", "Year": "2010", "GDP": "2.5"},
+   {"Country": "Australia", "Year": "2011", "GDP": "3.7"},
+   {"Country": "Australia", "Year": "2012", "GDP": "2.6"},
+   {"Country": "Australia", "Year": "2013", "GDP": "5.1"},
+   {"Country": "Australia", "Year": "2014", "GDP": "5.8"},
+   {"Country": "Australia", "Year": "2015", "GDP": "2.9"},
+   {"Country": "Australia", "Year": "2016", "GDP": "4.5"},
+   {"Country": "Australia", "Year": "2017", "GDP": "5.1"},
+   
+   {"Country": "Mexico", "Year": "2008", "GDP": "2.4"},
+   {"Country": "Mexico", "Year": "2009", "GDP": "-3.7"},
+   {"Country": "Mexico", "Year": "2010", "GDP": "4.1"},
+   {"Country": "Mexico", "Year": "2011", "GDP": "6.0"},
+   {"Country": "Mexico", "Year": "2012", "GDP": "5.0"},
+   {"Country": "Mexico", "Year": "2013", "GDP": "2.4"},
+   {"Country": "Mexico", "Year": "2014", "GDP": "3.3"},
+   {"Country": "Mexico", "Year": "2015", "GDP": "4.6"},
+   {"Country": "Mexico", "Year": "2016", "GDP": "4.3"},
+   {"Country": "Mexico", "Year": "2017", "GDP": "2.7"},
+   
+    {"Country": "Canada", "Year": "2008", "GDP": "2.0"},
+   {"Country": "Canada", "Year": "2009", "GDP": "7.0"},
+   {"Country": "Canada", "Year": "2010", "GDP": "-4.1"},
+   {"Country": "Canada", "Year": "2011", "GDP": "8.9"},
+   {"Country": "Canada", "Year": "2012", "GDP": "2.7"},
+   {"Country": "Canada", "Year": "2013", "GDP": "5.9"},
+   {"Country": "Canada", "Year": "2014", "GDP": "5.6"},
+   {"Country": "Canada", "Year": "2015", "GDP": "1.9"},
+   {"Country": "Canada", "Year": "2016", "GDP": "-1.7"},
+   {"Country": "Canada", "Year": "2017", "GDP": "2.9"},
+   
+    {"Country": "Brazil", "Year": "2008", "GDP": "5.4"},
+   {"Country": "Brazil", "Year": "2009", "GDP": "1.1"},
+   {"Country": "Brazil", "Year": "2010", "GDP": "6.9"},
+   {"Country": "Brazil", "Year": "2011", "GDP": "4.5"},
+   {"Country": "Brazil", "Year": "2012", "GDP": "2.9"},
+   {"Country": "Brazil", "Year": "2013", "GDP": "3.4"},
+   {"Country": "Brazil", "Year": "2014", "GDP": "1.5"},
+   {"Country": "Brazil", "Year": "2015", "GDP": "-2.8"},
+   {"Country": "Brazil", "Year": "2016", "GDP": "-4.6"},
+   {"Country": "Brazil", "Year": "2017", "GDP": "1.2"},
+   
+   {"Country": "USA", "Year": "2008", "GDP": "-1.3"},
+   {"Country": "USA", "Year": "2009", "GDP": "3.9"},
+   {"Country": "USA", "Year": "2010", "GDP": "3.5"},
+   {"Country": "USA", "Year": "2011", "GDP": "6.6"},
+   {"Country": "USA", "Year": "2012", "GDP": "5.2"},
+   {"Country": "USA", "Year": "2013", "GDP": "7.7"},
+   {"Country": "USA", "Year": "2014", "GDP": "1.4"},
+   {"Country": "USA", "Year": "2015", "GDP": "-3.6"},
+   {"Country": "USA", "Year": "2016", "GDP": "6.6"},
+   {"Country": "USA", "Year": "2017", "GDP": "4.3"},
+   
+    {"Country": "UK", "Year": "2008", "GDP": "-1.6"},
+   {"Country": "UK", "Year": "2009", "GDP": "2.3"},
+   {"Country": "UK", "Year": "2010", "GDP": "2.9"},
+   {"Country": "UK", "Year": "2011", "GDP": "-2.5"},
+   {"Country": "UK", "Year": "2012", "GDP": "1.3"},
+   {"Country": "UK", "Year": "2013", "GDP": "4.9"},
+   {"Country": "UK", "Year": "2014", "GDP": "10.1"},
+   {"Country": "UK", "Year": "2015", "GDP": "3.2"},
+   {"Country": "UK", "Year": "2016", "GDP": "4.8"},
+   {"Country": "UK", "Year": "2017", "GDP": "2.8"},
+   
+    {"Country": "Germany", "Year": "2008", "GDP": "10.8"},
+   {"Country": "Germany", "Year": "2009", "GDP": "-1.6"},
+   {"Country": "Germany", "Year": "2010", "GDP": "4.0"},
+   {"Country": "Germany", "Year": "2011", "GDP": "6.0"},
+   {"Country": "Germany", "Year": "2012", "GDP": "7.7"},
+   {"Country": "Germany", "Year": "2013", "GDP": "2.6"},
+   {"Country": "Germany", "Year": "2014", "GDP": "5.6"},
+   {"Country": "Germany", "Year": "2015", "GDP": "-2.5"},
+   {"Country": "Germany", "Year": "2016", "GDP": "3.8"},
+   {"Country": "Germany", "Year": "2017", "GDP": "-1.9"},
+   
+    {"Country": "Russia", "Year": "2008", "GDP": "6.2"},
+   {"Country": "Russia", "Year": "2009", "GDP": "9.8"},
+   {"Country": "Russia", "Year": "2010", "GDP": "-1.5"},
+   {"Country": "Russia", "Year": "2011", "GDP": "2.0"},
+   {"Country": "Russia", "Year": "2012", "GDP": "-1.5"},
+   {"Country": "Russia", "Year": "2013", "GDP": "4.3"},
+   {"Country": "Russia", "Year": "2014", "GDP": "6.7"},
+   {"Country": "Russia", "Year": "2015", "GDP": "3.8"},
+   {"Country": "Russia", "Year": "2016", "GDP": "-1.2"},
+   {"Country": "Russia", "Year": "2017", "GDP": "2.4"},
+   
+    {"Country": "France", "Year": "2008", "GDP": "1.2"},
+   {"Country": "France", "Year": "2009", "GDP": "10.9"},
+   {"Country": "France", "Year": "2010", "GDP": "4.0"},
+   {"Country": "France", "Year": "2011", "GDP": "-1.4"},
+   {"Country": "France", "Year": "2012", "GDP": "2.2"},
+   {"Country": "France", "Year": "2013", "GDP": "1.6"},
+   {"Country": "France", "Year": "2014", "GDP": "-2.6"},
+   {"Country": "France", "Year": "2015", "GDP": "2.3"},
+   {"Country": "France", "Year": "2016", "GDP": "1.7"},
+   {"Country": "France", "Year": "2017", "GDP": "2.4"},
+   
+   {"Country": "Japan", "Year": "2008", "GDP": "5.1"},
+   {"Country": "Japan", "Year": "2009", "GDP": "-2.4"},
+   {"Country": "Japan", "Year": "2010", "GDP": "8.2"},
+   {"Country": "Japan", "Year": "2011", "GDP": "-1.1"},
+   {"Country": "Japan", "Year": "2012", "GDP": "3.5"},
+   {"Country": "Japan", "Year": "2013", "GDP": "6.0"},
+   {"Country": "Japan", "Year": "2014", "GDP": "-1.3"},
+   {"Country": "Japan", "Year": "2015", "GDP": "7.2"},
+   {"Country": "Japan", "Year": "2016", "GDP": "9.0"},
+   {"Country": "Japan", "Year": "2017", "GDP": "4.2"}
+ ]
+
+';
+SELECT *
+FROM OPENJSON(@json) WITH (Country varchar(200) '$.Country', Year float '$.Year', GDP float '$.GDP')</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Country">
+          <DataField>Country</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="GDP">
+          <DataField>GDP</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code>Function GetHeatMapColor(data As Decimal, min As Decimal, max As Decimal) As String 
+  Dim colorR As Byte = 255
+  Dim colorG As Byte = 255
+  Dim colorB As Byte =  0 
+  Dim pointVal as Decimal =  (data - min) / (max - min)   
+  colorR = colorR - ( pointVal  * colorR) 
+  colorG = colorG * pointVal
+
+  Return "#" &amp; Right("0" &amp; Hex(colorR), 2) &amp; Right("0" &amp; Hex(colorG), 2) &amp; Right("0" &amp; Hex(colorB), 2) 
+
+End Function</Code>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+</Report>
