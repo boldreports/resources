@@ -1,0 +1,665 @@
+<?xml version="1.0"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Style>
+          <FontFamily>Arial</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+        <ReportItems>
+          <Tablix Name="Tablix2">
+            <Left>17.4375pt</Left>
+            <Top>15.75pt</Top>
+            <Height>54pt</Height>
+            <Width>231.375pt</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>MaxRowCount</Name>
+                <Value>100000</Value>
+              </CustomProperty>
+              <CustomProperty>
+                <Name>MaxColumnCount</Name>
+                <Value>20</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Style>
+              <FontFamily>Arial</FontFamily>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <DataSetName>DataSet1</DataSetName>
+            <TablixCorner>
+              <TablixCornerRows>
+                <TablixCornerRow>
+                  <TablixCornerCell>
+                    <CellContents>
+                      <Textbox Name="TextBox10">
+                        <Left>0in</Left>
+                        <Top>0in</Top>
+                        <Height>18pt</Height>
+                        <Width>119.25pt</Width>
+                        <Style>
+                          <FontFamily>Arial</FontFamily>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value />
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontWeight>Bold</FontWeight>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <FontFamily>Arial</FontFamily>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                      </Textbox>
+                      <ColSpan>1</ColSpan>
+                      <RowSpan>1</RowSpan>
+                    </CellContents>
+                  </TablixCornerCell>
+                </TablixCornerRow>
+              </TablixCornerRows>
+            </TablixCorner>
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>112.125pt</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>18pt</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox7">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18pt</Height>
+                          <Width>112.125pt</Width>
+                          <Style>
+                            <BackgroundColor>#0073dc</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>AnnualSales</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>9.99998pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#ffffff</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>18pt</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox8">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18pt</Height>
+                          <Width>112.125pt</Width>
+                          <Style>
+                            <BackgroundColor>#e7f4fd</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!AnnualSales.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Arial</FontFamily>
+                                    <FontSize>9.99998pt</FontSize>
+                                    <Format>C0</Format>
+                                    <Color>#6e6969</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="CountryRegionName2">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!CountryRegionName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!CountryRegionName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>18pt</Size>
+                    <CellContents>
+                      <Textbox Name="CountryRegionName21">
+                        <Left>0in</Left>
+                        <Top>0in</Top>
+                        <Height>18pt</Height>
+                        <Width>112.125pt</Width>
+                        <Style>
+                          <BackgroundColor>#fd8605</BackgroundColor>
+                          <FontFamily>Arial</FontFamily>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!CountryRegionName.Value</Value>
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontSize>9.99998pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#ffffff</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <FontFamily>Arial</FontFamily>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>119.25pt</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox11">
+                        <Left>0in</Left>
+                        <Top>0in</Top>
+                        <Height>18pt</Height>
+                        <Width>119.25pt</Width>
+                        <Style>
+                          <BackgroundColor>#0073dc</BackgroundColor>
+                          <FontFamily>Arial</FontFamily>
+                          <VerticalAlign>Middle</VerticalAlign>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>BankName</Value>
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontSize>9.99998pt</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#ffffff</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <FontFamily>Arial</FontFamily>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                  <KeepWithGroup>After</KeepWithGroup>
+                  <RepeatOnNewPage>true</RepeatOnNewPage>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="BankName2">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!BankName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!BankName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>119.25pt</Size>
+                    <CellContents>
+                      <Textbox Name="BankName21">
+                        <Left>0in</Left>
+                        <Top>0in</Top>
+                        <Height>18pt</Height>
+                        <Width>119.25pt</Width>
+                        <Style>
+                          <BackgroundColor>#e7f4fd</BackgroundColor>
+                          <FontFamily>Arial</FontFamily>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                        </Style>
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!BankName.Value</Value>
+                                <Style>
+                                  <FontFamily>Arial</FontFamily>
+                                  <FontSize>9.99998pt</FontSize>
+                                  <Color>#6e6969</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <FontFamily>Arial</FontFamily>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+          </Tablix>
+        </ReportItems>
+        <Height>85.5pt</Height>
+      </Body>
+      <Width>266.25pt</Width>
+      <Page>
+        <PageHeader>
+          <Style>
+            <BackgroundColor>#555b63</BackgroundColor>
+            <FontFamily>Arial</FontFamily>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+          <Height>44.25pt</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Rectangle Name="Rectangle2">
+              <Left>0pt</Left>
+              <Top>0pt</Top>
+              <Height>44.25pt</Height>
+              <Width>266.25pt</Width>
+              <Style>
+                <BackgroundColor>#555b63</BackgroundColor>
+                <FontFamily>Arial</FontFamily>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <ReportItems>
+                <Textbox Name="TextBox2">
+                  <Left>4.5pt</Left>
+                  <Top>9.75pt</Top>
+                  <Height>27pt</Height>
+                  <Width>210pt</Width>
+                  <Style>
+                    <FontFamily>Arial</FontFamily>
+                    <VerticalAlign>Middle</VerticalAlign>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>5.00025pt</PaddingBottom>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Annual Sales</Value>
+                          <Style>
+                            <FontFamily>Arial</FontFamily>
+                            <FontSize>12.24975pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Color>#ffffff</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <Style>
+                        <FontFamily>Arial</FontFamily>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                    </Paragraph>
+                  </Paragraphs>
+                </Textbox>
+              </ReportItems>
+              <KeepTogether>true</KeepTogether>
+            </Rectangle>
+          </ReportItems>
+        </PageHeader>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <FontFamily>Arial</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=AdventureWorks;</ConnectString>
+        <rd:IsDesignState>true</rd:IsDesignState>
+      </ConnectionProperties>
+      <rd:ImpersonateUser>false</rd:ImpersonateUser>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="CustomerID">
+          <DataField>CustomerID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ContactType">
+          <DataField>ContactType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Title">
+          <DataField>Title</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MiddleName">
+          <DataField>MiddleName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Suffix">
+          <DataField>Suffix</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Phone">
+          <DataField>Phone</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmailAddress">
+          <DataField>EmailAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmailPromotion">
+          <DataField>EmailPromotion</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AddressType">
+          <DataField>AddressType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AddressLine1">
+          <DataField>AddressLine1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AddressLine2">
+          <DataField>AddressLine2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StateProvinceName">
+          <DataField>StateProvinceName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PostalCode">
+          <DataField>PostalCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CountryRegionName">
+          <DataField>CountryRegionName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AnnualSales">
+          <DataField>AnnualSales</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AnnualRevenue">
+          <DataField>AnnualRevenue</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BankName">
+          <DataField>BankName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BusinessType">
+          <DataField>BusinessType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="YearOpened">
+          <DataField>YearOpened</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Specialty">
+          <DataField>Specialty</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SquareFeet">
+          <DataField>SquareFeet</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Brands">
+          <DataField>Brands</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Internet">
+          <DataField>Internet</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumberEmployees">
+          <DataField>NumberEmployees</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>SELECT [Sales].[vStoreWithDemographics].[CustomerID],
+[Sales].[vStoreWithDemographics].[Name],
+[Sales].[vStoreWithDemographics].[ContactType],
+[Sales].[vStoreWithDemographics].[Title],
+[Sales].[vStoreWithDemographics].[FirstName],
+[Sales].[vStoreWithDemographics].[MiddleName],
+[Sales].[vStoreWithDemographics].[LastName],
+[Sales].[vStoreWithDemographics].[Suffix],
+[Sales].[vStoreWithDemographics].[Phone],
+[Sales].[vStoreWithDemographics].[EmailAddress],
+[Sales].[vStoreWithDemographics].[EmailPromotion],
+[Sales].[vStoreWithDemographics].[AddressType],
+[Sales].[vStoreWithDemographics].[AddressLine1],
+[Sales].[vStoreWithDemographics].[AddressLine2],
+[Sales].[vStoreWithDemographics].[City],
+[Sales].[vStoreWithDemographics].[StateProvinceName],
+[Sales].[vStoreWithDemographics].[PostalCode],
+[Sales].[vStoreWithDemographics].[CountryRegionName],
+[Sales].[vStoreWithDemographics].[AnnualSales],
+[Sales].[vStoreWithDemographics].[AnnualRevenue],
+[Sales].[vStoreWithDemographics].[BankName],
+[Sales].[vStoreWithDemographics].[BusinessType],
+[Sales].[vStoreWithDemographics].[YearOpened],
+[Sales].[vStoreWithDemographics].[Specialty],
+[Sales].[vStoreWithDemographics].[SquareFeet],
+[Sales].[vStoreWithDemographics].[Brands],
+[Sales].[vStoreWithDemographics].[Internet],
+[Sales].[vStoreWithDemographics].[NumberEmployees] FROM [Sales].[vStoreWithDemographics]</CommandText>
+        <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
+          <Tables>
+            <Table Name="vStoreWithDemographics" Schema="Sales">
+              <Columns>
+                <Column Name="CustomerID" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Name" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ContactType" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Title" IsDuplicate="False" IsSelected="True" />
+                <Column Name="FirstName" IsDuplicate="False" IsSelected="True" />
+                <Column Name="MiddleName" IsDuplicate="False" IsSelected="True" />
+                <Column Name="LastName" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Suffix" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Phone" IsDuplicate="False" IsSelected="True" />
+                <Column Name="EmailAddress" IsDuplicate="False" IsSelected="True" />
+                <Column Name="EmailPromotion" IsDuplicate="False" IsSelected="True" />
+                <Column Name="AddressType" IsDuplicate="False" IsSelected="True" />
+                <Column Name="AddressLine1" IsDuplicate="False" IsSelected="True" />
+                <Column Name="AddressLine2" IsDuplicate="False" IsSelected="True" />
+                <Column Name="City" IsDuplicate="False" IsSelected="True" />
+                <Column Name="StateProvinceName" IsDuplicate="False" IsSelected="True" />
+                <Column Name="PostalCode" IsDuplicate="False" IsSelected="True" />
+                <Column Name="CountryRegionName" IsDuplicate="False" IsSelected="True" />
+                <Column Name="AnnualSales" IsDuplicate="False" IsSelected="True" />
+                <Column Name="AnnualRevenue" IsDuplicate="False" IsSelected="True" />
+                <Column Name="BankName" IsDuplicate="False" IsSelected="True" />
+                <Column Name="BusinessType" IsDuplicate="False" IsSelected="True" />
+                <Column Name="YearOpened" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Specialty" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SquareFeet" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Brands" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Internet" IsDuplicate="False" IsSelected="True" />
+                <Column Name="NumberEmployees" IsDuplicate="False" IsSelected="True" />
+              </Columns>
+              <SchemaLevels>
+                <SchemaInfo Name="Sales" SchemaType="Schema" />
+                <SchemaInfo Name="Tables" SchemaType="Category" />
+                <SchemaInfo Name="vStoreWithDemographics" SchemaType="Table" />
+              </SchemaLevels>
+            </Table>
+          </Tables>
+        </QueryDesignerState>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+</Report>
