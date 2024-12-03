@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Style>
+          <FontFamily>Arial</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+        <ReportItems>
+          <Tablix Name="Tablix2">
+            <Left>11.72265pt</Left>
+            <Top>10.5pt</Top>
+            <Height>37.5pt</Height>
+            <Width>500.8125pt</Width>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>MaxRowCount</Name>
+                <Value>100000</Value>
+              </CustomProperty>
+              <CustomProperty>
+                <Name>MaxColumnCount</Name>
+                <Value>20</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Style>
+              <FontFamily>Arial</FontFamily>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <DataSetName>DataSet1</DataSetName>
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>71.90625pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>71.44531pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>71.44531pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>142.5pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>71.5pt</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>72.00781pt</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>18.75pt</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox1">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>71.90625pt</Width>
+                          <Style>
+                            <BackgroundColor>#e3e6ea</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Sales ID</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox23">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>71.4453pt</Width>
+                          <Style>
+                            <BackgroundColor>#e3e6ea</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Order Date</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox24">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>71.4453pt</Width>
+                          <Style>
+                            <BackgroundColor>#e3e6ea</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Quantity</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox29">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>142.5pt</Width>
+                          <Style>
+                            <BackgroundColor>#e3e6ea</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Product Name</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox31">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>71.49998pt</Width>
+                          <Style>
+                            <BackgroundColor>#e3e6ea</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Unit Price</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox16">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>72.0078pt</Width>
+                          <Style>
+                            <BackgroundColor>#e3e6ea</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ItemTotal</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>18.75pt</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox2">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>71.90625pt</Width>
+                          <Style>
+                            <BackgroundColor>#ffffff</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>3.99975pt</PaddingLeft>
+                            <PaddingRight>3.99975pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!SalesOrderID.Value</Value>
+                                  <Style>
+                                    <FontSize>9.99998pt</FontSize>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox26">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>71.4453pt</Width>
+                          <Style>
+                            <BackgroundColor>#ffffff</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ModifiedDate.Value</Value>
+                                  <Style>
+                                    <FontSize>9.99998pt</FontSize>
+                                    <Format>d</Format>
+                                    <rd:FormatType>
+                                      <rd:Format>date</rd:Format>
+                                    </rd:FormatType>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox27">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>71.4453pt</Width>
+                          <Style>
+                            <BackgroundColor>#ffffff</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>3.99975pt</PaddingLeft>
+                            <PaddingRight>3.99975pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!OrderQty.Value</Value>
+                                  <Style>
+                                    <FontSize>9.99998pt</FontSize>
+                                    <Format>0</Format>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox30">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>142.5pt</Width>
+                          <Style>
+                            <BackgroundColor>#ffffff</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>3.99975pt</PaddingLeft>
+                            <PaddingRight>3.99975pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!Name.Value, "DataSet2")</Value>
+                                  <Style>
+                                    <FontSize>9.99998pt</FontSize>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox32">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>71.49998pt</Width>
+                          <Style>
+                            <BackgroundColor>#ffffff</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>3.99975pt</PaddingLeft>
+                            <PaddingRight>3.99975pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!UnitPrice.Value, "DataSet2")</Value>
+                                  <Style>
+                                    <FontSize>9.99998pt</FontSize>
+                                    <Format>'$'0.00;('$'0.00)</Format>
+                                    <rd:FormatType>
+                                      <rd:Format>Currency</rd:Format>
+                                      <rd:Representation>None</rd:Representation>
+                                      <rd:NegativeValue>($12345)</rd:NegativeValue>
+                                      <rd:Culture>English (United States)</rd:Culture>
+                                    </rd:FormatType>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox17">
+                          <Left>0in</Left>
+                          <Top>0in</Top>
+                          <Height>18.75pt</Height>
+                          <Width>72.0078pt</Width>
+                          <Style>
+                            <BackgroundColor>#ffffff</BackgroundColor>
+                            <FontFamily>Arial</FontFamily>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>3.99975pt</PaddingLeft>
+                            <PaddingRight>3.99975pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!OrderQty.Value * First(Fields!UnitPrice.Value, "DataSet2")</Value>
+                                  <Style>
+                                    <FontSize>9.99998pt</FontSize>
+                                    <Format>'$'0.00;('$'0.00)</Format>
+                                    <rd:FormatType>
+                                      <rd:Format>Currency</rd:Format>
+                                      <rd:Representation>None</rd:Representation>
+                                      <rd:NegativeValue>($12345)</rd:NegativeValue>
+                                      <rd:Culture>English (United States)</rd:Culture>
+                                    </rd:FormatType>
+                                    <Color>#000000</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <FontFamily>Arial</FontFamily>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                        </Textbox>
+                        <ColSpan>1</ColSpan>
+                        <RowSpan>1</RowSpan>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details1" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+          </Tablix>
+        </ReportItems>
+        <Height>58.5pt</Height>
+      </Body>
+      <Width>524.25pt</Width>
+      <Page>
+        <PageHeader>
+          <Style>
+            <FontFamily>Arial</FontFamily>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+          <Height>39pt</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Rectangle Name="Rectangle1">
+              <Left>0pt</Left>
+              <Top>0pt</Top>
+              <Height>39pt</Height>
+              <Width>523.5pt</Width>
+              <Style>
+                <BackgroundColor>#555b63</BackgroundColor>
+                <FontFamily>Arial</FontFamily>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <ReportItems>
+                <Textbox Name="TextBox13">
+                  <Left>6.75pt</Left>
+                  <Top>8.25pt</Top>
+                  <Height>23.25pt</Height>
+                  <Width>224.25pt</Width>
+                  <Style>
+                    <BackgroundColor>#555b63</BackgroundColor>
+                    <FontFamily>Arial</FontFamily>
+                    <PaddingLeft>2pt</PaddingLeft>
+                    <PaddingRight>2pt</PaddingRight>
+                    <PaddingTop>2pt</PaddingTop>
+                    <PaddingBottom>2pt</PaddingBottom>
+                    <Border>
+                      <Style>None</Style>
+                    </Border>
+                  </Style>
+                  <CanGrow>true</CanGrow>
+                  <KeepTogether>true</KeepTogether>
+                  <Paragraphs>
+                    <Paragraph>
+                      <TextRuns>
+                        <TextRun>
+                          <Value>Product Sales Details </Value>
+                          <Style>
+                            <FontSize>12.24975pt</FontSize>
+                            <FontWeight>Bold</FontWeight>
+                            <Color>#ffffff</Color>
+                          </Style>
+                        </TextRun>
+                        <TextRun>
+                          <Value />
+                          <Style>
+                            <FontFamily>Arial</FontFamily>
+                            <Color>Black</Color>
+                          </Style>
+                        </TextRun>
+                      </TextRuns>
+                      <RightIndent>0pt</RightIndent>
+                      <Style>
+                        <FontFamily>Arial</FontFamily>
+                        <TextAlign>Left</TextAlign>
+                      </Style>
+                      <SpaceAfter>0pt</SpaceAfter>
+                    </Paragraph>
+                  </Paragraphs>
+                </Textbox>
+              </ReportItems>
+              <KeepTogether>true</KeepTogether>
+            </Rectangle>
+          </ReportItems>
+        </PageHeader>
+        <PageFooter>
+          <Style>
+            <FontFamily>Arial</FontFamily>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+          <Height>9pt</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+        </PageFooter>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <FontFamily>Arial</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=dataplatformdemodata.syncfusion.com;Initial Catalog=AdventureWorks;</ConnectString>
+        <rd:IsDesignState>true</rd:IsDesignState>
+      </ConnectionProperties>
+      <rd:ImpersonateUser>false</rd:ImpersonateUser>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="SalesOrderID">
+          <DataField>SalesOrderID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SalesOrderDetailID">
+          <DataField>SalesOrderDetailID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CarrierTrackingNumber">
+          <DataField>CarrierTrackingNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrderQty">
+          <DataField>OrderQty</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="ProductID">
+          <DataField>ProductID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SpecialOfferID">
+          <DataField>SpecialOfferID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="UnitPrice">
+          <DataField>UnitPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="UnitPriceDiscount">
+          <DataField>UnitPriceDiscount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="LineTotal">
+          <DataField>LineTotal</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="rowguid">
+          <DataField>rowguid</DataField>
+          <rd:TypeName>System.Guid</rd:TypeName>
+        </Field>
+        <Field Name="ModifiedDate">
+          <DataField>ModifiedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>SELECT 
+    [SalesOrderID],
+    MAX([SalesOrderDetailID]) AS SalesOrderDetailID,  
+    MAX([CarrierTrackingNumber]) AS CarrierTrackingNumber,
+    MAX([OrderQty]) AS OrderQty,
+    MAX([ProductID]) AS ProductID,
+    MAX([SpecialOfferID]) AS SpecialOfferID,
+    MAX([UnitPrice]) AS UnitPrice,
+    MAX([UnitPriceDiscount]) AS UnitPriceDiscount,
+    MAX([LineTotal]) AS LineTotal,
+    MAX([rowguid]) AS rowguid,
+    MAX([ModifiedDate]) AS ModifiedDate
+FROM 
+    [Sales].[SalesOrderDetail]
+GROUP BY 
+    [SalesOrderID]
+ORDER BY 
+    [SalesOrderID] ASC; </CommandText>
+      </Query>
+    </DataSet>
+    <DataSet Name="DataSet2">
+      <Fields>
+        <Field Name="ProductID">
+          <DataField>ProductID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProductNumber">
+          <DataField>ProductNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MakeFlag">
+          <DataField>MakeFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="FinishedGoodsFlag">
+          <DataField>FinishedGoodsFlag</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Color">
+          <DataField>Color</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SafetyStockLevel">
+          <DataField>SafetyStockLevel</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="ReorderPoint">
+          <DataField>ReorderPoint</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="StandardCost">
+          <DataField>StandardCost</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ListPrice">
+          <DataField>ListPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Size">
+          <DataField>Size</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SizeUnitMeasureCode">
+          <DataField>SizeUnitMeasureCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WeightUnitMeasureCode">
+          <DataField>WeightUnitMeasureCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Weight">
+          <DataField>Weight</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DaysToManufacture">
+          <DataField>DaysToManufacture</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ProductLine">
+          <DataField>ProductLine</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Class">
+          <DataField>Class</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Style">
+          <DataField>Style</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProductSubcategoryID">
+          <DataField>ProductSubcategoryID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ProductModelID">
+          <DataField>ProductModelID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SellStartDate">
+          <DataField>SellStartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SellEndDate">
+          <DataField>SellEndDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DiscontinuedDate">
+          <DataField>DiscontinuedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="rowguid">
+          <DataField>rowguid</DataField>
+          <rd:TypeName>System.Guid</rd:TypeName>
+        </Field>
+        <Field Name="ModifiedDate">
+          <DataField>ModifiedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ProductListPriceHistory_ProductID">
+          <DataField>ProductListPriceHistory_ProductID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="StartDate">
+          <DataField>StartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="EndDate">
+          <DataField>EndDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="UnitPrice">
+          <DataField>UnitPrice</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ProductListPriceHistory_ModifiedDate">
+          <DataField>ProductListPriceHistory_ModifiedDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>SELECT [Production].[Product].[ProductID],
+[Production].[Product].[Name],
+[Production].[Product].[ProductNumber],
+[Production].[Product].[MakeFlag],
+[Production].[Product].[FinishedGoodsFlag],
+[Production].[Product].[Color],
+[Production].[Product].[SafetyStockLevel],
+[Production].[Product].[ReorderPoint],
+[Production].[Product].[StandardCost],
+[Production].[Product].[ListPrice],
+[Production].[Product].[Size],
+[Production].[Product].[SizeUnitMeasureCode],
+[Production].[Product].[WeightUnitMeasureCode],
+[Production].[Product].[Weight],
+[Production].[Product].[DaysToManufacture],
+[Production].[Product].[ProductLine],
+[Production].[Product].[Class],
+[Production].[Product].[Style],
+[Production].[Product].[ProductSubcategoryID],
+[Production].[Product].[ProductModelID],
+[Production].[Product].[SellStartDate],
+[Production].[Product].[SellEndDate],
+[Production].[Product].[DiscontinuedDate],
+[Production].[Product].[rowguid],
+[Production].[Product].[ModifiedDate],
+[Production].[ProductListPriceHistory].[ProductID] AS [ProductListPriceHistory_ProductID],
+[Production].[ProductListPriceHistory].[StartDate],
+[Production].[ProductListPriceHistory].[EndDate],
+[Production].[ProductListPriceHistory].[ListPrice] AS [UnitPrice],
+[Production].[ProductListPriceHistory].[ModifiedDate] AS [ProductListPriceHistory_ModifiedDate] FROM [Production].[Product] INNER JOIN [Production].[ProductListPriceHistory] ON [Production].[Product].[ProductID]=[Production].[ProductListPriceHistory].[ProductID]</CommandText>
+        <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
+          <Tables>
+            <Table Name="Product" Schema="Production">
+              <Columns>
+                <Column Name="ProductID" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Name" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ProductNumber" IsDuplicate="False" IsSelected="True" />
+                <Column Name="MakeFlag" IsDuplicate="False" IsSelected="True" />
+                <Column Name="FinishedGoodsFlag" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Color" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SafetyStockLevel" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ReorderPoint" IsDuplicate="False" IsSelected="True" />
+                <Column Name="StandardCost" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ListPrice" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Size" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SizeUnitMeasureCode" IsDuplicate="False" IsSelected="True" />
+                <Column Name="WeightUnitMeasureCode" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Weight" IsDuplicate="False" IsSelected="True" />
+                <Column Name="DaysToManufacture" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ProductLine" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Class" IsDuplicate="False" IsSelected="True" />
+                <Column Name="Style" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ProductSubcategoryID" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ProductModelID" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SellStartDate" IsDuplicate="False" IsSelected="True" />
+                <Column Name="SellEndDate" IsDuplicate="False" IsSelected="True" />
+                <Column Name="DiscontinuedDate" IsDuplicate="False" IsSelected="True" />
+                <Column Name="rowguid" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ModifiedDate" IsDuplicate="False" IsSelected="True" />
+              </Columns>
+              <SchemaLevels>
+                <SchemaInfo Name="Production" SchemaType="Schema" />
+                <SchemaInfo Name="Tables" SchemaType="Category" />
+                <SchemaInfo Name="Product" SchemaType="Table" />
+              </SchemaLevels>
+            </Table>
+            <Table Name="ProductListPriceHistory" Schema="Production">
+              <Columns>
+                <Column Name="ProductID" AliasName="ProductListPriceHistory_ProductID" IsDuplicate="True" IsSelected="True" />
+                <Column Name="StartDate" IsDuplicate="False" IsSelected="True" />
+                <Column Name="EndDate" IsDuplicate="False" IsSelected="True" />
+                <Column Name="ListPrice" AliasName="UnitPrice" IsDuplicate="True" IsSelected="True" />
+                <Column Name="ModifiedDate" AliasName="ProductListPriceHistory_ModifiedDate" IsDuplicate="True" IsSelected="True" />
+              </Columns>
+              <SchemaLevels>
+                <SchemaInfo Name="Production" SchemaType="Schema" />
+                <SchemaInfo Name="Tables" SchemaType="Category" />
+                <SchemaInfo Name="ProductListPriceHistory" SchemaType="Table" />
+              </SchemaLevels>
+            </Table>
+          </Tables>
+          <Joins>
+            <Join LeftTable="Product" RightTable="ProductListPriceHistory" JoinType="Inner">
+              <JoinFields>
+                <JoinField LeftField="ProductID" RightField="ProductID" OperatorType="=" />
+              </JoinFields>
+            </Join>
+          </Joins>
+        </QueryDesignerState>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+</Report>
