@@ -744,7 +744,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>functionalities</Value>
+                    <Value>Functionalities</Value>
                     <Style>
                       <FontSize>8.25pt</FontSize>
                       <FontWeight>Normal</FontWeight>
@@ -837,7 +837,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Resistive Touch fumctionalities</Value>
+                    <Value>Resistive Touch Functionalities</Value>
                     <Style>
                       <FontSize>8.25pt</FontSize>
                       <FontWeight>Normal</FontWeight>
@@ -1040,7 +1040,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Maintaining Standandards</Value>
+                    <Value>Maintaining Standards</Value>
                     <Style>
                       <FontSize>8.25pt</FontSize>
                       <FontWeight>Normal</FontWeight>
