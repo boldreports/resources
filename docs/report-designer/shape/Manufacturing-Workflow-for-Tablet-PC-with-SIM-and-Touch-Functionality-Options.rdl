@@ -3,7 +3,7 @@
   <ReportSections>
     <ReportSection>
       <Body>
-        <Height>675.75pt</Height>
+        <Height>639.75pt</Height>
         <ReportItems>
           <CustomReportItem Name="CustomItem1">
             <Left>156.75pt</Left>
@@ -247,8 +247,8 @@
             </Paragraphs>
           </Textbox>
           <Textbox Name="TextBox5">
-            <Left>248.9625pt</Left>
-            <Top>241.8375pt</Top>
+            <Left>254.2125pt</Left>
+            <Top>241.0875pt</Top>
             <Height>21pt</Height>
             <Width>19.5pt</Width>
             <Style>
@@ -1550,17 +1550,6 @@
             </Border>
           </Style>
         </PageHeader>
-        <PageFooter>
-          <Height>0.72917in</Height>
-          <PrintOnFirstPage>true</PrintOnFirstPage>
-          <PrintOnLastPage>true</PrintOnLastPage>
-          <Style>
-            <FontFamily>Arial</FontFamily>
-            <Border>
-              <Style>None</Style>
-            </Border>
-          </Style>
-        </PageFooter>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
         <TopMargin>1in</TopMargin>
