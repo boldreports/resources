@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:df="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition/defaultfontfamily" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>3.125in</Height>
+        <ReportItems>
+          <CustomReportItem Name="CustomItem1">
+            <Left>165.74063pt</Left>
+            <Top>48.75001pt</Top>
+            <Height>120pt</Height>
+            <Width>120pt</Width>
+            <Style>
+              <FontFamily>Arial</FontFamily>
+              <Border>
+                <Width>1.37475pt</Width>
+                <Style>Dashed</Style>
+              </Border>
+            </Style>
+            <CustomProperties>
+              <CustomProperty>
+                <Name>Source</Name>
+                <Value>Content</Value>
+              </CustomProperty>
+              <CustomProperty>
+                <Name>Sizing</Name>
+                <Value>AutoSize</Value>
+              </CustomProperty>
+              <CustomProperty>
+                <Name>DocumentValue</Name>
+                <Value>&lt;style&gt;
+        .pie-chart {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(
+                green 0% 40%,
+                dodgerblue 40% 70%,
+                orange 70% 90%,
+                red 90% 100%
+            );
+            margin: 50px auto;
+        }
+
+        .legend {
+            width: fit-content;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .color-box {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+
+        .green { background-color: green; }
+        .blue { background-color: dodgerblue; }
+        .orange { background-color: orange; }
+        .red { background-color: red; }
+    &lt;/style&gt;
+&lt;body&gt;
+
+    &lt;div class="pie-chart"&gt;&lt;/div&gt;
+
+    &lt;div class="legend"&gt;
+        &lt;div class="legend-item"&gt;&lt;div class="color-box green"&gt;&lt;/div&gt;Product A - 40%&lt;/div&gt;
+        &lt;div class="legend-item"&gt;&lt;div class="color-box blue"&gt;&lt;/div&gt;Product B - 30%&lt;/div&gt;
+        &lt;div class="legend-item"&gt;&lt;div class="color-box orange"&gt;&lt;/div&gt;Product C - 20%&lt;/div&gt;
+        &lt;div class="legend-item"&gt;&lt;div class="color-box red"&gt;&lt;/div&gt;Product D - 10%&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;</Value>
+              </CustomProperty>
+            </CustomProperties>
+            <Type>htmldocument</Type>
+          </CustomReportItem>
+        </ReportItems>
+        <Style>
+          <FontFamily>Arial</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <PageFooter>
+          <Height>0.72917in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <FontFamily>Arial</FontFamily>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+          <FontFamily>Arial</FontFamily>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+  <df:DefaultFontFamily>Segoe UI</df:DefaultFontFamily>
+</Report>
