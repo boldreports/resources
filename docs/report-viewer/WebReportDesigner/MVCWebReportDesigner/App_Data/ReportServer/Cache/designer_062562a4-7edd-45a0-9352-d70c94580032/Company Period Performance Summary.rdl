@@ -1,0 +1,3039 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="IvyCollection">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=localhost;Initial Catalog=AdventureWorks</ConnectString>
+        <IntegratedSecurity>true</IntegratedSecurity>
+      </ConnectionProperties>
+      <rd:SecurityType>Integrated</rd:SecurityType>
+      <rd:DataSourceID>7f55695a-40ff-4793-bc56-b9f57f2b7fe4</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="FiscalPeriods">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_FiscalPeriods (PeriodID  int, Period  int, YearID  int);
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('0' , '0' , '0' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('1' , '1' , '1' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('2' , '2' , '2' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('3' , '3' , '3' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('4' , '4' , '4' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('5' , '5' , '5' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('6' , '6' , '6' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('7' , '7' , '7' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('8' , '8' , '8' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('9' , '9' , '9' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('10' , '10' , '10' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('11' , '11' , '11' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('12' , '12' , '12' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('13' , '13' , '13' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('14' , '14' , '14' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('15' , '15' , '15' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('16' , '16' , '16' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('17' , '17' , '17' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('18' , '18' , '18' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods VALUES ('19' , '19' , '19' );
+Select * from CompanyPeriodPerformanceSummary_FiscalPeriods;
+DROP TABLE CompanyPeriodPerformanceSummary_FiscalPeriods;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PeriodID">
+          <DataField>PeriodID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Period">
+          <DataField>Period</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="YearID">
+          <DataField>YearID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="FiscalPeriods_Default">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_FiscalPeriods_Default (PeriodID  int);
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('0' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('1' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('2' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('3' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('4' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('5' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('6' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('7' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('8' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('9' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('10' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('11' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('12' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('13' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('14' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('15' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('16' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('17' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('18' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalPeriods_Default VALUES ('19' );
+Select * from CompanyPeriodPerformanceSummary_FiscalPeriods_Default;
+DROP TABLE CompanyPeriodPerformanceSummary_FiscalPeriods_Default;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PeriodID">
+          <DataField>PeriodID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="FiscalWeeks">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_FiscalWeeks (WeekID  int, Week  int, WeekEndDate  Varchar(50), PeriodID  int);
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('0' , '0' , 'AAABBBCCC' , '0' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('1' , '1' , 'BBBCCCDDD' , '1' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('2' , '2' , 'CCCDDDEEE' , '2' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('3' , '3' , 'DDDEEEFFF' , '3' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('4' , '4' , 'EEEFFFGGG' , '4' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('5' , '5' , 'FFFGGGHHH' , '5' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('6' , '6' , 'GGGHHHIII' , '6' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('7' , '7' , 'HHHIIIJJJ' , '7' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('8' , '8' , 'IIIJJJKKK' , '8' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('9' , '9' , 'JJJKKKLLL' , '9' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('10' , '10' , 'KKKLLLMMM' , '10' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('11' , '11' , 'LLLMMMNNN' , '11' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('12' , '12' , 'MMMNNNOOO' , '12' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('13' , '13' , 'NNNOOOPPP' , '13' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('14' , '14' , 'OOOPPPQQQ' , '14' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('15' , '15' , 'PPPQQQRRR' , '15' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('16' , '16' , 'QQQRRRSSS' , '16' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('17' , '17' , 'RRRSSSTTT' , '17' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('18' , '18' , 'SSSTTTUUU' , '18' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks VALUES ('19' , '19' , 'TTTUUUVVV' , '19' );
+Select * from CompanyPeriodPerformanceSummary_FiscalWeeks;
+DROP TABLE CompanyPeriodPerformanceSummary_FiscalWeeks;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="WeekID">
+          <DataField>WeekID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Week">
+          <DataField>Week</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WeekEndDate">
+          <DataField>WeekEndDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PeriodID">
+          <DataField>PeriodID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="FiscalWeeks_Default">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_FiscalWeeks_Default (WeekID  int);
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('0' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('1' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('2' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('3' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('4' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('5' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('6' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('7' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('8' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('9' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('10' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('11' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('12' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('13' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('14' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('15' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('16' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('17' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('18' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalWeeks_Default VALUES ('19' );
+Select * from CompanyPeriodPerformanceSummary_FiscalWeeks_Default;
+DROP TABLE CompanyPeriodPerformanceSummary_FiscalWeeks_Default;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="WeekID">
+          <DataField>WeekID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="FiscalYears">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_FiscalYears (YearID  int, Year  int);
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('0' , '0' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('1' , '1' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('2' , '2' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('3' , '3' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('4' , '4' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('5' , '5' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('6' , '6' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('7' , '7' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('8' , '8' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('9' , '9' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('10' , '10' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('11' , '11' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('12' , '12' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('13' , '13' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('14' , '14' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('15' , '15' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('16' , '16' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('17' , '17' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('18' , '18' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears VALUES ('19' , '19' );
+Select * from CompanyPeriodPerformanceSummary_FiscalYears;
+DROP TABLE CompanyPeriodPerformanceSummary_FiscalYears;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="YearID">
+          <DataField>YearID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="FiscalYears_Default">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_FiscalYears_Default (YearID  int);
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('0' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('1' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('2' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('3' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('4' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('5' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('6' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('7' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('8' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('9' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('10' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('11' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('12' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('13' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('14' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('15' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('16' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('17' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('18' );
+INSERT INTO CompanyPeriodPerformanceSummary_FiscalYears_Default VALUES ('19' );
+Select * from CompanyPeriodPerformanceSummary_FiscalYears_Default;
+DROP TABLE CompanyPeriodPerformanceSummary_FiscalYears_Default;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="YearID">
+          <DataField>YearID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ProfitCentres">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_ProfitCentres (ProfitCentreID  int, ProfitCentreCode  Varchar(50), ProfitCentreName  Varchar(50));
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('0' , 'AAABBBCCC' , 'AAABBBCCC' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('1' , 'BBBCCCDDD' , 'BBBCCCDDD' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('2' , 'CCCDDDEEE' , 'CCCDDDEEE' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('3' , 'DDDEEEFFF' , 'DDDEEEFFF' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('4' , 'EEEFFFGGG' , 'EEEFFFGGG' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('5' , 'FFFGGGHHH' , 'FFFGGGHHH' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('6' , 'GGGHHHIII' , 'GGGHHHIII' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('7' , 'HHHIIIJJJ' , 'HHHIIIJJJ' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('8' , 'IIIJJJKKK' , 'IIIJJJKKK' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('9' , 'JJJKKKLLL' , 'JJJKKKLLL' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('10' , 'KKKLLLMMM' , 'KKKLLLMMM' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('11' , 'LLLMMMNNN' , 'LLLMMMNNN' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('12' , 'MMMNNNOOO' , 'MMMNNNOOO' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('13' , 'NNNOOOPPP' , 'NNNOOOPPP' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('14' , 'OOOPPPQQQ' , 'OOOPPPQQQ' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('15' , 'PPPQQQRRR' , 'PPPQQQRRR' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('16' , 'QQQRRRSSS' , 'QQQRRRSSS' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('17' , 'RRRSSSTTT' , 'RRRSSSTTT' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('18' , 'SSSTTTUUU' , 'SSSTTTUUU' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres VALUES ('19' , 'TTTUUUVVV' , 'TTTUUUVVV' );
+Select * from CompanyPeriodPerformanceSummary_ProfitCentres;
+DROP TABLE CompanyPeriodPerformanceSummary_ProfitCentres;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ProfitCentreID">
+          <DataField>ProfitCentreID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ProfitCentreCode">
+          <DataField>ProfitCentreCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProfitCentreName">
+          <DataField>ProfitCentreName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="ProfitCentres_Default">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_ProfitCentres_Default (ProfitCentreID  int);
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('0' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('1' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('2' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('3' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('4' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('5' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('6' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('7' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('8' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('9' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('10' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('11' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('12' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('13' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('14' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('15' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('16' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('17' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('18' );
+INSERT INTO CompanyPeriodPerformanceSummary_ProfitCentres_Default VALUES ('19' );
+Select * from CompanyPeriodPerformanceSummary_ProfitCentres_Default;
+DROP TABLE CompanyPeriodPerformanceSummary_ProfitCentres_Default;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ProfitCentreID">
+          <DataField>ProfitCentreID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Company_DailyPeriodPerformanceSummary">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary (PeriodID  int, Period  int, WeekID  int, Week  int, WeekEndDate  date, BusinessDate  date, Day  Varchar(50), RegionID  int, RegionName  Varchar(50), ProfitCentreID  int, ProfitCentreName  Varchar(50), Covers  int, NetSales  decimal);
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('0' , '0' , '0' , '0' , '1/1/2001 12:00:00 AM' , '1/1/2001 12:00:00 AM' , 'AAABBBCCC' , '0' , 'AAABBBCCC' , '0' , 'AAABBBCCC' , '0' , '1.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('1' , '1' , '1' , '1' , '1/2/2001 12:00:00 AM' , '1/2/2001 12:00:00 AM' , 'AAABBBCCC' , '1' , 'AAABBBCCC' , '1' , 'AAABBBCCC' , '1' , '2.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('2' , '2' , '2' , '2' , '1/3/2001 12:00:00 AM' , '1/3/2001 12:00:00 AM' , 'AAABBBCCC' , '2' , 'AAABBBCCC' , '2' , 'AAABBBCCC' , '2' , '3.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('3' , '3' , '3' , '3' , '1/4/2001 12:00:00 AM' , '1/4/2001 12:00:00 AM' , 'AAABBBCCC' , '3' , 'AAABBBCCC' , '3' , 'AAABBBCCC' , '3' , '4.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('4' , '4' , '4' , '4' , '1/5/2001 12:00:00 AM' , '1/5/2001 12:00:00 AM' , 'AAABBBCCC' , '4' , 'AAABBBCCC' , '4' , 'AAABBBCCC' , '4' , '5.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('5' , '5' , '5' , '5' , '1/6/2001 12:00:00 AM' , '1/6/2001 12:00:00 AM' , 'FFFGGGHHH' , '5' , 'FFFGGGHHH' , '5' , 'FFFGGGHHH' , '5' , '6.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('6' , '6' , '6' , '6' , '1/7/2001 12:00:00 AM' , '1/7/2001 12:00:00 AM' , 'GGGHHHIII' , '6' , 'GGGHHHIII' , '6' , 'GGGHHHIII' , '6' , '7.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('7' , '7' , '7' , '7' , '1/8/2001 12:00:00 AM' , '1/8/2001 12:00:00 AM' , 'HHHIIIJJJ' , '7' , 'HHHIIIJJJ' , '7' , 'HHHIIIJJJ' , '7' , '8.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('8' , '8' , '8' , '8' , '1/9/2001 12:00:00 AM' , '1/9/2001 12:00:00 AM' , 'IIIJJJKKK' , '8' , 'IIIJJJKKK' , '8' , 'IIIJJJKKK' , '8' , '9.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('9' , '9' , '9' , '9' , '1/10/2001 12:00:00 AM' , '1/10/2001 12:00:00 AM' , 'JJJKKKLLL' , '9' , 'JJJKKKLLL' , '9' , 'JJJKKKLLL' , '9' , '10.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('10' , '10' , '10' , '10' , '1/11/2001 12:00:00 AM' , '1/11/2001 12:00:00 AM' , 'KKKLLLMMM' , '10' , 'KKKLLLMMM' , '10' , 'KKKLLLMMM' , '10' , '11.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('11' , '11' , '11' , '11' , '1/12/2001 12:00:00 AM' , '1/12/2001 12:00:00 AM' , 'LLLMMMNNN' , '11' , 'LLLMMMNNN' , '11' , 'LLLMMMNNN' , '11' , '12.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('12' , '12' , '12' , '12' , '1/13/2001 12:00:00 AM' , '1/13/2001 12:00:00 AM' , 'MMMNNNOOO' , '12' , 'MMMNNNOOO' , '12' , 'MMMNNNOOO' , '12' , '13.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('13' , '13' , '13' , '13' , '1/14/2001 12:00:00 AM' , '1/14/2001 12:00:00 AM' , 'NNNOOOPPP' , '13' , 'NNNOOOPPP' , '13' , 'NNNOOOPPP' , '13' , '14.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('14' , '14' , '14' , '14' , '1/15/2001 12:00:00 AM' , '1/15/2001 12:00:00 AM' , 'OOOPPPQQQ' , '14' , 'OOOPPPQQQ' , '14' , 'OOOPPPQQQ' , '14' , '15.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('15' , '15' , '15' , '15' , '1/16/2001 12:00:00 AM' , '1/16/2001 12:00:00 AM' , 'PPPQQQRRR' , '15' , 'PPPQQQRRR' , '15' , 'PPPQQQRRR' , '15' , '16.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('16' , '16' , '16' , '16' , '1/17/2001 12:00:00 AM' , '1/17/2001 12:00:00 AM' , 'QQQRRRSSS' , '16' , 'QQQRRRSSS' , '16' , 'QQQRRRSSS' , '16' , '17.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('17' , '17' , '17' , '17' , '1/18/2001 12:00:00 AM' , '1/18/2001 12:00:00 AM' , 'RRRSSSTTT' , '17' , 'RRRSSSTTT' , '17' , 'RRRSSSTTT' , '17' , '18.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('18' , '18' , '18' , '18' , '1/19/2001 12:00:00 AM' , '1/19/2001 12:00:00 AM' , 'SSSTTTUUU' , '18' , 'SSSTTTUUU' , '18' , 'SSSTTTUUU' , '18' , '19.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary VALUES ('19' , '19' , '19' , '19' , '1/20/2001 12:00:00 AM' , '1/20/2001 12:00:00 AM' , 'TTTUUUVVV' , '19' , 'TTTUUUVVV' , '19' , 'TTTUUUVVV' , '19' , '20.10' );
+Select * from CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary;
+DROP TABLE CompanyPeriodPerformanceSummary_Company_DailyPeriodPerformanceSummary;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PeriodID">
+          <DataField>PeriodID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Period">
+          <DataField>Period</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WeekID">
+          <DataField>WeekID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Week">
+          <DataField>Week</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WeekEndDate">
+          <DataField>WeekEndDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="BusinessDate">
+          <DataField>BusinessDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Day">
+          <DataField>Day</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegionID">
+          <DataField>RegionID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RegionName">
+          <DataField>RegionName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProfitCentreID">
+          <DataField>ProfitCentreID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ProfitCentreName">
+          <DataField>ProfitCentreName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Covers">
+          <DataField>Covers</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NetSales">
+          <DataField>NetSales</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Company_WeeklyPeriodPerformanceSummary">
+      <Query>
+        <DataSourceName>IvyCollection</DataSourceName>
+        <CommandText>CREATE TABLE CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary (PeriodID  int, Period  int, WeekID  int, Week  int, WeekEndDate  date, RegionID  int, RegionName  Varchar(50), ProfitCentreID  int, ProfitCentreName  Varchar(50), Covers  int, NetSales  decimal, Budget  decimal, BudgetVariance  decimal, Forecast  decimal, ForecastVariance  decimal);
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('0' , '0' , '0' , '0' , '1/1/2001 12:00:00 AM' , '0' , 'AAABBBCCC' , '0' , 'AAABBBCCC' , '0' , '1.10' , '1.10' , '1.10' , '1.10' , '1.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('1' , '1' , '1' , '1' , '1/2/2001 12:00:00 AM' , '1' , 'BBBCCCDDD' , '1' , 'BBBCCCDDD' , '1' , '2.10' , '2.10' , '2.10' , '2.10' , '2.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('2' , '2' , '2' , '2' , '1/3/2001 12:00:00 AM' , '2' , 'CCCDDDEEE' , '2' , 'CCCDDDEEE' , '2' , '3.10' , '3.10' , '3.10' , '3.10' , '3.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('3' , '3' , '3' , '3' , '1/4/2001 12:00:00 AM' , '3' , 'DDDEEEFFF' , '3' , 'DDDEEEFFF' , '3' , '4.10' , '4.10' , '4.10' , '4.10' , '4.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('4' , '4' , '4' , '4' , '1/5/2001 12:00:00 AM' , '4' , 'EEEFFFGGG' , '4' , 'EEEFFFGGG' , '4' , '5.10' , '5.10' , '5.10' , '5.10' , '5.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('5' , '5' , '5' , '5' , '1/6/2001 12:00:00 AM' , '5' , 'FFFGGGHHH' , '5' , 'FFFGGGHHH' , '5' , '6.10' , '6.10' , '6.10' , '6.10' , '6.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('6' , '6' , '6' , '6' , '1/7/2001 12:00:00 AM' , '6' , 'GGGHHHIII' , '6' , 'GGGHHHIII' , '6' , '7.10' , '7.10' , '7.10' , '7.10' , '7.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('7' , '7' , '7' , '7' , '1/8/2001 12:00:00 AM' , '7' , 'HHHIIIJJJ' , '7' , 'HHHIIIJJJ' , '7' , '8.10' , '8.10' , '8.10' , '8.10' , '8.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('8' , '8' , '8' , '8' , '1/9/2001 12:00:00 AM' , '8' , 'IIIJJJKKK' , '8' , 'IIIJJJKKK' , '8' , '9.10' , '9.10' , '9.10' , '9.10' , '9.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('9' , '9' , '9' , '9' , '1/10/2001 12:00:00 AM' , '9' , 'JJJKKKLLL' , '9' , 'JJJKKKLLL' , '9' , '10.10' , '10.10' , '10.10' , '10.10' , '10.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('10' , '10' , '10' , '10' , '1/11/2001 12:00:00 AM' , '10' , 'KKKLLLMMM' , '10' , 'KKKLLLMMM' , '10' , '11.10' , '11.10' , '11.10' , '11.10' , '11.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('11' , '11' , '11' , '11' , '1/12/2001 12:00:00 AM' , '11' , 'LLLMMMNNN' , '11' , 'LLLMMMNNN' , '11' , '12.10' , '12.10' , '12.10' , '12.10' , '12.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('12' , '12' , '12' , '12' , '1/13/2001 12:00:00 AM' , '12' , 'MMMNNNOOO' , '12' , 'MMMNNNOOO' , '12' , '13.10' , '13.10' , '13.10' , '13.10' , '13.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('13' , '13' , '13' , '13' , '1/14/2001 12:00:00 AM' , '13' , 'NNNOOOPPP' , '13' , 'NNNOOOPPP' , '13' , '14.10' , '14.10' , '14.10' , '14.10' , '14.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('14' , '14' , '14' , '14' , '1/15/2001 12:00:00 AM' , '14' , 'OOOPPPQQQ' , '14' , 'OOOPPPQQQ' , '14' , '15.10' , '15.10' , '15.10' , '15.10' , '15.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('15' , '15' , '15' , '15' , '1/16/2001 12:00:00 AM' , '15' , 'PPPQQQRRR' , '15' , 'PPPQQQRRR' , '15' , '16.10' , '16.10' , '16.10' , '16.10' , '16.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('16' , '16' , '16' , '16' , '1/17/2001 12:00:00 AM' , '16' , 'QQQRRRSSS' , '16' , 'QQQRRRSSS' , '16' , '17.10' , '17.10' , '17.10' , '17.10' , '17.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('17' , '17' , '17' , '17' , '1/18/2001 12:00:00 AM' , '17' , 'RRRSSSTTT' , '17' , 'RRRSSSTTT' , '17' , '18.10' , '18.10' , '18.10' , '18.10' , '18.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('18' , '18' , '18' , '18' , '1/19/2001 12:00:00 AM' , '18' , 'SSSTTTUUU' , '18' , 'SSSTTTUUU' , '18' , '19.10' , '19.10' , '19.10' , '19.10' , '19.10' );
+INSERT INTO CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary VALUES ('19' , '19' , '19' , '19' , '1/20/2001 12:00:00 AM' , '19' , 'TTTUUUVVV' , '19' , 'TTTUUUVVV' , '19' , '20.10' , '20.10' , '20.10' , '20.10' , '20.10' );
+Select * from CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary;
+DROP TABLE CompanyPeriodPerformanceSummary_Company_WeeklyPeriodPerformanceSummary;</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="PeriodID">
+          <DataField>PeriodID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Period">
+          <DataField>Period</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WeekID">
+          <DataField>WeekID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Week">
+          <DataField>Week</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WeekEndDate">
+          <DataField>WeekEndDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RegionID">
+          <DataField>RegionID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RegionName">
+          <DataField>RegionName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProfitCentreID">
+          <DataField>ProfitCentreID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ProfitCentreName">
+          <DataField>ProfitCentreName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Covers">
+          <DataField>Covers</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NetSales">
+          <DataField>NetSales</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Budget">
+          <DataField>Budget</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="BudgetVariance">
+          <DataField>BudgetVariance</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Forecast">
+          <DataField>Forecast</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ForecastVariance">
+          <DataField>ForecastVariance</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix6">
+            <TablixCorner>
+              <TablixCornerRows>
+                <TablixCornerRow>
+                  <TablixCornerCell>
+                    <CellContents>
+                      <Textbox Name="TextBox81">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value />
+                                <Style>
+                                  <FontSize>0.352cm</FontSize>
+                                  <Color>#676767</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixCornerCell>
+                  <TablixCornerCell>
+                    <CellContents>
+                      <Textbox Name="TextBox82">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value />
+                                <Style>
+                                  <FontSize>0.35278cm</FontSize>
+                                  <Color>#676767</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixCornerCell>
+                </TablixCornerRow>
+              </TablixCornerRows>
+            </TablixCorner>
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.00978cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.01083cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox83">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BusinessDate.Value</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>dd-MM-yyyy</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox84">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>WTD</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox85">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!NetSales.Value</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox86">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!NetSales.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox3">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!NetSales.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.35278cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox4">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!NetSales.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.35278cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox87">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!NetSales.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox88">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!NetSales.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="BusinessDate1211">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!BusinessDate.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!BusinessDate.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>0.635cm</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox89">
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!Day.Value</Value>
+                                <Style>
+                                  <FontSize>0.352cm</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#676767</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>0.635cm</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox90">
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Actual</Value>
+                                <Style>
+                                  <FontSize>0.352cm</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#676767</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>4.0005cm</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox91">
+                        <CanShrink>true</CanShrink>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Region</Value>
+                                <Style>
+                                  <FontSize>0.352cm</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#676767</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>4.99983cm</Size>
+                        <CellContents>
+                          <Textbox Name="TextBox92">
+                            <CanShrink>true</CanShrink>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Profit Centre</Value>
+                                    <Style>
+                                      <FontSize>0.352cm</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>#676767</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="RegionName1211">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!RegionName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!RegionName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixHeader>
+                    <Size>4.0005cm</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox93">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>=Fields!RegionName.Value</Value>
+                                <Style>
+                                  <FontSize>0.35278cm</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#676767</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="ProfitCentreName1211">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!ProfitCentreName.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!ProfitCentreName.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixHeader>
+                        <Size>4.99983cm</Size>
+                        <CellContents>
+                          <Textbox Name="TextBox94">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>=Fields!ProfitCentreName.Value</Value>
+                                    <Style>
+                                      <FontSize>0.35278cm</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>#676767</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>4.99983cm</Size>
+                        <CellContents>
+                          <Textbox Name="TextBox2">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value>Total</Value>
+                                    <Style>
+                                      <FontSize>0.35278cm</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>#676767</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                      <KeepWithGroup>Before</KeepWithGroup>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>4.0005cm</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox95">
+                        <CanGrow>true</CanGrow>
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Total</Value>
+                                <Style>
+                                  <FontSize>0.352cm</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#676767</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style />
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                  <TablixMembers>
+                    <TablixMember>
+                      <TablixHeader>
+                        <Size>4.99983cm</Size>
+                        <CellContents>
+                          <Textbox Name="TextBox96">
+                            <CanGrow>true</CanGrow>
+                            <KeepTogether>true</KeepTogether>
+                            <Paragraphs>
+                              <Paragraph>
+                                <TextRuns>
+                                  <TextRun>
+                                    <Value />
+                                    <Style>
+                                      <FontSize>0.352cm</FontSize>
+                                      <FontWeight>Bold</FontWeight>
+                                      <Color>#676767</Color>
+                                    </Style>
+                                  </TextRun>
+                                </TextRuns>
+                                <Style />
+                              </Paragraph>
+                            </Paragraphs>
+                            <Style>
+                              <Border>
+                                <Color>LightGrey</Color>
+                                <Style>Solid</Style>
+                              </Border>
+                              <PaddingLeft>2pt</PaddingLeft>
+                              <PaddingRight>2pt</PaddingRight>
+                              <PaddingTop>2pt</PaddingTop>
+                              <PaddingBottom>2pt</PaddingBottom>
+                            </Style>
+                          </Textbox>
+                        </CellContents>
+                      </TablixHeader>
+                    </TablixMember>
+                  </TablixMembers>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <KeepTogether>true</KeepTogether>
+            <DataSetName>Company_DailyPeriodPerformanceSummary</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!WeekID.Value</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue DataType="Integer">=Parameters!WeekID.Value</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
+            <Top>0.17198cm</Top>
+            <Left>0.10583cm</Left>
+            <Height>3.175cm</Height>
+            <Width>13.02094cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Tablix Name="Tablix8">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.01083cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.01083cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox121">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>v Budget</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox109">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>WTD</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox126">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox127">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BudgetVariance.Value/Fields!Budget.Value</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <Format>P2</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox8">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.35278cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox9">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=sum(Fields!BudgetVariance.Value)/sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.35278cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>P2</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox136">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox137">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=sum(Fields!BudgetVariance.Value)/sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>P2</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember>
+                  <Group Name="RegionName2">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!RegionName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!RegionName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="ProfitCentreName2">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!ProfitCentreName.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!ProfitCentreName.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                    <TablixMember>
+                      <KeepWithGroup>Before</KeepWithGroup>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+                <TablixMember />
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <KeepTogether>true</KeepTogether>
+            <DataSetName>Company_WeeklyPeriodPerformanceSummary</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!WeekID.Value</FilterExpression>
+                <Operator>Equal</Operator>
+                <FilterValues>
+                  <FilterValue DataType="Integer">=Parameters!WeekID.Value</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
+            <Top>0.17198cm</Top>
+            <Left>15.24106cm</Left>
+            <Height>3.175cm</Height>
+            <Width>4.02166cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Tablix Name="Tablix9">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.01083cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.01083cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox139">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>v Budget</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox140">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>MTD</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox141">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox142">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!BudgetVariance.Value/Fields!Budget.Value</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <Format>P2</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox10">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.35278cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox11">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=sum(Fields!BudgetVariance.Value)/sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.35278cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>P2</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox143">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox144">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=sum(Fields!BudgetVariance.Value)/sum(Fields!Budget.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>P2</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember>
+                  <Group Name="RegionName22">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!RegionName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!RegionName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="ProfitCentreName22">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!ProfitCentreName.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!ProfitCentreName.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                    <TablixMember>
+                      <KeepWithGroup>Before</KeepWithGroup>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+                <TablixMember />
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <KeepTogether>true</KeepTogether>
+            <DataSetName>Company_WeeklyPeriodPerformanceSummary</DataSetName>
+            <Top>0.17198cm</Top>
+            <Left>19.31405cm</Left>
+            <Height>3.175cm</Height>
+            <Width>4.02166cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+          <Chart Name="Chart2">
+            <ChartCategoryHierarchy>
+              <ChartMembers>
+                <ChartMember>
+                  <Group Name="Chart2_CategoryGroup1">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!Week.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!Week.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <Label>=Fields!Week.Value</Label>
+                </ChartMember>
+              </ChartMembers>
+            </ChartCategoryHierarchy>
+            <ChartSeriesHierarchy>
+              <ChartMembers>
+                <ChartMember>
+                  <Label>Net Sales</Label>
+                </ChartMember>
+                <ChartMember>
+                  <Label>Budget</Label>
+                </ChartMember>
+              </ChartMembers>
+            </ChartSeriesHierarchy>
+            <ChartData>
+              <ChartSeriesCollection>
+                <ChartSeries Name="NetSales4">
+                  <ChartDataPoints>
+                    <ChartDataPoint>
+                      <ChartDataPointValues>
+                        <Y>=Sum(Fields!NetSales.Value)</Y>
+                      </ChartDataPointValues>
+                      <ChartDataLabel>
+                        <Style>
+                          <Border>
+                            <Color>#00ffffff</Color>
+                          </Border>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                        </Style>
+                      </ChartDataLabel>
+                      <Style>
+                        <Border>
+                          <Color>#676767</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+                      </Style>
+                      <ChartMarker>
+                        <Size>6pt</Size>
+                        <Style>
+                          <Border>
+                            <Color>#00ffffff</Color>
+                          </Border>
+                        </Style>
+                      </ChartMarker>
+                    </ChartDataPoint>
+                  </ChartDataPoints>
+                  <Style>
+                    <ShadowColor>#00ffffff</ShadowColor>
+                  </Style>
+                  <ChartEmptyPoints>
+                    <Style />
+                    <ChartMarker>
+                      <Style />
+                    </ChartMarker>
+                    <ChartDataLabel>
+                      <Style />
+                    </ChartDataLabel>
+                  </ChartEmptyPoints>
+                  <ValueAxisName>Primary</ValueAxisName>
+                  <CategoryAxisName>Primary</CategoryAxisName>
+                  <ChartSmartLabel>
+                    <CalloutLineColor>Black</CalloutLineColor>
+                    <MinMovingDistance>0pt</MinMovingDistance>
+                  </ChartSmartLabel>
+                </ChartSeries>
+                <ChartSeries Name="Budget2">
+                  <ChartDataPoints>
+                    <ChartDataPoint>
+                      <ChartDataPointValues>
+                        <Y>=Sum(Fields!Budget.Value)</Y>
+                      </ChartDataPointValues>
+                      <ChartDataLabel>
+                        <Style>
+                          <Border>
+                            <Color>#00ffffff</Color>
+                          </Border>
+                          <FontFamily>Segoe UI</FontFamily>
+                          <FontSize>7.5pt</FontSize>
+                        </Style>
+                      </ChartDataLabel>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+                      </Style>
+                      <ChartMarker>
+                        <Size>6pt</Size>
+                        <Style>
+                          <Border>
+                            <Color>#00ffffff</Color>
+                          </Border>
+                        </Style>
+                      </ChartMarker>
+                    </ChartDataPoint>
+                  </ChartDataPoints>
+                  <Style>
+                    <ShadowColor>#00ffffff</ShadowColor>
+                  </Style>
+                  <ChartEmptyPoints>
+                    <Style />
+                    <ChartMarker>
+                      <Style />
+                    </ChartMarker>
+                    <ChartDataLabel>
+                      <Style />
+                    </ChartDataLabel>
+                  </ChartEmptyPoints>
+                  <ValueAxisName>Primary</ValueAxisName>
+                  <CategoryAxisName>Primary</CategoryAxisName>
+                  <ChartSmartLabel>
+                    <CalloutLineColor>Black</CalloutLineColor>
+                    <MinMovingDistance>0pt</MinMovingDistance>
+                  </ChartSmartLabel>
+                </ChartSeries>
+              </ChartSeriesCollection>
+            </ChartData>
+            <ChartAreas>
+              <ChartArea Name="Default">
+                <ChartCategoryAxes>
+                  <ChartAxis Name="Primary">
+                    <Style>
+                      <Border>
+                        <Color>#808080</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>#dcdcdc</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>#dcdcdc</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMajorTickMarks>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>0.75pt</Width>
+                        </Border>
+                      </Style>
+                      <Length>1.5</Length>
+                    </ChartMajorTickMarks>
+                    <ChartMinorTickMarks>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>0.75pt</Width>
+                        </Border>
+                      </Style>
+                    </ChartMinorTickMarks>
+                    <InterlacedColor>#00ffffff</InterlacedColor>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
+                    <ChartAxisScaleBreak>
+                      <Spacing>0</Spacing>
+                      <Style>
+                        <Border>
+                          <Color>#d3d3d3</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                      </Style>
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                  <ChartAxis Name="Secondary">
+                    <Style>
+                      <Border>
+                        <Color>#808080</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>#dcdcdc</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>#dcdcdc</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMajorTickMarks>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>0.75pt</Width>
+                        </Border>
+                      </Style>
+                      <Length>1.5</Length>
+                    </ChartMajorTickMarks>
+                    <ChartMinorTickMarks>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>0.75pt</Width>
+                        </Border>
+                      </Style>
+                    </ChartMinorTickMarks>
+                    <Location>Opposite</Location>
+                    <InterlacedColor>#00ffffff</InterlacedColor>
+                    <Minimum>NaN</Minimum>
+                    <Maximum>NaN</Maximum>
+                    <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
+                    <ChartAxisScaleBreak>
+                      <Spacing>0</Spacing>
+                      <Style>
+                        <Border>
+                          <Color>#d3d3d3</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                      </Style>
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                </ChartCategoryAxes>
+                <ChartValueAxes>
+                  <ChartAxis Name="Primary">
+                    <Style>
+                      <Border>
+                        <Color>#808080</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>#dcdcdc</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>#dcdcdc</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMajorTickMarks>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>0.75pt</Width>
+                        </Border>
+                      </Style>
+                      <Length>1.5</Length>
+                    </ChartMajorTickMarks>
+                    <ChartMinorTickMarks>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>0.75pt</Width>
+                        </Border>
+                      </Style>
+                    </ChartMinorTickMarks>
+                    <InterlacedColor>#00ffffff</InterlacedColor>
+                    <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
+                    <ChartAxisScaleBreak>
+                      <Spacing>0</Spacing>
+                      <Style>
+                        <Border>
+                          <Color>#d3d3d3</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                      </Style>
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                  <ChartAxis Name="Secondary">
+                    <Style>
+                      <Border>
+                        <Color>#808080</Color>
+                        <Style>Solid</Style>
+                      </Border>
+                      <FontFamily>Segoe UI</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                    <ChartAxisTitle>
+                      <Caption />
+                      <Style>
+                        <FontFamily>Segoe UI</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </ChartAxisTitle>
+                    <ChartMajorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>#dcdcdc</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                      </Style>
+                    </ChartMajorGridLines>
+                    <ChartMinorGridLines>
+                      <Style>
+                        <Border>
+                          <Color>#dcdcdc</Color>
+                          <Style>Dotted</Style>
+                        </Border>
+                      </Style>
+                    </ChartMinorGridLines>
+                    <ChartMajorTickMarks>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>0.75pt</Width>
+                        </Border>
+                      </Style>
+                      <Length>1.5</Length>
+                    </ChartMajorTickMarks>
+                    <ChartMinorTickMarks>
+                      <Enabled>False</Enabled>
+                      <Style>
+                        <Border>
+                          <Color>Gray</Color>
+                          <Style>Solid</Style>
+                          <Width>0.75pt</Width>
+                        </Border>
+                      </Style>
+                    </ChartMinorTickMarks>
+                    <Location>Opposite</Location>
+                    <InterlacedColor>#00ffffff</InterlacedColor>
+                    <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
+                    <ChartAxisScaleBreak>
+                      <Spacing>0</Spacing>
+                      <Style>
+                        <Border>
+                          <Color>#d3d3d3</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                      </Style>
+                    </ChartAxisScaleBreak>
+                  </ChartAxis>
+                </ChartValueAxes>
+                <Style>
+                  <Border>
+                    <Color>#d3d3d3</Color>
+                    <Style>None</Style>
+                  </Border>
+                  <BackgroundGradientEndColor>White</BackgroundGradientEndColor>
+                  <ShadowColor>#00ffffff</ShadowColor>
+                </Style>
+              </ChartArea>
+            </ChartAreas>
+            <ChartLegends>
+              <ChartLegend Name="Default">
+                <Style>
+                  <Border>
+                    <Color>#d3d3d3</Color>
+                    <Style>None</Style>
+                  </Border>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <ShadowColor>#00ffffff</ShadowColor>
+                </Style>
+                <Position>BottomCenter</Position>
+                <ChartLegendTitle>
+                  <Caption />
+                  <Style>
+                    <Border>
+                      <Color>LightGrey</Color>
+                    </Border>
+                    <FontFamily>Segoe UI</FontFamily>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextAlign>Center</TextAlign>
+                    <Color>Gray</Color>
+                  </Style>
+                </ChartLegendTitle>
+                <HeaderSeparatorColor>Black</HeaderSeparatorColor>
+                <ColumnSeparatorColor>Black</ColumnSeparatorColor>
+                <ColumnSpacing>0</ColumnSpacing>
+                <InterlacedRowsColor>#00ffffff</InterlacedRowsColor>
+                <TextWrapThreshold>0</TextWrapThreshold>
+              </ChartLegend>
+            </ChartLegends>
+            <ChartTitles>
+              <ChartTitle Name="Default">
+                <Caption>Chart Title</Caption>
+                <Style>
+                  <Border>
+                    <Color>LightGrey</Color>
+                    <Style>None</Style>
+                    <Width>0.75pt</Width>
+                  </Border>
+                  <FontFamily>Segoe UI</FontFamily>
+                  <FontSize>10.5pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextAlign>General</TextAlign>
+                  <VerticalAlign>Top</VerticalAlign>
+                  <ShadowColor>#00ffffff</ShadowColor>
+                </Style>
+              </ChartTitle>
+            </ChartTitles>
+            <Palette>BrightPastel</Palette>
+            <ChartBorderSkin>
+              <Style>
+                <Border>
+                  <Color>#d3d3d3</Color>
+                  <Style>Solid</Style>
+                </Border>
+                <Color>White</Color>
+              </Style>
+            </ChartBorderSkin>
+            <ChartNoDataMessage Name="NoDataMessage">
+              <Caption>No Data Available</Caption>
+              <Style>
+                <Border>
+                  <Color>#d3d3d3</Color>
+                  <Style>Solid</Style>
+                </Border>
+                <FontFamily>Segoe UI</FontFamily>
+                <FontSize>8pt</FontSize>
+                <TextAlign>Center</TextAlign>
+                <Color>Gray</Color>
+                <ShadowColor>#00ffffff</ShadowColor>
+              </Style>
+            </ChartNoDataMessage>
+            <DataSetName>Company_WeeklyPeriodPerformanceSummary</DataSetName>
+            <Top>3.78354cm</Top>
+            <Left>0.10583cm</Left>
+            <Height>7.9375cm</Height>
+            <Width>35.69229cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Color>#d3d3d3</Color>
+                <Style>Solid</Style>
+              </Border>
+              <FontFamily>Segoe UI</FontFamily>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <Color>Gray</Color>
+              <ShadowColor>#00ffffff</ShadowColor>
+            </Style>
+          </Chart>
+          <Tablix Name="Tablix4">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.01083cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox52">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>MTD</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox54">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!NetSales.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox7">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!NetSales.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.635cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="TextBox56">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!NetSales.Value)</Value>
+                                  <Style>
+                                    <FontSize>0.352cm</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>N0</Format>
+                                    <Color>#676767</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <TablixHeader>
+                    <Size>0.635cm</Size>
+                    <CellContents>
+                      <Textbox Name="TextBox58">
+                        <KeepTogether>true</KeepTogether>
+                        <Paragraphs>
+                          <Paragraph>
+                            <TextRuns>
+                              <TextRun>
+                                <Value>Actual</Value>
+                                <Style>
+                                  <FontSize>0.352cm</FontSize>
+                                  <FontWeight>Bold</FontWeight>
+                                  <Color>#676767</Color>
+                                </Style>
+                              </TextRun>
+                            </TextRuns>
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
+                          </Paragraph>
+                        </Paragraphs>
+                        <Style>
+                          <Border>
+                            <Color>LightGrey</Color>
+                            <Style>Solid</Style>
+                          </Border>
+                          <PaddingLeft>2pt</PaddingLeft>
+                          <PaddingRight>2pt</PaddingRight>
+                          <PaddingTop>2pt</PaddingTop>
+                          <PaddingBottom>2pt</PaddingBottom>
+                        </Style>
+                      </Textbox>
+                    </CellContents>
+                  </TablixHeader>
+                </TablixMember>
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember>
+                  <Group Name="RegionName121">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!RegionName.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!RegionName.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="ProfitCentreName121">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!ProfitCentreName.Value</GroupExpression>
+                        </GroupExpressions>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!ProfitCentreName.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixMembers>
+                        <TablixMember />
+                      </TablixMembers>
+                    </TablixMember>
+                    <TablixMember>
+                      <KeepWithGroup>Before</KeepWithGroup>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+                <TablixMember />
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <KeepTogether>true</KeepTogether>
+            <DataSetName>Company_DailyPeriodPerformanceSummary</DataSetName>
+            <Top>0.17198cm</Top>
+            <Left>13.16805cm</Left>
+            <Height>3.175cm</Height>
+            <Width>2.01083cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>27.33069cm</Height>
+        <Style />
+      </Body>
+      <Width>36.05345cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>2.54cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox195">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Globals!ReportName</Value>
+                      <Style>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>DimGray</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <LeftIndent>2pt</LeftIndent>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.19921cm</Top>
+              <Height>0.6cm</Height>
+              <Width>9cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox197">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Week Ending: " + Parameters!WeekID.Label</Value>
+                      <Style>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>dd-MM-yyyy</Format>
+                        <Color>DimGray</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <LeftIndent>2pt</LeftIndent>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.9756cm</Top>
+              <Height>0.6cm</Height>
+              <Width>9cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Image Name="ImageURL">
+              <Source>Embedded</Source>
+              <Value>ivy_collection_grey</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.01984cm</Top>
+              <Left>29.7cm</Left>
+              <Height>2.48708cm</Height>
+              <Width>5.00063cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>38cm</PageWidth>
+        <InteractiveHeight>0cm</InteractiveHeight>
+        <InteractiveWidth>42cm</InteractiveWidth>
+        <LeftMargin>0.5cm</LeftMargin>
+        <RightMargin>0.5cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+        <ColumnSpacing>0.13cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="UserName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=User!UserID</Value>
+        </Values>
+      </DefaultValue>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="YearID">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>FiscalYears_Default</DataSetName>
+          <ValueField>YearID</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Year</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>FiscalYears</DataSetName>
+          <ValueField>YearID</ValueField>
+          <LabelField>Year</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="PeriodID">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>FiscalPeriods_Default</DataSetName>
+          <ValueField>PeriodID</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Period</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>FiscalPeriods</DataSetName>
+          <ValueField>PeriodID</ValueField>
+          <LabelField>Period</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="WeekID">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>FiscalWeeks_Default</DataSetName>
+          <ValueField>WeekID</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Week</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>FiscalWeeks</DataSetName>
+          <ValueField>WeekID</ValueField>
+          <LabelField>WeekEndDate</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>3</NumberOfColumns>
+      <NumberOfRows>3</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>UserName</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>YearID</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>PeriodID</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>WeekID</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="ivy_collection_grey">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>cd427b9e-661b-46c8-b38e-f1a5c18c89ad</rd:ReportID>
+</Report>

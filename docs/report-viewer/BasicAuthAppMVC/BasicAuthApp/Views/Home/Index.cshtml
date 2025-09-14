@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="testing" style="height: 820px; width: 100%; margin-bottom: 10px;">
+        @(Html.Bold().ReportViewer("viewer")
+        .ReportServiceUrl("/api/ReportApi")
+        .ReportPath("~/App_Data/DemoRDL.rdl")
+        .AjaxBeforeLoad("onAjaxRequest")
+   )
+</div>
+
+<script type="text/javascript">
+    //$(function () {
+    //    $.ajaxSetup({
+    //        xhrFields: {
+    //            withCredentials: true
+    //        }
+    //    });
+    //});
+
+    function onAjaxRequest(args) {
+        args.headers.push({ Key: 'Authorization', Value: "Basic " + btoa("guest@boldreports.com:demo") });
+    }
+</script>
