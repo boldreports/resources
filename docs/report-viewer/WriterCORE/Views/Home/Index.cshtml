@@ -1,0 +1,39 @@
+﻿@{Html.BeginForm("Export", "Home", FormMethod.Post);
+    {
+        <div class="Common">
+            <div class="tablediv">
+                <div class="rowdiv">
+                    <label id="design">
+                        Choose the any one of the format to export the document in Report Writer.
+                        <br />
+                        <br />
+                    </label>
+                </div>
+                <div class="rowdiv">
+                    <div class="celldiv" style="padding:10px">
+                        <label>
+                            <strong>  Save As :</strong>
+                        </label>
+                        <input id="rbtnPDf" type="radio" name="writerFormat" value="PDF" checked="checked" style="margin-left: 15px" />
+                        <label for="rbtnPDf" style="padding:0px 5px 0px 2px">
+                            PDF
+                        </label>
+                        <input id="rbtnWord" type="radio" name="writerFormat" value="Word" style="margin-left: 15px" />
+                        <label for="rbtnWord" style="padding:0px 5px 0px 2px">
+                            Word
+                        </label>
+                        <input id="rbtnxls" type="radio" name="writerFormat" value="xls" style="margin-left: 15px" />
+                        <label for="rbtnxls" style="padding:0px 5px 0px 2px">
+                            Excel
+                        </label>
+                        <input id="rbtnCSV" type="radio" name="writerFormat" value="CSV" style="margin-left: 15px" />
+                        <label for="rbtnCSV" style="padding:0px 25px 0px 2px ">
+                            CSV
+                        </label>
+                        <input class="buttonStyle" type="submit" name="button" value="Generate" style="width:150px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        Html.EndForm();
+    }}
