@@ -1,0 +1,47 @@
+﻿@{Html.BeginForm("Export", "Home", FormMethod.Post);
+    {
+        <div class="Common">
+            <div class="tablediv">
+                <div id="description_Pane" style="text-align: justify;">
+                    <h3>Description</h3>
+                    <span>
+                        Bold ReportWriter is a powerful control for exporting RDL and RDLC files into specified
+                        format files.
+                    </span>
+                </div>
+                <div class="rowdiv">
+                    <div class="celldiv" style="padding:10px">
+                        <label>
+                            <strong>  Save As :</strong>
+                        </label>
+                        <input id="rbtnPDf" type="radio" name="writerFormat" value="PDF" checked="checked" style="margin-left: 15px" />
+                        <label for="rbtnPDf" style="padding:0px 5px 0px 2px">
+                            PDF
+                        </label>
+                        <input id="rbtnWord" type="radio" name="writerFormat" value="Word" style="margin-left: 15px" />
+                        <label for="rbtnWord" style="padding:0px 5px 0px 2px">
+                            Word
+                        </label>
+                        <input id="rbtnxls" type="radio" name="writerFormat" value="xls" style="margin-left: 15px" />
+                        <label for="rbtnxls" style="padding:0px 5px 0px 2px">
+                            Excel
+                        </label>
+                        <input id="rbtnCSV" type="radio" name="writerFormat" value="CSV" style="margin-left: 15px" />
+                        <label for="rbtnCSV" style="padding:0px 25px 0px 2px ">
+                            CSV
+                        </label>
+                        <input id="rbtnHTML" type="radio" name="writerFormat" value="HTML" style="margin-left: 15px" />
+                        <label for="rbtnHTML" style="padding:0px 25px 0px 2px ">
+                            HTML
+                        </label>
+                        <input id="rbtnPPT" type="radio" name="writerFormat" value="PPT" style="margin-left: 15px" />
+                        <label for="rbtnPPT" style="padding:0px 25px 0px 2px ">
+                            PPT
+                        </label>
+                        <input class="buttonStyle" type="submit" name="button" value="Generate" OnClick="ExportButton_Click" style="width:150px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        Html.EndForm();
+    }}

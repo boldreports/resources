@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSourceDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ConnectString>Data Source=mvc.syncfusion.com;Initial Catalog=AdventureWorks;</ConnectString>
+  <CredentialRetrieval>Store</CredentialRetrieval>
+  <Enabled>true</Enabled>
+  <Extension>SQL</Extension>
+  <ImpersonateUser>false</ImpersonateUser>
+  <OriginalConnectStringExpressionBased>false</OriginalConnectStringExpressionBased>
+  <UseOriginalConnectString>false</UseOriginalConnectString>
+  <UserName>ssrs1</UserName>
+  <Password>RDLReport1</Password>
+  <WindowsCredentials>false</WindowsCredentials>
+</DataSourceDefinition>

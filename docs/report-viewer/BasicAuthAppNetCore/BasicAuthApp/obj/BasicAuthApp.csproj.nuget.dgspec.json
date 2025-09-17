@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Documentation\\REPORT-3246\\doc\\boldreports-support-samples\\ASP.NET Core\\BasicAuthApp\\BasicAuthApp\\BasicAuthApp.csproj": {}
+  },
+  "projects": {
+    "D:\\Documentation\\REPORT-3246\\doc\\boldreports-support-samples\\ASP.NET Core\\BasicAuthApp\\BasicAuthApp\\BasicAuthApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Documentation\\REPORT-3246\\doc\\boldreports-support-samples\\ASP.NET Core\\BasicAuthApp\\BasicAuthApp\\BasicAuthApp.csproj",
+        "projectName": "BasicAuthApp",
+        "projectPath": "D:\\Documentation\\REPORT-3246\\doc\\boldreports-support-samples\\ASP.NET Core\\BasicAuthApp\\BasicAuthApp\\BasicAuthApp.csproj",
+        "packagesPath": "C:\\Users\\SubhaSukumaran\\.nuget\\packages\\",
+        "outputPath": "D:\\Documentation\\REPORT-3246\\doc\\boldreports-support-samples\\ASP.NET Core\\BasicAuthApp\\BasicAuthApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SubhaSukumaran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nexus.syncfusion.com/repository/nuget-hosted": {},
+          "http://nexus.syncfusion.com/repository/reports-nuget-hosted": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "BoldReports.AspNet.Core": {
+              "target": "Package",
+              "version": "[2.3.27, )"
+            },
+            "BoldReports.Net.Core": {
+              "target": "Package",
+              "version": "[2.3.30, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

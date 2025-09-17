@@ -1,0 +1,1330 @@
+<?xml version="1.0"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+        <ReportItems>
+          <Textbox Name="TextBox3">
+            <Left>128.25pt</Left>
+            <Top>2.25pt</Top>
+            <Height>16.5pt</Height>
+            <Width>210.75pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>0.50025pt</PaddingTop>
+              <PaddingBottom>0.50025pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Demand Letter</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="POSITION_DESC1">
+            <Left>36.75pt</Left>
+            <Top>72.75pt</Top>
+            <Height>14.25pt</Height>
+            <Width>97.5pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>0.50025pt</PaddingTop>
+              <PaddingBottom>0.50025pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!POSITION_DESC.Value, "DataSet1")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox5">
+            <Left>36.75pt</Left>
+            <Top>90pt</Top>
+            <Height>16.5pt</Height>
+            <Width>29.25pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Date:</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox6">
+            <Left>36pt</Left>
+            <Top>105.75pt</Top>
+            <Height>17.25pt</Height>
+            <Width>113.25pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>0.50025pt</PaddingTop>
+              <PaddingBottom>0.50025pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Subject: Demand Letter</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox7">
+            <Left>36.75pt</Left>
+            <Top>125.25pt</Top>
+            <Height>20.25pt</Height>
+            <Width>150pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Dear Sir or Madam,</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox11">
+            <Left>36.75pt</Left>
+            <Top>243.75pt</Top>
+            <Height>15pt</Height>
+            <Width>411.75pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="3.	Probation period: " +Fields!PROBATION_PERIOD.Value+ " days"</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox12">
+            <Left>36.75pt</Left>
+            <Top>265.5pt</Top>
+            <Height>15pt</Height>
+            <Width>411.75pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="4.	Basic salary: "+Fields!CURRENCY.Value+  +Fields!SALARY.Value+ " / month "</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox13">
+            <Left>36.75pt</Left>
+            <Top>301.5pt</Top>
+            <Height>15pt</Height>
+            <Width>411.75pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="6.	Working hours: " +Fields!NO_WORK_HOUR.Value+ "," +Fields!NO_WORK_DAY.Value+ " days a week "</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox17">
+            <Left>36.75pt</Left>
+            <Top>344.25pt</Top>
+            <Height>15pt</Height>
+            <Width>411pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="8.	Recruitment cost:  paid by the Employer "</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox18">
+            <Left>36.75pt</Left>
+            <Top>361.5pt</Top>
+            <Height>15pt</Height>
+            <Width>411.75pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="9. Annual leave: " +Fields!ANNUAL_LEAVE.Value+ " days every year "</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox20">
+            <Left>36.75pt</Left>
+            <Top>410.25pt</Top>
+            <Height>15.75pt</Height>
+            <Width>411.75pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="11. Air ticket: return tickets to the foreign employee's home country paid by the Employer"</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="RA_PIC_NM1">
+            <Left>36.75pt</Left>
+            <Top>56.25pt</Top>
+            <Height>15pt</Height>
+            <Width>97.5pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>0.50025pt</PaddingTop>
+              <PaddingBottom>0.50025pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!RA_PIC_NM.Value, "DataSet1")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="EMP_NAME2">
+            <Left>338.25pt</Left>
+            <Top>21.75pt</Top>
+            <Height>18.75pt</Height>
+            <Width>107.25pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!EMP_NAME.Value, "DataSet1")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox21">
+            <Left>36.75pt</Left>
+            <Top>450pt</Top>
+            <Height>21.75pt</Height>
+            <Width>408.75pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="13. Other term and conditions as per labour laws of Saudi Arabia: " 
++Fields!TERMS_CONDITIONS.Value</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="System_Date1">
+            <Left>69pt</Left>
+            <Top>89.25pt</Top>
+            <Height>15pt</Height>
+            <Width>97.5pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!System_Date.Value, "DataSet1")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox4">
+            <Left>36.75pt</Left>
+            <Top>285pt</Top>
+            <Height>15pt</Height>
+            <Width>410.25pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="5.	The salary will be paid by : " +Fields!PYMNT_METHOD.Value+ "on" +Fields!PAYDAY.Value+ " of each month "</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox15">
+            <Left>36.75pt</Left>
+            <Top>321.75pt</Top>
+            <Height>21pt</Height>
+            <Width>408pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="7.	Overtime:" +Fields!CURRENCY.Value+ 
++(Sum(Fields!OT_AMT_AM.Value,"DataSet1")+Sum(Fields!OT_AMT_PM.Value,"DataSet1") )+" / hour"</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox19">
+            <Left>36.75pt</Left>
+            <Top>378.75pt</Top>
+            <Height>27.75pt</Height>
+            <Width>411.75pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="10. Benefits provided by the Employer: " +Fields!Medical.Value+","+Fields!Food.Value+","+Fields!Accomodation.Value+"," +Fields!Transport.Value</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox23">
+            <Left>36.75pt</Left>
+            <Top>426pt</Top>
+            <Height>16.5pt</Height>
+            <Width>407.25pt</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="12. Repatriation cost: paid by the Employer"</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox24">
+            <Left>39.75pt</Left>
+            <Top>150pt</Top>
+            <Height>39pt</Height>
+            <Width>408.75pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>= "Based on the approval of our Ministry of Administrative Development, Labour and Social Affairs, we hereby place the following demands for dispatch of manpower to work with our organization under the following terms and conditions:"</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox10">
+            <Left>36.75pt</Left>
+            <Top>222.75pt</Top>
+            <Height>15pt</Height>
+            <Width>411.75pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="2.	Place of work will be at:  " +Fields!WORK_SITE_ADDRESS.Value</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+          <Textbox Name="TextBox9">
+            <Left>39.75pt</Left>
+            <Top>199.5pt</Top>
+            <Height>18pt</Height>
+            <Width>411pt</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+              <Border>
+                <Color>gray</Color>
+                <Style>None</Style>
+              </Border>
+            </Style>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="1.	Period of contract: " +Fields!CONTRACT_PERIOD.Value+ " years starting on " +Fields!EXPECTED_START_DT.Value + " and ending on " +Fields!EXPECTED_END_DT.Value</Value>
+                    <Style>
+                      <Color>black</Color>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+                <SpaceBefore />
+                <SpaceAfter />
+              </Paragraph>
+            </Paragraphs>
+          </Textbox>
+        </ReportItems>
+        <Height>499.5pt</Height>
+      </Body>
+      <Width>481.5pt</Width>
+      <Page>
+        <PageHeight>841.68pt</PageHeight>
+        <PageWidth>595.44pt</PageWidth>
+        <PageHeader>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+          <Height>144.75pt</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <ReportItems>
+            <Image Name="Image1">
+              <Left>194.25pt</Left>
+              <Top>12pt</Top>
+              <Height>48pt</Height>
+              <Width>60.75pt</Width>
+              <Visibility />
+              <Style>
+                <Border>
+                  <Color>#808080</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <Source>Embedded</Source>
+              <Sizing>FitProportional</Sizing>
+            </Image>
+            <Textbox Name="EMP_NAME1">
+              <Left>168pt</Left>
+              <Top>64.5pt</Top>
+              <Height>13.5pt</Height>
+              <Width>114pt</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>0.50025pt</PaddingTop>
+                <PaddingBottom>0.50025pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!EMP_NAME.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="EMP_ADDRESS1">
+              <Left>128.25pt</Left>
+              <Top>79.5pt</Top>
+              <Height>21.75pt</Height>
+              <Width>203.25pt</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!EMP_ADDRESS.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="ZIPCODE1">
+              <Left>128.25pt</Left>
+              <Top>102.75pt</Top>
+              <Height>18.75pt</Height>
+              <Width>51pt</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>0.50025pt</PaddingTop>
+                <PaddingBottom>0.50025pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!ZIPCODE.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="TextBox1">
+              <Left>128.25pt</Left>
+              <Top>122.25pt</Top>
+              <Height>16.5pt</Height>
+              <Width>21pt</Width>
+              <Style>
+                <PaddingLeft>0.50025pt</PaddingLeft>
+                <PaddingRight>0.50025pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Tel:</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="CONTACT_NO1">
+              <Left>150.75pt</Left>
+              <Top>123pt</Top>
+              <Height>18.75pt</Height>
+              <Width>81.75pt</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>0.50025pt</PaddingTop>
+                <PaddingBottom>0.50025pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!CONTACT_NO.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="TextBox2">
+              <Left>234pt</Left>
+              <Top>123pt</Top>
+              <Height>19.5pt</Height>
+              <Width>28.5pt</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>0.50025pt</PaddingTop>
+                <PaddingBottom>0.50025pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Fax:</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="FAX_NO1">
+              <Left>264pt</Left>
+              <Top>123.75pt</Top>
+              <Height>19.5pt</Height>
+              <Width>49.5pt</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>0.50025pt</PaddingTop>
+                <PaddingBottom>0.50025pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!FAX_NO.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="CITY_DESC1">
+              <Left>180.75pt</Left>
+              <Top>102.75pt</Top>
+              <Height>18.75pt</Height>
+              <Width>97.5pt</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!CITY_DESC.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="CNTRY_DESC1">
+              <Left>279.75pt</Left>
+              <Top>102pt</Top>
+              <Height>18.75pt</Height>
+              <Width>97.5pt</Width>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!CNTRY_DESC.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+          </ReportItems>
+        </PageHeader>
+        <PageFooter>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+          <Height>91.5pt</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <ReportItems>
+            <Textbox Name="TextBox16">
+              <Left>51pt</Left>
+              <Top>8.25pt</Top>
+              <Height>16.5pt</Height>
+              <Width>103.5pt</Width>
+              <Style>
+                <PaddingLeft>0.15000pt</PaddingLeft>
+                <PaddingRight>0.15000pt</PaddingRight>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Thank you,</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="EMP_PIC_NM2">
+              <Left>52.5pt</Left>
+              <Top>30.75pt</Top>
+              <Height>18.75pt</Height>
+              <Width>97.5pt</Width>
+              <Style>
+                <PaddingLeft>0.15000pt</PaddingLeft>
+                <PaddingRight>0.15000pt</PaddingRight>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!EMP_PIC_NM.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+            <Textbox Name="POSITION_DESC2">
+              <Left>54.75pt</Left>
+              <Top>53.25pt</Top>
+              <Height>18.75pt</Height>
+              <Width>97.5pt</Width>
+              <Style>
+                <PaddingLeft>0.15000pt</PaddingLeft>
+                <PaddingRight>0.15000pt</PaddingRight>
+                <Border>
+                  <Color>gray</Color>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!POSITION_DESC.Value, "DataSet1")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                  <SpaceBefore />
+                  <SpaceAfter />
+                </Paragraph>
+              </Paragraphs>
+            </Textbox>
+          </ReportItems>
+        </PageFooter>
+        <LeftMargin>1in</LeftMargin>
+        <RightMargin>1in</RightMargin>
+        <TopMargin>1in</TopMargin>
+        <BottomMargin>1in</BottomMargin>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <ConnectionProperties>
+        <DataProvider>ODBC</DataProvider>
+        <ConnectString>DSN=LowerURPNew;</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="JoID">
+          <DataField>JoID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EMP_NAME">
+          <DataField>EMP_NAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="System_Date">
+          <DataField>System_Date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Medical">
+          <DataField>Medical</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Food">
+          <DataField>Food</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Accomodation">
+          <DataField>Accomodation</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Transport">
+          <DataField>Transport</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EMP_ADDRESS">
+          <DataField>EMP_ADDRESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RA_ADDRESS">
+          <DataField>RA_ADDRESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WORK_SITE_ADDRESS">
+          <DataField>WORK_SITE_ADDRESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZIPCODE">
+          <DataField>ZIPCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CITY_DESC">
+          <DataField>CITY_DESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CNTRY_DESC">
+          <DataField>CNTRY_DESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CURRENCY">
+          <DataField>CURRENCY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTACT_NO">
+          <DataField>CONTACT_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FAX_NO">
+          <DataField>FAX_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EMP_LOGO">
+          <DataField>EMP_LOGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOC_DESC">
+          <DataField>DOC_DESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DOC_ID">
+          <DataField>DOC_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EMP_PIC_NM">
+          <DataField>EMP_PIC_NM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RA_PIC_NM">
+          <DataField>RA_PIC_NM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Agent_Position">
+          <DataField>Agent Position</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RA_REG_NO">
+          <DataField>RA_REG_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTRACT_PERIOD">
+          <DataField>CONTRACT_PERIOD</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="PROBATION_PERIOD">
+          <DataField>PROBATION_PERIOD</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SALARY">
+          <DataField>SALARY</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OT_AMT_AM">
+          <DataField>OT_AMT_AM</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="OT_AMT_PM">
+          <DataField>OT_AMT_PM</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="SALARY_TYPE_MTDT_ID">
+          <DataField>SALARY_TYPE_MTDT_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PYMNT_METHOD">
+          <DataField>PYMNT_METHOD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PAYDAY">
+          <DataField>PAYDAY</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="NO_WORK_HOUR">
+          <DataField>NO_WORK_HOUR</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="NO_WORK_DAY">
+          <DataField>NO_WORK_DAY</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="ANNUAL_LEAVE">
+          <DataField>ANNUAL_LEAVE</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="EMP_PROF_ID">
+          <DataField>EMP_PROF_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SIGN_DOC_MGT_ID">
+          <DataField>SIGN_DOC_MGT_ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EXPECTED_START_DT">
+          <DataField>EXPECTED_START_DT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EXPECTED_END_DT">
+          <DataField>EXPECTED_END_DT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SIGN_DOC_REF_NO">
+          <DataField>SIGN_DOC_REF_NO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SIGN_DOC_DESC">
+          <DataField>SIGN_DOC_DESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SIGN_DOC_ID">
+          <DataField>SIGN_DOC_ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TERMS_CONDITIONS">
+          <DataField>TERMS_CONDITIONS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>Text</CommandType>
+        <CommandText>select JO.JO_ID as JoID,EP.EMP_NAME,DATE_FORMAT(CURDATE(), '%d/%m/%Y') as 'System_Date',
+(select b.JO_BENEFIT_DESC from BE_JOB_ORDER_BENEFIT b join BE_JOB_ORDER_BENEFIT_RELATION a on b.JO_BENEFIT_ID=a.JO_BENEFIT_ID and b.JO_BENEFIT_DESC = 'Medical Insurance' where a.JO_ID = JO.JO_ID) AS Medical,
+(select b.JO_BENEFIT_DESC from BE_JOB_ORDER_BENEFIT b join BE_JOB_ORDER_BENEFIT_RELATION a on b.JO_BENEFIT_ID=a.JO_BENEFIT_ID and b.JO_BENEFIT_DESC = 'Food' where a.JO_ID = JO.JO_ID) AS Food,
+(select b.JO_BENEFIT_DESC from BE_JOB_ORDER_BENEFIT b join BE_JOB_ORDER_BENEFIT_RELATION a on b.JO_BENEFIT_ID=a.JO_BENEFIT_ID and b.JO_BENEFIT_DESC = 'Accomidation' where a.JO_ID = JO.JO_ID) AS Accomodation,
+(select b.JO_BENEFIT_DESC from BE_JOB_ORDER_BENEFIT b join BE_JOB_ORDER_BENEFIT_RELATION a on b.JO_BENEFIT_ID=a.JO_BENEFIT_ID and b.JO_BENEFIT_DESC = 'Transportation' where a.JO_ID = JO.JO_ID) AS Transport,
+-- ,JOB1.JO_BENEFIT_DESC,JOB2.JO_BENEFIT_DESC,JOB3.JO_BENEFIT_DESC,JOB4.JO_BENEFIT_DESC,
+CONCAT(COALESCE(EA.ADDR_1,''),' ',COALESCE(EA.ADDR_2,''),' ',COALESCE(EA.ADDR_3,''),' ',COALESCE(EA.ADDR_4,''),' ',COALESCE(EA.ADDR_5,'')) AS EMP_ADDRESS,
+CONCAT(COALESCE(RA.ADDR_1,''),' ',COALESCE(RA.ADDR_2,''),' ',COALESCE(RA.ADDR_3,''),' ',COALESCE(RA.ADDR_4,''),' ',COALESCE(RA.ADDR_5,'')) AS RA_ADDRESS,
+CONCAT(COALESCE(JOWS.ADDR_1,''),' ',COALESCE(JOWS.ADDR_2,''),' ',COALESCE(JOWS.ADDR_3,''),' ',COALESCE(JOWS.ADDR_4,''),' ',COALESCE(JOWS.ADDR_5,'')) AS WORK_SITE_ADDRESS,
+EA.ZIPCODE,RC.CITY_DESC, RCON.CNTRY_DESC,RCON.CURRENCY,EP.CONTACT_NO,EP.FAX_NO,TD.DOC_MGT_ID AS 'EMP_LOGO',RD.DOC_DESC,TD.DOC_ID,EO.FIRST_NAME AS 'EMP_PIC_NM',RP.RA_NAME AS 'RA_PIC_NM',
+RPOS.POSITION_DESC as 'Agent Position',RP.RA_REG_NO,JOC.CONTRACT_PERIOD, JOC.PROBATION_PERIOD,JOC.SALARY,JOC.OT_AMT_AM,JOC.OT_AMT_PM,JOC.SALARY_TYPE_MTDT_ID,JOC.PYMNT_METHOD,
+JOC.PAYDAY,JOC.NO_WORK_HOUR,JOC.NO_WORK_DAY,JOC.ANNUAL_LEAVE,EO.EMP_PROF_ID, TDL.DOC_MGT_ID as SIGN_DOC_MGT_ID , 
+ DATE_FORMAT(JOC.EXPECTED_START_DT, '%d/%m/%Y') as 'EXPECTED_START_DT',DATE_FORMAT(JOC.EXPECTED_END_DT,'%d/%m/%Y') as EXPECTED_END_DT,
+TDL.DOC_REF_NO as 'SIGN_DOC_REF_NO' , RDL.DOC_DESC as 'SIGN_DOC_DESC',TDL.DOC_ID AS 'SIGN_DOC_ID',JOT.TERMS_CONDITIONS
+from BE_JOB_ORDER JO
+join BE_EMP_PROFILE EP on JO.EMP_PROF_ID = EP.EMP_PROF_ID
+left join BE_TRXN_DOCUMENTS TD on EP.DOC_REF_NO = TD.DOC_REF_NO
+join REF_DOCUMENTS RD on TD.DOC_ID = RD.DOC_ID and RD.DOC_DESC ='COMPANY LOGO'
+join BE_TRXN_DOCUMENTS TDL on EP.DOC_REF_NO = TDL.DOC_REF_NO
+join REF_DOCUMENTS RDL on TDL.DOC_ID = RDL.DOC_ID and RDL.DOC_DESC ='SIGNATURE'
+join BE_EMP_ADDRESS EA on EP.EMP_PROF_ID = EA.EMP_PROF_ID
+join BE_EMP_OWNER EO on EP.EMP_PROF_ID = EO.EMP_PROF_ID and EO.STATUS = 1
+join BE_RA_OWNER RO on JO.RA_PROF_ID = RO.RA_PROF_ID
+join BE_RA_PROFILE RP on JO.RA_PROF_ID = RP.RA_PROF_ID and RP.STATUS = 1
+join BE_RA_ADDRESS RA on JO.RA_PROF_ID = RA.RA_PROF_ID
+join BE_JOB_ORDER_CONTRACT JOC on JO.JO_CNTRCT_ID = JOC.JO_CNTRCT_ID
+left join BE_JOB_ORDER_WORK_SITE JOWS on JO.JO_WORK_SITE_ID = JOWS.JO_WORK_SITE_ID
+/*join BE_JOB_ORDER_BENEFIT_RELATION JOBR1 on JO.JO_ID = JOBR1.JO_ID
+join BE_JOB_ORDER_BENEFIT JOB1 on JOB1.JO_BENEFIT_ID = JOBR1.JO_BENEFIT_ID and JOB1.JO_BENEFIT_DESC = 'Medical Insurance'
+join BE_JOB_ORDER_BENEFIT_RELATION JOBR2 on JO.JO_ID = JOBR2.JO_ID
+join BE_JOB_ORDER_BENEFIT JOB2 on JOB2.JO_BENEFIT_ID = JOBR2.JO_BENEFIT_ID and JOB2.JO_BENEFIT_DESC = 'Food'
+join BE_JOB_ORDER_BENEFIT_RELATION JOBR3 on JO.JO_ID = JOBR3.JO_ID
+join BE_JOB_ORDER_BENEFIT JOB3 on JOB3.JO_BENEFIT_ID = JOBR3.JO_BENEFIT_ID and JOB3.JO_BENEFIT_DESC = 'Accomidation'
+join BE_JOB_ORDER_BENEFIT_RELATION JOBR4 on JO.JO_ID = JOBR4.JO_ID
+join BE_JOB_ORDER_BENEFIT JOB4 on JOB4.JO_BENEFIT_ID = JOBR4.JO_BENEFIT_ID and JOB4.JO_BENEFIT_DESC = 'Transportation'
+-- and JOBR.JO_BENEFIT_ID = BE_JOB_ORDER_BENEFIT.JO_BENEFIT_ID*/
+left join BE_EMP_OWNER EPW on JO.EMP_PROF_ID = EPW.EMP_PROF_ID and EPW.STATUS = 1
+left join REF_POSITION RPOS on RO.POSITION_CD = RPOS.POSITION_CD
+left join REF_CITY RC on RC.CITY_CD= EA.CITY_CD
+left join REF_COUNTRY RCON on RCON.CNTRY_CD = EA.CNTRY_CD
+left join BE_JOB_ORDER_TERMS JOT on JOT.JO_ID = JO.JO_ID where JO.JO_ID =@JoID;</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@JoID">
+            <Value>=Parameters!JoID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="JoID">
+      <DataType>String</DataType>
+      <Prompt>JoID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:PageUnit>Px</rd:PageUnit>
+</Report>

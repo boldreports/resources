@@ -1,0 +1,10 @@
+<Schema Name="Schemas">
+	<Method Name="StoreSales" Method="GetData" ActionType="GET">
+	</Method>
+	<Method Name="CustomerSales" Method="GetParamData" ActionType="GET">
+		<Parameter>
+			<Name>stateCode</Name>
+			<Type>System.String</Type>
+		</Parameter>
+	</Method>
+</Schema>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bold-reports/material/bold.reports.all.min.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div style="min-height: 600px;width: 100%;">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <!--Render the gauge item. Add these scripts only if your report contains the gauge report item.-->
+    @Scripts.Render("~/Scripts/bold-reports/common/ej2-base.min.js")
+    @Scripts.Render("~/Scripts/bold-reports/common/ej2-data.min.js")
+    @Scripts.Render("~/Scripts/bold-reports/common/ej2-pdf-export.min.js")
+    @Scripts.Render("~/Scripts/bold-reports/common/ej2-svg-base.min.js")
+    @Scripts.Render("~/Scripts/bold-reports/data-visualization/ej2-circulargauge.min.js")
+    @Scripts.Render("~/Scripts/bold-reports/data-visualization/ej2-lineargauge.min.js")
+    <!--Renders the map item. Add this script only if your report contains the map report item.-->
+    @Scripts.Render("~/Scripts/bold-reports/data-visualization/ej2-maps.min.js")
+    @Scripts.Render("~/Scripts/bold-reports/common/bold.reports.common.min.js")
+    @Scripts.Render("~/Scripts/bold-reports/common/bold.reports.widgets.min.js")
+    <!--Renders the chart item. Add this script only if your report contains the chart report item.-->
+    @Scripts.Render("~/Scripts/bold-reports/data-visualization/ej.chart.min.js")
+    <!-- Report Viewer component script-->
+    @Scripts.Render("~/Scripts/bold-reports/bold.report-viewer.min.js")
+    @RenderSection("scripts", required: false)
+    @Html.Bold().ScriptManager()
+    <!-- Bold Reports script manager -->
+    @Html.Bold().ScriptManager()
+</body>
+</html>
