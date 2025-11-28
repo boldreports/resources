@@ -56,57 +56,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <DataSources>
-    <DataSource Name="DataSource1">
-      <rd:SecurityType>DataBase</rd:SecurityType>
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=SYNCLAPN-38107  ;Initial Catalog=AdventureWorks2016_EXT;Encrypt=false;TrustServerCertificate=true;</ConnectString>
-        <UserName>sa</UserName>
-        <PassWord>Syncfusion@123</PassWord>
-      </ConnectionProperties>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet1">
-      <Query>
-        <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT [dbo].[AdBudgetVsTraffic].[ID],
-[dbo].[AdBudgetVsTraffic].[AdBudgets],
-[dbo].[AdBudgetVsTraffic].[MonthlyVisitors] FROM [dbo].[AdBudgetVsTraffic]</CommandText>
-        <QueryDesignerState xmlns="http://schemas.microsoft.com/ReportingServices/QueryDefinition/Relational">
-          <Tables>
-            <Table Name="AdBudgetVsTraffic" Schema="dbo">
-              <Columns>
-                <Column Name="ID" AliasName="" AggregateType="" IsDuplicate="false" IsSelected="true" />
-                <Column Name="AdBudgets" AliasName="" AggregateType="" IsDuplicate="false" IsSelected="true" />
-                <Column Name="MonthlyVisitors" AliasName="" AggregateType="" IsDuplicate="false" IsSelected="true" />
-              </Columns>
-              <SchemaLevels>
-                <SchemaInfo Name="dbo" SchemaType="Schema" />
-                <SchemaInfo Name="Tables" SchemaType="Category" />
-                <SchemaInfo Name="AdBudgetVsTraffic" SchemaType="Table" />
-              </SchemaLevels>
-            </Table>
-          </Tables>
-        </QueryDesignerState>
-      </Query>
-      <Fields>
-        <Field Name="ID">
-          <DataField>ID</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="AdBudgets">
-          <DataField>AdBudgets</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="MonthlyVisitors">
-          <DataField>MonthlyVisitors</DataField>
-          <rd:TypeName>System.Int64</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
