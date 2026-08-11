@@ -1,0 +1,43 @@
+﻿
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PDF Combine</title>
+    <style>
+        .container {
+            width: 72%;
+            border-color: rgb(39, 161, 174);
+            border-width: medium;
+            border-style: double;
+            position: absolute;
+            left: 14%;
+            height: 97.5%;
+        }
+
+        .header {
+            background-color: rgb(39, 161, 174);
+            text-align: center;
+        }
+
+        .content_section {
+            height: 100%;
+            position: absolute;
+            top: 10%;
+            left: 3%;
+            right: 3%;
+        }
+    </style>
+</head>
+<body>
+    @{Html.BeginForm("RDLPDF", "Home", FormMethod.Post);
+        {
+            <div>
+                <input type="submit" value="CombinePDF" style="width: 150px;" />
+            </div>
+        }
+
+        Html.EndForm();
+    }
+   
+</body>
+</html>

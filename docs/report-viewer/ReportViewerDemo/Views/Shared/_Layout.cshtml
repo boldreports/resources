@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.boldreports.com/3.1.42/content/material/bold.reports.all.min.css" rel="stylesheet" />
+    <script src="https://cdn.boldreports.com/external/jquery-1.10.2.min.js" type="text/javascript"></script>
+
+    <!--Render the gauge item. Add this script only if your report contains the gauge report item. -->
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/common/ej2-base.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/common/ej2-data.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/common/ej2-pdf-export.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/common/ej2-svg-base.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/data-visualization/ej2-lineargauge.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/data-visualization/ej2-circulargauge.min.js"></script>
+
+    <!--Render the map item. Add this script only if your report contains the map report item.-->
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/data-visualization/ej2-maps.min.js"></script>
+
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/common/bold.reports.common.min.js"></script>
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/common/bold.reports.widgets.min.js"></script>
+
+    <!--Render the chart item. Add this script only if your report contains the chart report item.-->
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/data-visualization/ej.chart.min.js"></script>
+
+    <!-- Report Viewer component script-->
+    <script src="https://cdn.boldreports.com/3.1.42/scripts/bold.report-viewer.min.js"></script>
+</head>
+<body>
+    <div style="min-height: 600px;width: 100%;">
+        @RenderBody()
+    </div>
+
+    @RenderSection("Scripts", required: false)
+    <!-- Bold Reports script manager -->
+    <bold-script-manager></bold-script-manager>
+</body>
+</html>
+

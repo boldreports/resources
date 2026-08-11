@@ -1,0 +1,879 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{74D069DD-5704-49F6-B0DD-3E97B8AAB08B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVC_SAMPLE</RootNamespace>
+    <AssemblyName>MVC SAMPLE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44387</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bold.Licensing, Version=3.2460.23.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>packages\Bold.Licensing.3.2.23\lib\net46\Bold.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="BoldReports.Mvc, Version=3.2500.23.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\BoldReports.Mvc5.3.2.23\lib\net45\BoldReports.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="BoldReports.Web, Version=3.2460.23.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\BoldReports.Web.3.2.23\lib\net46\BoldReports.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Syncfusion.Compression.Base, Version=19.2460.1.1, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Compression.Base.19.2.1.1\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.DocIO.AspNet.19.2.0.44\lib\net46\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Licensing.19.2.0.44\lib\net46\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OfficeChart.Base, Version=19.2460.1.1, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.OfficeChart.Base.19.2.1.1\lib\net46\Syncfusion.OfficeChart.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Pdf.AspNet.19.2.0.44\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Presentation.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.Presentation.AspNet.19.2.0.44\lib\net46\Syncfusion.Presentation.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=19.2460.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>packages\Syncfusion.XlsIO.AspNet.19.2.0.44\lib\net46\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReportViewerController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.bootstrap.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.bootstrap.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.bootstrap4.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.bootstrap4.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.material.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.material.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.office-365.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.reportdesigner.core.office-365.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.bootstrap.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.bootstrap.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.bootstrap4.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.bootstrap4.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.material.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.material.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.office-365.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bold.widgets.core.office-365.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\bold.reportdesigner.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\bold.reportdesigner.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\bold.reportdesigner.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\bold.reportdesigner.theme.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\bold.reports.all.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\bold.reports.all.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\bold.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\bold.theme.min.css" />
+    <Content Include="Content\bold-reports\bootstrap-theme\images\ajax-loader.gif" />
+    <Content Include="Content\bold-reports\bootstrap-theme\images\checkedtick.png" />
+    <Content Include="Content\bold-reports\bootstrap-theme\images\drop-sibling.png" />
+    <Content Include="Content\bold-reports\bootstrap-theme\images\rating-star.png" />
+    <Content Include="Content\bold-reports\bootstrap-theme\images\rotator-icon.png" />
+    <Content Include="Content\bold-reports\bootstrap-theme\images\slider-tick.png" />
+    <Content Include="Content\bold-reports\bootstrap-theme\images\waitingpopup.gif" />
+    <Content Include="Content\bold-reports\bootstrap4\bold.reportdesigner.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bootstrap4\bold.reportdesigner.min.css" />
+    <Content Include="Content\bold-reports\bootstrap4\bold.reportdesigner.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bootstrap4\bold.reportdesigner.theme.min.css" />
+    <Content Include="Content\bold-reports\bootstrap4\bold.reports.all.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bootstrap4\bold.reports.all.min.css" />
+    <Content Include="Content\bold-reports\bootstrap4\bold.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\bootstrap4\bold.theme.min.css" />
+    <Content Include="Content\bold-reports\bootstrap4\icons\ejicons.svg" />
+    <Content Include="Content\bold-reports\bootstrap4\images\ajax-loader.gif" />
+    <Content Include="Content\bold-reports\bootstrap4\images\checkedtick.png" />
+    <Content Include="Content\bold-reports\bootstrap4\images\drop-sibling.png" />
+    <Content Include="Content\bold-reports\bootstrap4\images\rating-star.png" />
+    <Content Include="Content\bold-reports\bootstrap4\images\rotator-icon.png" />
+    <Content Include="Content\bold-reports\bootstrap4\images\slider-tick.png" />
+    <Content Include="Content\bold-reports\bootstrap4\images\waitingpopup.gif" />
+    <Content Include="Content\bold-reports\common-images\darktheme\colorpicker_dark.png" />
+    <Content Include="Content\bold-reports\common-images\ejicons.svg" />
+    <Content Include="Content\bold-reports\common-images\grid\dropPointer.cur" />
+    <Content Include="Content\bold-reports\common-images\lighttheme\colorpicker_light.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Arrow_Bootom.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Arrow_Bootom_hover.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Arrow_Left.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Arrow_Left_hover.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Arrow_Right.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Arrow_Right_hover.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Arrow_Top.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Arrow_Top_hover.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Bar.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Home.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Home_hover.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Home_hover_lime.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Home_hover_saffron.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Home_lime.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Home_saffron.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Navicatior.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Zoom-In.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Zoom-In_hover.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Zoom-out.png" />
+    <Content Include="Content\bold-reports\common-images\maps\Zoom-out_hover.png" />
+    <Content Include="Content\bold-reports\common-images\materialtheme\colorpicker_light_material.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\dataset.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\datasource.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\defaultimage.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\dragtable.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\ejreportdesigner.svg" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\image.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\moveicon.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\nodata.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\parameter.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\resizeicon.png" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\settingicon.png" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\alertIcon.svg" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\collapse.svg" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\down.png" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\ej-reportviewericons.svg" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\errorIcon.svg" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\expand.svg" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\minus.gif" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\minus.jpg" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\minus.png" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\plus.gif" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\plus.jpg" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\plus.png" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\up.png" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\updown.png" />
+    <Content Include="Content\bold-reports\common-images\treeview\drop-sibling-rtl.png" />
+    <Content Include="Content\bold-reports\high-contrast-01\bold.reportdesigner.compatibility.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-01\bold.reportdesigner.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-01\bold.reportdesigner.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-01\bold.reportdesigner.theme.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-01\bold.reports.all.compatibility.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-01\bold.reports.all.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-01\bold.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-01\bold.theme.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-01\images\ajax-loader.gif" />
+    <Content Include="Content\bold-reports\high-contrast-01\images\checkedtick.png" />
+    <Content Include="Content\bold-reports\high-contrast-01\images\drop-sibling.png" />
+    <Content Include="Content\bold-reports\high-contrast-01\images\rating-star.png" />
+    <Content Include="Content\bold-reports\high-contrast-01\images\rotator-icon.png" />
+    <Content Include="Content\bold-reports\high-contrast-01\images\slider-tick.png" />
+    <Content Include="Content\bold-reports\high-contrast-01\images\waitingpopup.gif" />
+    <Content Include="Content\bold-reports\high-contrast-02\bold.reportdesigner.compatibility.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-02\bold.reportdesigner.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-02\bold.reportdesigner.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-02\bold.reportdesigner.theme.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-02\bold.reports.all.compatibility.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-02\bold.reports.all.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-02\bold.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-02\bold.theme.min.css" />
+    <Content Include="Content\bold-reports\high-contrast-02\images\ajax-loader.gif" />
+    <Content Include="Content\bold-reports\high-contrast-02\images\checkedtick.png" />
+    <Content Include="Content\bold-reports\high-contrast-02\images\drop-sibling.png" />
+    <Content Include="Content\bold-reports\high-contrast-02\images\rating-star.png" />
+    <Content Include="Content\bold-reports\high-contrast-02\images\rotator-icon.png" />
+    <Content Include="Content\bold-reports\high-contrast-02\images\slider-tick.png" />
+    <Content Include="Content\bold-reports\high-contrast-02\images\waitingpopup.gif" />
+    <Content Include="Content\bold-reports\material\bold.reportdesigner.compatibility.min.css" />
+    <Content Include="Content\bold-reports\material\bold.reportdesigner.min.css" />
+    <Content Include="Content\bold-reports\material\bold.reportdesigner.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\material\bold.reportdesigner.theme.min.css" />
+    <Content Include="Content\bold-reports\material\bold.reports.all.compatibility.min.css" />
+    <Content Include="Content\bold-reports\material\bold.reports.all.min.css" />
+    <Content Include="Content\bold-reports\material\bold.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\material\bold.theme.min.css" />
+    <Content Include="Content\bold-reports\material\icons\ejicons.svg" />
+    <Content Include="Content\bold-reports\material\images\ajax-loader.gif" />
+    <Content Include="Content\bold-reports\material\images\checkedtick.png" />
+    <Content Include="Content\bold-reports\material\images\drop-sibling.png" />
+    <Content Include="Content\bold-reports\material\images\rating-star.png" />
+    <Content Include="Content\bold-reports\material\images\rotator-icon.png" />
+    <Content Include="Content\bold-reports\material\images\slider-tick.png" />
+    <Content Include="Content\bold-reports\material\images\waitingpopup.gif" />
+    <Content Include="Content\bold-reports\office-365\bold.reportdesigner.compatibility.min.css" />
+    <Content Include="Content\bold-reports\office-365\bold.reportdesigner.min.css" />
+    <Content Include="Content\bold-reports\office-365\bold.reportdesigner.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\office-365\bold.reportdesigner.theme.min.css" />
+    <Content Include="Content\bold-reports\office-365\bold.reports.all.compatibility.min.css" />
+    <Content Include="Content\bold-reports\office-365\bold.reports.all.min.css" />
+    <Content Include="Content\bold-reports\office-365\bold.theme.compatibility.min.css" />
+    <Content Include="Content\bold-reports\office-365\bold.theme.min.css" />
+    <Content Include="Content\bold-reports\office-365\icons\ejicons.svg" />
+    <Content Include="Content\bold-reports\office-365\images\ajax-loader.gif" />
+    <Content Include="Content\bold-reports\office-365\images\checkedtick.png" />
+    <Content Include="Content\bold-reports\office-365\images\drop-sibling.png" />
+    <Content Include="Content\bold-reports\office-365\images\Rating_Active.png" />
+    <Content Include="Content\bold-reports\office-365\images\Rating_Clear.png" />
+    <Content Include="Content\bold-reports\office-365\images\Rating_Default.png" />
+    <Content Include="Content\bold-reports\office-365\images\rotator-icon.png" />
+    <Content Include="Content\bold-reports\office-365\images\slider-tick.png" />
+    <Content Include="Content\bold-reports\office-365\images\waitingpopup.gif" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bold-reports\bold.report-designer.min.js" />
+    <Content Include="Scripts\bold-reports\bold.report-viewer.min.js" />
+    <Content Include="Scripts\bold-reports\common\bold.report-designer-widgets.min.js" />
+    <Content Include="Scripts\bold-reports\common\bold.reports.common.min.js" />
+    <Content Include="Scripts\bold-reports\common\bold.reports.react.min.js" />
+    <Content Include="Scripts\bold-reports\common\bold.reports.widgets.min.js" />
+    <Content Include="Scripts\bold-reports\common\ej.unobtrusive.min.js" />
+    <Content Include="Scripts\bold-reports\common\ej.webform.min.js" />
+    <Content Include="Scripts\bold-reports\common\ej.widget.angular.min.js" />
+    <Content Include="Scripts\bold-reports\common\ej.widget.ko.min.js" />
+    <Content Include="Scripts\bold-reports\common\ej2-base.min.js" />
+    <Content Include="Scripts\bold-reports\common\ej2-data.min.js" />
+    <Content Include="Scripts\bold-reports\common\ej2-pdf-export.min.js" />
+    <Content Include="Scripts\bold-reports\common\ej2-svg-base.min.js" />
+    <Content Include="Scripts\bold-reports\data-visualization\ej.bulletgraph.min.js" />
+    <Content Include="Scripts\bold-reports\data-visualization\ej.chart.min.js" />
+    <Content Include="Scripts\bold-reports\data-visualization\ej2-circulargauge.min.js" />
+    <Content Include="Scripts\bold-reports\data-visualization\ej2-lineargauge.min.js" />
+    <Content Include="Scripts\bold-reports\data-visualization\ej2-maps.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\bold-reports\office-365\icons\ejicons.woff" />
+    <Content Include="Content\bold-reports\office-365\icons\ejicons.ttf" />
+    <Content Include="Content\bold-reports\office-365\icons\ejicons.eot" />
+    <Content Include="Content\bold-reports\material\icons\ejicons.woff" />
+    <Content Include="Content\bold-reports\material\icons\ejicons.ttf" />
+    <Content Include="Content\bold-reports\material\icons\ejicons.eot" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\ej-reportviewericons.woff" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\ej-reportviewericons.ttf" />
+    <Content Include="Content\bold-reports\common-images\reportviewer\ej-reportviewericons.eot" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\ejreportdesigner.woff" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\ejreportdesigner.ttf" />
+    <Content Include="Content\bold-reports\common-images\reportdesigner\ejreportdesigner.eot" />
+    <Content Include="Content\bold-reports\common-images\ejicons.woff" />
+    <Content Include="Content\bold-reports\common-images\ejicons.ttf" />
+    <Content Include="Content\bold-reports\common-images\ejicons.eot" />
+    <Content Include="Content\bold-reports\bootstrap4\icons\ejicons.woff" />
+    <Content Include="Content\bold-reports\bootstrap4\icons\ejicons.ttf" />
+    <Content Include="Content\bold-reports\bootstrap4\icons\ejicons.eot" />
+    <Content Include="Resources\sales-report.rdl" />
+    <Content Include="Resources\company-sales%28json%29.rdl" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\CodeMirror\addon\comment\comment.js" />
+    <Content Include="Scripts\CodeMirror\addon\comment\continuecomment.js" />
+    <Content Include="Scripts\CodeMirror\addon\dialog\dialog.css" />
+    <Content Include="Scripts\CodeMirror\addon\dialog\dialog.js" />
+    <Content Include="Scripts\CodeMirror\addon\display\autorefresh.js" />
+    <Content Include="Scripts\CodeMirror\addon\display\fullscreen.css" />
+    <Content Include="Scripts\CodeMirror\addon\display\fullscreen.js" />
+    <Content Include="Scripts\CodeMirror\addon\display\panel.js" />
+    <Content Include="Scripts\CodeMirror\addon\display\placeholder.js" />
+    <Content Include="Scripts\CodeMirror\addon\display\rulers.js" />
+    <Content Include="Scripts\CodeMirror\addon\edit\closebrackets.js" />
+    <Content Include="Scripts\CodeMirror\addon\edit\closetag.js" />
+    <Content Include="Scripts\CodeMirror\addon\edit\continuelist.js" />
+    <Content Include="Scripts\CodeMirror\addon\edit\matchbrackets.js" />
+    <Content Include="Scripts\CodeMirror\addon\edit\matchtags.js" />
+    <Content Include="Scripts\CodeMirror\addon\edit\trailingspace.js" />
+    <Content Include="Scripts\CodeMirror\addon\fold\brace-fold.js" />
+    <Content Include="Scripts\CodeMirror\addon\fold\comment-fold.js" />
+    <Content Include="Scripts\CodeMirror\addon\fold\foldcode.js" />
+    <Content Include="Scripts\CodeMirror\addon\fold\foldgutter.css" />
+    <Content Include="Scripts\CodeMirror\addon\fold\foldgutter.js" />
+    <Content Include="Scripts\CodeMirror\addon\fold\indent-fold.js" />
+    <Content Include="Scripts\CodeMirror\addon\fold\markdown-fold.js" />
+    <Content Include="Scripts\CodeMirror\addon\fold\xml-fold.js" />
+    <Content Include="Scripts\CodeMirror\addon\hint\anyword-hint.js" />
+    <Content Include="Scripts\CodeMirror\addon\hint\css-hint.js" />
+    <Content Include="Scripts\CodeMirror\addon\hint\html-hint.js" />
+    <Content Include="Scripts\CodeMirror\addon\hint\javascript-hint.js" />
+    <Content Include="Scripts\CodeMirror\addon\hint\show-hint.css" />
+    <Content Include="Scripts\CodeMirror\addon\hint\show-hint.js" />
+    <Content Include="Scripts\CodeMirror\addon\hint\sql-hint.js" />
+    <Content Include="Scripts\CodeMirror\addon\hint\xml-hint.js" />
+    <Content Include="Scripts\CodeMirror\addon\lint\coffeescript-lint.js" />
+    <Content Include="Scripts\CodeMirror\addon\lint\css-lint.js" />
+    <Content Include="Scripts\CodeMirror\addon\lint\html-lint.js" />
+    <Content Include="Scripts\CodeMirror\addon\lint\javascript-lint.js" />
+    <Content Include="Scripts\CodeMirror\addon\lint\json-lint.js" />
+    <Content Include="Scripts\CodeMirror\addon\lint\lint.css" />
+    <Content Include="Scripts\CodeMirror\addon\lint\lint.js" />
+    <Content Include="Scripts\CodeMirror\addon\lint\yaml-lint.js" />
+    <Content Include="Scripts\CodeMirror\addon\merge\merge.css" />
+    <Content Include="Scripts\CodeMirror\addon\merge\merge.js" />
+    <Content Include="Scripts\CodeMirror\addon\mode\loadmode.js" />
+    <Content Include="Scripts\CodeMirror\addon\mode\multiplex.js" />
+    <Content Include="Scripts\CodeMirror\addon\mode\multiplex_test.js" />
+    <Content Include="Scripts\CodeMirror\addon\mode\overlay.js" />
+    <Content Include="Scripts\CodeMirror\addon\mode\simple.js" />
+    <Content Include="Scripts\CodeMirror\addon\runmode\colorize.js" />
+    <Content Include="Scripts\CodeMirror\addon\runmode\runmode-standalone.js" />
+    <Content Include="Scripts\CodeMirror\addon\runmode\runmode.js" />
+    <Content Include="Scripts\CodeMirror\addon\runmode\runmode.node.js" />
+    <Content Include="Scripts\CodeMirror\addon\scroll\annotatescrollbar.js" />
+    <Content Include="Scripts\CodeMirror\addon\scroll\scrollpastend.js" />
+    <Content Include="Scripts\CodeMirror\addon\scroll\simplescrollbars.css" />
+    <Content Include="Scripts\CodeMirror\addon\scroll\simplescrollbars.js" />
+    <Content Include="Scripts\CodeMirror\addon\search\jump-to-line.js" />
+    <Content Include="Scripts\CodeMirror\addon\search\match-highlighter.js" />
+    <Content Include="Scripts\CodeMirror\addon\search\matchesonscrollbar.css" />
+    <Content Include="Scripts\CodeMirror\addon\search\matchesonscrollbar.js" />
+    <Content Include="Scripts\CodeMirror\addon\search\search.js" />
+    <Content Include="Scripts\CodeMirror\addon\search\searchcursor.js" />
+    <Content Include="Scripts\CodeMirror\addon\selection\active-line.js" />
+    <Content Include="Scripts\CodeMirror\addon\selection\mark-selection.js" />
+    <Content Include="Scripts\CodeMirror\addon\selection\selection-pointer.js" />
+    <Content Include="Scripts\CodeMirror\addon\tern\tern.css" />
+    <Content Include="Scripts\CodeMirror\addon\tern\tern.js" />
+    <Content Include="Scripts\CodeMirror\addon\tern\worker.js" />
+    <Content Include="Scripts\CodeMirror\addon\wrap\hardwrap.js" />
+    <Content Include="Scripts\CodeMirror\keymap\emacs.js" />
+    <Content Include="Scripts\CodeMirror\keymap\sublime.js" />
+    <Content Include="Scripts\CodeMirror\keymap\vim.js" />
+    <Content Include="Scripts\CodeMirror\lib\codemirror.css" />
+    <Content Include="Scripts\CodeMirror\lib\codemirror.js" />
+    <Content Include="Scripts\CodeMirror\mode\apl\apl.js" />
+    <Content Include="Scripts\CodeMirror\mode\apl\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\asciiarmor\asciiarmor.js" />
+    <Content Include="Scripts\CodeMirror\mode\asciiarmor\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\asn.1\asn.1.js" />
+    <Content Include="Scripts\CodeMirror\mode\asn.1\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\asterisk\asterisk.js" />
+    <Content Include="Scripts\CodeMirror\mode\asterisk\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\brainfuck\brainfuck.js" />
+    <Content Include="Scripts\CodeMirror\mode\brainfuck\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\clike\clike.js" />
+    <Content Include="Scripts\CodeMirror\mode\clike\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\clike\scala.html" />
+    <Content Include="Scripts\CodeMirror\mode\clike\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\clojure\clojure.js" />
+    <Content Include="Scripts\CodeMirror\mode\clojure\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\cmake\cmake.js" />
+    <Content Include="Scripts\CodeMirror\mode\cmake\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\cobol\cobol.js" />
+    <Content Include="Scripts\CodeMirror\mode\cobol\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\coffeescript\coffeescript.js" />
+    <Content Include="Scripts\CodeMirror\mode\coffeescript\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\commonlisp\commonlisp.js" />
+    <Content Include="Scripts\CodeMirror\mode\commonlisp\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\crystal\crystal.js" />
+    <Content Include="Scripts\CodeMirror\mode\crystal\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\css\css.js" />
+    <Content Include="Scripts\CodeMirror\mode\css\gss.html" />
+    <Content Include="Scripts\CodeMirror\mode\css\gss_test.js" />
+    <Content Include="Scripts\CodeMirror\mode\css\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\css\less.html" />
+    <Content Include="Scripts\CodeMirror\mode\css\less_test.js" />
+    <Content Include="Scripts\CodeMirror\mode\css\scss.html" />
+    <Content Include="Scripts\CodeMirror\mode\css\scss_test.js" />
+    <Content Include="Scripts\CodeMirror\mode\css\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\cypher\cypher.js" />
+    <Content Include="Scripts\CodeMirror\mode\cypher\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\cypher\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\dart\dart.js" />
+    <Content Include="Scripts\CodeMirror\mode\dart\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\diff\diff.js" />
+    <Content Include="Scripts\CodeMirror\mode\diff\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\django\django.js" />
+    <Content Include="Scripts\CodeMirror\mode\django\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\dockerfile\dockerfile.js" />
+    <Content Include="Scripts\CodeMirror\mode\dockerfile\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\dockerfile\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\dtd\dtd.js" />
+    <Content Include="Scripts\CodeMirror\mode\dtd\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\dylan\dylan.js" />
+    <Content Include="Scripts\CodeMirror\mode\dylan\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\dylan\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\d\d.js" />
+    <Content Include="Scripts\CodeMirror\mode\d\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\d\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\ebnf\ebnf.js" />
+    <Content Include="Scripts\CodeMirror\mode\ebnf\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\ecl\ecl.js" />
+    <Content Include="Scripts\CodeMirror\mode\ecl\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\eiffel\eiffel.js" />
+    <Content Include="Scripts\CodeMirror\mode\eiffel\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\elm\elm.js" />
+    <Content Include="Scripts\CodeMirror\mode\elm\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\erlang\erlang.js" />
+    <Content Include="Scripts\CodeMirror\mode\erlang\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\factor\factor.js" />
+    <Content Include="Scripts\CodeMirror\mode\factor\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\fcl\fcl.js" />
+    <Content Include="Scripts\CodeMirror\mode\fcl\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\forth\forth.js" />
+    <Content Include="Scripts\CodeMirror\mode\forth\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\fortran\fortran.js" />
+    <Content Include="Scripts\CodeMirror\mode\fortran\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\gas\gas.js" />
+    <Content Include="Scripts\CodeMirror\mode\gas\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\gfm\gfm.js" />
+    <Content Include="Scripts\CodeMirror\mode\gfm\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\gfm\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\gherkin\gherkin.js" />
+    <Content Include="Scripts\CodeMirror\mode\gherkin\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\go\go.js" />
+    <Content Include="Scripts\CodeMirror\mode\go\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\groovy\groovy.js" />
+    <Content Include="Scripts\CodeMirror\mode\groovy\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\haml\haml.js" />
+    <Content Include="Scripts\CodeMirror\mode\haml\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\haml\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\handlebars\handlebars.js" />
+    <Content Include="Scripts\CodeMirror\mode\handlebars\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\haskell-literate\haskell-literate.js" />
+    <Content Include="Scripts\CodeMirror\mode\haskell-literate\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\haskell\haskell.js" />
+    <Content Include="Scripts\CodeMirror\mode\haskell\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\haxe\haxe.js" />
+    <Content Include="Scripts\CodeMirror\mode\haxe\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\htmlembedded\htmlembedded.js" />
+    <Content Include="Scripts\CodeMirror\mode\htmlembedded\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="Scripts\CodeMirror\mode\htmlmixed\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\http\http.js" />
+    <Content Include="Scripts\CodeMirror\mode\http\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\idl\idl.js" />
+    <Content Include="Scripts\CodeMirror\mode\idl\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\javascript\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\javascript\javascript.js" />
+    <Content Include="Scripts\CodeMirror\mode\javascript\json-ld.html" />
+    <Content Include="Scripts\CodeMirror\mode\javascript\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\javascript\typescript.html" />
+    <Content Include="Scripts\CodeMirror\mode\jinja2\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\jinja2\jinja2.js" />
+    <Content Include="Scripts\CodeMirror\mode\jsx\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\jsx\jsx.js" />
+    <Content Include="Scripts\CodeMirror\mode\jsx\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\julia\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\julia\julia.js" />
+    <Content Include="Scripts\CodeMirror\mode\livescript\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\livescript\livescript.js" />
+    <Content Include="Scripts\CodeMirror\mode\lua\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\lua\lua.js" />
+    <Content Include="Scripts\CodeMirror\mode\markdown\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\markdown\markdown.js" />
+    <Content Include="Scripts\CodeMirror\mode\markdown\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\mathematica\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\mathematica\mathematica.js" />
+    <Content Include="Scripts\CodeMirror\mode\mbox\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\mbox\mbox.js" />
+    <Content Include="Scripts\CodeMirror\mode\meta.js" />
+    <Content Include="Scripts\CodeMirror\mode\mirc\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\mirc\mirc.js" />
+    <Content Include="Scripts\CodeMirror\mode\mllike\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\mllike\mllike.js" />
+    <Content Include="Scripts\CodeMirror\mode\modelica\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\modelica\modelica.js" />
+    <Content Include="Scripts\CodeMirror\mode\mscgen\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\mscgen\mscgen.js" />
+    <Content Include="Scripts\CodeMirror\mode\mscgen\mscgen_test.js" />
+    <Content Include="Scripts\CodeMirror\mode\mscgen\msgenny_test.js" />
+    <Content Include="Scripts\CodeMirror\mode\mscgen\xu_test.js" />
+    <Content Include="Scripts\CodeMirror\mode\mumps\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\mumps\mumps.js" />
+    <Content Include="Scripts\CodeMirror\mode\nginx\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\nginx\nginx.js" />
+    <Content Include="Scripts\CodeMirror\mode\nsis\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\nsis\nsis.js" />
+    <Content Include="Scripts\CodeMirror\mode\ntriples\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\ntriples\ntriples.js" />
+    <Content Include="Scripts\CodeMirror\mode\octave\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\octave\octave.js" />
+    <Content Include="Scripts\CodeMirror\mode\oz\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\oz\oz.js" />
+    <Content Include="Scripts\CodeMirror\mode\pascal\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\pascal\pascal.js" />
+    <Content Include="Scripts\CodeMirror\mode\pegjs\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\pegjs\pegjs.js" />
+    <Content Include="Scripts\CodeMirror\mode\perl\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\perl\perl.js" />
+    <Content Include="Scripts\CodeMirror\mode\php\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\php\php.js" />
+    <Content Include="Scripts\CodeMirror\mode\php\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\pig\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\pig\pig.js" />
+    <Content Include="Scripts\CodeMirror\mode\powershell\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\powershell\powershell.js" />
+    <Content Include="Scripts\CodeMirror\mode\powershell\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\properties\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\properties\properties.js" />
+    <Content Include="Scripts\CodeMirror\mode\protobuf\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\protobuf\protobuf.js" />
+    <Content Include="Scripts\CodeMirror\mode\pug\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\pug\pug.js" />
+    <Content Include="Scripts\CodeMirror\mode\puppet\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\puppet\puppet.js" />
+    <Content Include="Scripts\CodeMirror\mode\python\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\python\python.js" />
+    <Content Include="Scripts\CodeMirror\mode\python\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\q\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\q\q.js" />
+    <Content Include="Scripts\CodeMirror\mode\rpm\changes\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\rpm\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\rpm\rpm.js" />
+    <Content Include="Scripts\CodeMirror\mode\rst\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\rst\rst.js" />
+    <Content Include="Scripts\CodeMirror\mode\ruby\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\ruby\ruby.js" />
+    <Content Include="Scripts\CodeMirror\mode\ruby\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\rust\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\rust\rust.js" />
+    <Content Include="Scripts\CodeMirror\mode\rust\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\r\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\r\r.js" />
+    <Content Include="Scripts\CodeMirror\mode\sass\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\sass\sass.js" />
+    <Content Include="Scripts\CodeMirror\mode\sass\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\sas\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\sas\sas.js" />
+    <Content Include="Scripts\CodeMirror\mode\scheme\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\scheme\scheme.js" />
+    <Content Include="Scripts\CodeMirror\mode\shell\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\shell\shell.js" />
+    <Content Include="Scripts\CodeMirror\mode\shell\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\sieve\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\sieve\sieve.js" />
+    <Content Include="Scripts\CodeMirror\mode\slim\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\slim\slim.js" />
+    <Content Include="Scripts\CodeMirror\mode\slim\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\smalltalk\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\smalltalk\smalltalk.js" />
+    <Content Include="Scripts\CodeMirror\mode\smarty\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\smarty\smarty.js" />
+    <Content Include="Scripts\CodeMirror\mode\solr\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\solr\solr.js" />
+    <Content Include="Scripts\CodeMirror\mode\soy\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\soy\soy.js" />
+    <Content Include="Scripts\CodeMirror\mode\soy\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\sparql\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\sparql\sparql.js" />
+    <Content Include="Scripts\CodeMirror\mode\spreadsheet\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\spreadsheet\spreadsheet.js" />
+    <Content Include="Scripts\CodeMirror\mode\sql\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\sql\sql.js" />
+    <Content Include="Scripts\CodeMirror\mode\stex\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\stex\stex.js" />
+    <Content Include="Scripts\CodeMirror\mode\stex\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\stylus\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\stylus\stylus.js" />
+    <Content Include="Scripts\CodeMirror\mode\swift\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\swift\swift.js" />
+    <Content Include="Scripts\CodeMirror\mode\swift\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\tcl\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\tcl\tcl.js" />
+    <Content Include="Scripts\CodeMirror\mode\textile\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\textile\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\textile\textile.js" />
+    <Content Include="Scripts\CodeMirror\mode\tiddlywiki\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\tiddlywiki\tiddlywiki.css" />
+    <Content Include="Scripts\CodeMirror\mode\tiddlywiki\tiddlywiki.js" />
+    <Content Include="Scripts\CodeMirror\mode\tiki\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\tiki\tiki.css" />
+    <Content Include="Scripts\CodeMirror\mode\tiki\tiki.js" />
+    <Content Include="Scripts\CodeMirror\mode\toml\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\toml\toml.js" />
+    <Content Include="Scripts\CodeMirror\mode\tornado\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\tornado\tornado.js" />
+    <Content Include="Scripts\CodeMirror\mode\troff\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\troff\troff.js" />
+    <Content Include="Scripts\CodeMirror\mode\ttcn-cfg\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\ttcn-cfg\ttcn-cfg.js" />
+    <Content Include="Scripts\CodeMirror\mode\ttcn\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\ttcn\ttcn.js" />
+    <Content Include="Scripts\CodeMirror\mode\turtle\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\turtle\turtle.js" />
+    <Content Include="Scripts\CodeMirror\mode\twig\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\twig\twig.js" />
+    <Content Include="Scripts\CodeMirror\mode\vbscript\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\vbscript\vbscript.js" />
+    <Content Include="Scripts\CodeMirror\mode\vb\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\vb\vb.js" />
+    <Content Include="Scripts\CodeMirror\mode\velocity\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\velocity\velocity.js" />
+    <Content Include="Scripts\CodeMirror\mode\verilog\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\verilog\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\verilog\verilog.js" />
+    <Content Include="Scripts\CodeMirror\mode\vhdl\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\vhdl\vhdl.js" />
+    <Content Include="Scripts\CodeMirror\mode\vue\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\vue\vue.js" />
+    <Content Include="Scripts\CodeMirror\mode\webidl\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\webidl\webidl.js" />
+    <Content Include="Scripts\CodeMirror\mode\xml\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\xml\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\xml\xml.js" />
+    <Content Include="Scripts\CodeMirror\mode\xquery\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\xquery\test.js" />
+    <Content Include="Scripts\CodeMirror\mode\xquery\xquery.js" />
+    <Content Include="Scripts\CodeMirror\mode\yacas\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\yacas\yacas.js" />
+    <Content Include="Scripts\CodeMirror\mode\yaml-frontmatter\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\yaml-frontmatter\yaml-frontmatter.js" />
+    <Content Include="Scripts\CodeMirror\mode\yaml\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\yaml\yaml.js" />
+    <Content Include="Scripts\CodeMirror\mode\z80\index.html" />
+    <Content Include="Scripts\CodeMirror\mode\z80\z80.js" />
+    <Content Include="Scripts\CodeMirror\theme\3024-day.css" />
+    <Content Include="Scripts\CodeMirror\theme\3024-night.css" />
+    <Content Include="Scripts\CodeMirror\theme\abcdef.css" />
+    <Content Include="Scripts\CodeMirror\theme\ambiance-mobile.css" />
+    <Content Include="Scripts\CodeMirror\theme\ambiance.css" />
+    <Content Include="Scripts\CodeMirror\theme\base16-dark.css" />
+    <Content Include="Scripts\CodeMirror\theme\base16-light.css" />
+    <Content Include="Scripts\CodeMirror\theme\bespin.css" />
+    <Content Include="Scripts\CodeMirror\theme\blackboard.css" />
+    <Content Include="Scripts\CodeMirror\theme\cobalt.css" />
+    <Content Include="Scripts\CodeMirror\theme\colorforth.css" />
+    <Content Include="Scripts\CodeMirror\theme\dracula.css" />
+    <Content Include="Scripts\CodeMirror\theme\duotone-dark.css" />
+    <Content Include="Scripts\CodeMirror\theme\duotone-light.css" />
+    <Content Include="Scripts\CodeMirror\theme\eclipse.css" />
+    <Content Include="Scripts\CodeMirror\theme\elegant.css" />
+    <Content Include="Scripts\CodeMirror\theme\erlang-dark.css" />
+    <Content Include="Scripts\CodeMirror\theme\hopscotch.css" />
+    <Content Include="Scripts\CodeMirror\theme\icecoder.css" />
+    <Content Include="Scripts\CodeMirror\theme\isotope.css" />
+    <Content Include="Scripts\CodeMirror\theme\lesser-dark.css" />
+    <Content Include="Scripts\CodeMirror\theme\liquibyte.css" />
+    <Content Include="Scripts\CodeMirror\theme\material.css" />
+    <Content Include="Scripts\CodeMirror\theme\mbo.css" />
+    <Content Include="Scripts\CodeMirror\theme\mdn-like.css" />
+    <Content Include="Scripts\CodeMirror\theme\midnight.css" />
+    <Content Include="Scripts\CodeMirror\theme\monokai.css" />
+    <Content Include="Scripts\CodeMirror\theme\neat.css" />
+    <Content Include="Scripts\CodeMirror\theme\neo.css" />
+    <Content Include="Scripts\CodeMirror\theme\night.css" />
+    <Content Include="Scripts\CodeMirror\theme\oceanic-next.css" />
+    <Content Include="Scripts\CodeMirror\theme\panda-syntax.css" />
+    <Content Include="Scripts\CodeMirror\theme\paraiso-dark.css" />
+    <Content Include="Scripts\CodeMirror\theme\paraiso-light.css" />
+    <Content Include="Scripts\CodeMirror\theme\pastel-on-dark.css" />
+    <Content Include="Scripts\CodeMirror\theme\railscasts.css" />
+    <Content Include="Scripts\CodeMirror\theme\rubyblue.css" />
+    <Content Include="Scripts\CodeMirror\theme\seti.css" />
+    <Content Include="Scripts\CodeMirror\theme\shadowfox.css" />
+    <Content Include="Scripts\CodeMirror\theme\solarized.css" />
+    <Content Include="Scripts\CodeMirror\theme\the-matrix.css" />
+    <Content Include="Scripts\CodeMirror\theme\tomorrow-night-bright.css" />
+    <Content Include="Scripts\CodeMirror\theme\tomorrow-night-eighties.css" />
+    <Content Include="Scripts\CodeMirror\theme\ttcn.css" />
+    <Content Include="Scripts\CodeMirror\theme\twilight.css" />
+    <Content Include="Scripts\CodeMirror\theme\vibrant-ink.css" />
+    <Content Include="Scripts\CodeMirror\theme\xq-dark.css" />
+    <Content Include="Scripts\CodeMirror\theme\xq-light.css" />
+    <Content Include="Scripts\CodeMirror\theme\yeti.css" />
+    <Content Include="Scripts\CodeMirror\theme\zenburn.css" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jsrender.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58972</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44387/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

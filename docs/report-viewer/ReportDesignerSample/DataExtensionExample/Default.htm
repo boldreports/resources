@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="height: 100%; width: 100%;">
+<head>
+    <title>Syncfusion Report Samples</title>
+
+    <link href="https://cdn.syncfusion.com/1.2.7/bold-reports/material/bold.reports.all.min.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/1.2.7/bold-reports/material/bold.reportdesigner.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.css" rel="stylesheet" />
+    <script src="https://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/js/assets/external/jsrender.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/codemirror.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/show-hint.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/addon/hint/sql-hint.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.37.0/mode/sql/sql.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.44.0/mode/vb/vb.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/1.2.7/bold-reports/common/bold.reports.common.min.js"></script>
+    <script src="https://cdn.syncfusion.com/1.2.7/bold-reports/common/bold.reports.widgets.min.js"></script>
+    <script src="https://cdn.syncfusion.com/1.2.7/bold-reports/common/bold.report-designer-widgets.min.js"></script>
+    <!--Used to render the chart item. Add this script only if your report contains the chart report item.-->
+    <script src="https://cdn.syncfusion.com/1.2.7/bold-reports/data-visualization/ej.chart.min.js"></script>
+    <script src="https://cdn.syncfusion.com/1.2.7/bold-reports/bold.report-viewer.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/1.2.7/bold-reports/bold.report-designer.min.js" type="text/javascript"></script>
+</head>
+<body style="overflow: hidden; position: static; margin: 0; padding: 0; height: 100%; width: 100%;">
+    <div id="rptDesigner" style="position: absolute; height: 100%; width: 100%;"></div>
+    <script type="text/javascript">
+        var isSubmit = true;
+        var rptName = "/Catagory1/Website Visitor Analysis";
+
+        $(function () {            
+            $("#rptDesigner").boldReportDesigner(
+                {
+                    serviceUrl: '../../api/ReportingAPI',
+                    create: $.proxy(controlInitialized, this),
+                    toolbarRendering: $.proxy(renderDesignerToolbar, this),
+                    toolbarSettings: {
+                        items: ej.ReportDesigner.ToolbarItems.All & ~ej.ReportDesigner.ToolbarItems.Preview & ~ej.ReportDesigner.ToolbarItems.EditDesign & ~ej.ReportDesigner.ToolbarItems.New & ~ej.ReportDesigner.ToolbarItems.Open & ~ej.ReportDesigner.ToolbarItems.Save
+                    }
+                });
+        });
+
+        function controlInitialized(args) {
+            var designer = $('#rptDesigner').data('boldReportDesigner');
+            //designer.openReport(reportName);
+        }
+
+        function showViewer() {
+            $("#rptViewer").css('display', 'block');
+            $("#rptDesigner").css('display', 'none');
+            var viewer = $('#rptViewer').data('boldReportViewer');
+            viewer.reload();
+        }
+
+        function renderDesignerToolbar(args) {
+            var ulTag = $("<ul class='e-rptdesigner-sample-toolbarul'/>");
+            ulTag.attr('id', 'reportdesigner-toolbarul');
+            var divElement = $("<div/>");
+            divElement.attr('id', 'reportdesigner-btn-div');
+            var saveButton = $("<button></button>");
+            saveButton.attr('id', 'reportdesigner-savebutton');
+            divElement.append(saveButton);
+            ulTag.append(divElement);
+            args.target.append(ulTag);
+            saveButton.bind('click', $.proxy(saveClick, this));
+            saveButton.ejButton({
+                size: "medium",
+                showRoundedCorner: true,
+                cssClass: 'e-primary',
+                contentType: "textandimage",
+                prefixIcon: "e-icon e-save",
+                text: 'Save'
+            });
+        }
+
+        function editClick(args) {
+            updateViewerHiddenList();
+            showDesigner();
+        }
+
+        function saveClick(args) {
+            updateDesignerHiddenList();
+            saveReport();
+        }
+
+        function cancelClick(args) {
+            cancelReport();
+        }
+
+        function showDesigner() {
+            $('#rptViewer_loadingIndicator').data('ejWaitingPopup').hide();
+            $("#rptViewer").css('display', 'none');
+            $("#rptDesigner").css('display', 'block');
+            var designer = $('#rptDesigner').data('boldReportDesigner');
+            if (designer) {
+                designer.openReport(rptName);
+                var waitingPopup = $('#rptDesigner_designAreaContainer').data('ejWaitingPopup');
+                waitingPopup.hide();
+            } else {
+                renderDesigner();
+
+            }
+        }
+
+        function saveReport() {
+            var designer = $('#rptDesigner').data('boldReportDesigner');
+            designer.downloadReport();
+        }
+
+        function updateViewerHiddenList() {
+            if ($('#rptViewer_toolbarContainer_target').length > 0 && $('#rptViewer_toolbarContainer_hiddenlist').is(':visible')) {
+                $('#rptViewer_toolbarContainer_target').mousedown();
+            }
+        }
+
+        function updateDesignerHiddenList() {
+            if ($('#rptDesigner_toolBar_target').length > 0 && $('#rptDesigner_toolBar_hiddenlist').is(':visible')) {
+                $('#rptDesigner_toolBar_target').mousedown();
+            }
+        }
+
+        function cancelReport() {
+            var designer = $('#rptDesigner').data('boldReportDesigner');
+            updateDesignerHiddenList();
+            if (designer.hasReportChanges()) {
+                if (confirm("Changes you made may not be saved. Do you want back to Preview?")) {
+                    showViewer();
+                } else {
+                    return;
+                }
+            } else {
+                showViewer();
+            }
+        }
+
+        function formSubmit(args) {
+            isSubmit = false;
+        }
+
+        function windowUnload(args) {
+            var designer = $('#rptDesigner').data('boldReportDesigner');
+            if (designer.hasReportChanges() && isSubmit) {
+                return 'Changes you made may not be saved';
+            }
+            isSubmit = true;
+        }
+    </script>
+</body>
+</html>

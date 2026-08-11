@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div id="testing" style="height: 820px; width: 100%; margin-bottom: 10px;">
+    <bold-report-viewer id="viewer" report-service-url="https://on-premise-demo.boldreports.com/reporting/reportservice/api/Viewer" report-path="/Sample Reports/Company Sales" service-authorization-token="@ViewBag.ServiceAuthorizationToken" ajax-before-load="onAjaxRequest"></bold-report-viewer>
+</div>
+
+<script type="text/javascript">
+    function onAjaxRequest(args) {
+        args.headers.push({ Key: 'serverurl', Value: 'https://on-premise-demo.boldreports.com/reporting/api/site/site1' });
+    }
+</script>
